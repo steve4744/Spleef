@@ -152,14 +152,14 @@ public class SetupCommandsHandler implements CommandExecutor {
 			CommandHandlerInterface commandh = commandHandlers.get(args[0]);
 			//check args length
 			if (args.length - 1 < commandh.getMinArgsLength()) {
-				Messages.sendMessage(player, "&c ERROR: Please use &6/tr cmds&c to view required arguments for all game commands");
+				Messages.sendMessage(player, "&c ERROR: Please use &6/sp cmds&c to view required arguments for all game commands");
 				return false;
 			}
 			//execute command
 			boolean result = commandh.handleCommand(player, Arrays.copyOfRange(args, 1, args.length));
 			return result;
 		} 
-		Messages.sendMessage(player, "&c ERROR: Please use &6/tr cmds&c to view all valid game commands");
+		Messages.sendMessage(player, "&c ERROR: Please use &6/sp cmds&c to view all valid game commands");
 		return false;
 	}
 }

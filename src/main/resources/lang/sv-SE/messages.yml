@@ -1,18 +1,18 @@
 ---
-trprefix: '&7[&6TNTRun_reloaded&7]'
-menutitle: '&1TNTRun_reloaded Arenor'
+trprefix: '&7[&6Spleef_reloaded&7]'
+menutitle: '&1Spleef_reloaded Arenor'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Spelare: &6{PS}/{MPS}'
 menufee: '&5Delta i avgift: &6{FEE}'
 menupvp: '&5PVP: &6Aktiverad'
-menutracker: '&1TNTRun spelarspårare'
+menutracker: '&1Spleef spelarspårare'
 nopermission: '&c Du saknar rättigheter till att göra detta'
-nolobby: '&c Global lobby är inte satt, kör &6/trsetup setlobby'
+nolobby: '&c Global lobby är inte satt, kör &6/spsetup setlobby'
 lobbyunloaded: '&c Lobbyvärlden är oladdad eller existerar inte'
 teleporttolobby: '&7 Teleporterade till lobbyn'
 arenanotexist: '&c Arena &6{ARENA}&c existerar inte'
 noarenas: '&c Det finns inga arenor att ansluta till'
-arenanotdisabled: '&c Vänligen inaktivera arena: &6/trsetup disable {ARENA}'
+arenanotdisabled: '&c Vänligen inaktivera arena: &6/spsetup disable {ARENA}'
 arenanospectatorspawn: '&c Ingen spawnplats för åskådare för arenan &6{ARENA}'
 availablearenas: '&7 Tillgängliga arenor: {COUNT}'
 availablekits: '&7 Tillgängliga kit: {COUNT}'
@@ -34,7 +34,7 @@ arenawaiting: '&6 Arenan väntar'
 playerscountinarena: '&6 Nuvarande antal spelare i arena: {COUNT} spelare'
 limitreached: '&7 Arenan är full.'
 playerjoinedtoothers: '&c {RANK}&6{COLOR}{PLAYER} &7gick med i arenan (&6{PS}&7/&6{MPS}&7)'
-playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7har anslutit sig till TNTRun arenan &6{ARENA}&7, klicka för att spela'
+playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7har anslutit sig till Spleef arenan &6{ARENA}&7, klicka för att spela'
 playerborderinvite: '&b---------------------------------------'
 playerclickinvite: Klicka för att ansluta till {ARENA}
 playerjoinedasspectator: '&7 Du gick med i arenan &6{ARENA} &7som åskådare'
@@ -67,18 +67,18 @@ notenoughmoney: '&c Du behöver {MONEY} att köpa denna vara'
 alreadyboughtitem: '&c Du har redan köpt en butiksvara'
 shopnostock: '&c Denna vara är för närvarande slut i lager'
 maxdoublejumpsexceeded: '&c Du kan inte överskrida de högsta tillåtna dubbelhoppen ({MAXJUMPS})'
-playernotinarena: '&c Du är inte i en TNTRun arena'
+playernotinarena: '&c Du är inte i en Spleef arena'
 playernotonline: '&6 {PLAYER} &7är inte online just nu'
 gamesplayed: '&bGames played &f: '
 gameswon: '&bWins &f: '
 gameslost: '&bLosses &f: '
-statshead: '&7=========[&6TNTRun Statistik&7]========='
-rewardshead: '&7======[&6TNTRun Belöningar&7 - &a{ARENA}&7]======'
-leaderhead: '&7======[&6TNTRun Leaderboard&7]======'
-resultshead: '&7============[&6TNTRun&7]============'
+statshead: '&7=========[&6Spleef Statistik&7]========='
+rewardshead: '&7======[&6Spleef Belöningar&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6Spleef Leaderboard&7]======'
+resultshead: '&7============[&6Spleef&7]============'
 leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: Vinner &3{WINS}'
 leadersign: '&1{PLAYER} &4{WINS}'
-shopmoneyheader: '&fTNTRun Butiks konto'
+shopmoneyheader: '&fSpleef Butiks konto'
 shopmoneybalance: '&5Ditt saldo är &6{BAL}'
 statsdisabled: '&c Statistik är för närvarande inaktiverad'
 helplobby: Teleportera till lobbyn
@@ -90,10 +90,10 @@ helpspectate: Gå med på arenan som åskådare
 helpautojoin: Gå automatiskt med i den första tillgängliga arenan
 helpleave: Lämna den nuvarande arenan
 helpvote: Rösta för att tvångs-starta nuvarande arena
-helpcmds: Visa alla TNTRun kommandon
+helpcmds: Visa alla Spleef kommandon
 helpinfo: Visa plugin-information
 helpstats: Se spelarstatistik
-helplb: Visa TNTRun topplista
+helplb: Visa Spleef topplista
 helpstart: Tvinga igång arenan
 setuplobby: Ställ in den globala lobbyn på din nuvarande plats
 setupdellobby: Ta bort den globala lobbyn
@@ -131,13 +131,13 @@ setupcurrency: Ställ in valutan för att gå med i arenan
 setuphelp: Kommandon som krävs för att skapa en ny arena
 setupenablekits: Aktivera kit för arenan
 setupdisablekits: Inaktivera kit för arenan
-setupaddkit: Skapa en TNTRun kit
-setupdelkit: Ta bort a TNTRun kit
+setupaddkit: Skapa en Spleef kit
+setupdelkit: Ta bort a Spleef kit
 setupp1: Ställ in målblock som första urvalspunkt
 setupp2: Ställ in målblocket som andra urvalspunkt
 setupclear: Rensa urvalspunkter
 setupwhitelist: Vitlista ett kommando för användning i spelet
-setupresetstats: Ta bort alla TNTRun statistik för spelaren
+setupresetstats: Ta bort alla Spleef statistik för spelaren
 setupresetrank: Ta bort spelarens rang från cachen
 kitadd: '&7 De kit &6{KIT} &7Har skapats'
 kitdel: '&7 De kit &6{KIT} &7har blivit raderad'
@@ -158,4 +158,4 @@ partyban: '&c Du är för närvarande sparkad från detta party'
 partyinparty: '&c Du är redan i en party'
 partynotexist: '&c Den valda party existerar inte'
 partynoinvite: '&c Du har ingen inbjudan till detta party'
-partynotenabled: '&c TNTRun parties är för närvarande inte aktiverade'
+partynotenabled: '&c Spleef parties är för närvarande inte aktiverade'

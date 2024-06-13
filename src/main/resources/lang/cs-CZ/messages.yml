@@ -1,18 +1,18 @@
 ---
-trprefix: '&7[&6TNTRun_reloaded&7]'
-menutitle: '&1TNTRun_reloaded Areny'
+trprefix: '&7[&6Spleef_reloaded&7]'
+menutitle: '&1Spleef_reloaded Areny'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Hraci: &6{PS}/{MPS}'
 menufee: '&5Poplatek za Pripojeni: &6{FEE}'
 menupvp: '&5PVP: &6Povoleno'
-menutracker: '&1TNTRun sledovani hracu'
+menutracker: '&1Spleef sledovani hracu'
 nopermission: '&c Nemas Pravomoce na tuhle cinnost'
-nolobby: '&c Hlavni lobby neni nastavena, napis &6/trsetup setlobby'
+nolobby: '&c Hlavni lobby neni nastavena, napis &6/spsetup setlobby'
 lobbyunloaded: '&c Svet s Lobby je nenacteny nebo neexistuje'
 teleporttolobby: '&7 Teleportovani do lobby'
 arenanotexist: '&c Arena &6{ARENA}&c neexistuje'
 noarenas: '&c Neexistuje zadna dostupna arena k pripojeni'
-arenanotdisabled: '&c Prosim vypnete arenu pomoci &6/trsetup disable {ARENA}'
+arenanotdisabled: '&c Prosim vypnete arenu pomoci &6/spsetup disable {ARENA}'
 arenanospectatorspawn: '&c Žádný spawn pro diváky nebyl nastaven pro arénu &6{ARENA}'
 availablearenas: '&7 Dostupné arény: {COUNT}'
 availablekits: '&7 Dostupné kity: {COUNT}'
@@ -67,18 +67,18 @@ notenoughmoney: '&c Potřebuješ {MONEY} pro nákup této položky'
 alreadyboughtitem: '&c Již sis koupil tento item z obchodu'
 shopnostock: '&c Tento item je vyprodán'
 maxdoublejumpsexceeded: '&c Nemůžeš překročit maximální počet dvoj-skoků, který je {MAXJUMPS}'
-playernotinarena: '&c Nejsi v TNTRun Aréně'
+playernotinarena: '&c Nejsi v Spleef Aréně'
 playernotonline: '&6 {PLAYER} &7 není v aréně'
 gamesplayed: '&b Odehraných her&f: '
 gameswon: '&bVýhry &f: '
 gameslost: '&bProhry &f: '
-statshead: '&7=========[&6TNTRun Staty&7]========='
-rewardshead: '&7======[&6TNTRun Odměny&7 - &a{ARENA}&7]======'
-leaderhead: '&7======[&6TNTRun Žebříček&7]======'
-resultshead: '&7============[&6TNTRun&7]============'
+statshead: '&7=========[&6Spleef Staty&7]========='
+rewardshead: '&7======[&6Spleef Odměny&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6Spleef Žebříček&7]======'
+resultshead: '&7============[&6Spleef&7]============'
 leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: Výhry &3{WINS}'
 leadersign: '&1{PLAYER} &4{WINS}'
-shopmoneyheader: '&fTNTRun Účet Obchodu'
+shopmoneyheader: '&fSpleef Účet Obchodu'
 shopmoneybalance: '&5Tvuj zustatek je &6{BAL}'
 statsdisabled: '&c Staty jsou momentálně vypnuté'
 helplobby: Teleportování do lobby
@@ -90,10 +90,10 @@ helpspectate: Připojit se do arény jako divák
 helpautojoin: Automaticky se připojit do první dostupné arény
 helpleave: Opustit momentální arénu
 helpvote: Hlasovat pro vynucení startu momentální arény
-helpcmds: Zobrazit všechny TNTRun příkazy
+helpcmds: Zobrazit všechny Spleef příkazy
 helpinfo: Zobrazit info pluginu
 helpstats: Zobrazit statistiku hráče
-helplb: Zobrazit TNTRun žebříček
+helplb: Zobrazit Spleef žebříček
 helpstart: Vynutit spuštění arény
 setuplobby: Nastavení globální lobby na vaší aktuální pozici
 setupdellobby: Vymazání Globální lobby
@@ -131,13 +131,13 @@ setupcurrency: Nastavení měny pro připojení do arény
 setuphelp: Příkazy nutné pro nastavení nové arény
 setupenablekits: Povolení kitů v aréně
 setupdisablekits: Zakázání kitů v aréně
-setupaddkit: Vytvoření nového TNTRun Kitu
-setupdelkit: Vymazání TNTRun Kitu
+setupaddkit: Vytvoření nového Spleef Kitu
+setupdelkit: Vymazání Spleef Kitu
 setupp1: Nastavit cílený blok jako první bod výběru
 setupp2: Nastavit cílený blok jako druhý bod výběru
 setupclear: Vymazat vybrané body
 setupwhitelist: Povolení příkazu pro použití ve hře
-setupresetstats: Smazání všech TNTRun statistik pro hráče
+setupresetstats: Smazání všech Spleef statistik pro hráče
 setupresetrank: Vymazání ranku hráče z cache
 kitadd: '&7 Kit s názvem &6{KIT} &7Byl vytvořen'
 kitdel: '&7 Kit s názvem &6{KIT} &7byl vymazán'
@@ -158,4 +158,4 @@ partyban: '&c Byl si vyhozen z této party'
 partyinparty: '&c Už si v partě'
 partynotexist: '&c Zvolená parta neexistuje'
 partynoinvite: '&c Nemáš pozvánku do této party'
-partynotenabled: '&c TNTRun party nejsou momentálně zaplé'
+partynotenabled: '&c Spleef party nejsou momentálně zaplé'

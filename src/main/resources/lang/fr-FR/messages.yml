@@ -1,18 +1,18 @@
 ---
-trprefix: '&7[&6TNTRun&7] '
+trprefix: '&7[&6Spleef&7] '
 menutitle: '&1Arènes'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Joueurs: &6{PS}/{MPS}'
 menufee: '&5Taxe d''entrée: &6{FEE}'
 menupvp: '&5PVP: &6Activé'
-menutracker: '&1Traqueur de joueurs TNTRun'
+menutracker: '&1Traqueur de joueurs Spleef'
 nopermission: '&cVous n''avez pas la permission de faire ça'
-nolobby: '&cLe lobby n''est pas défini, faites &6/trsetup setlobby'
+nolobby: '&cLe lobby n''est pas défini, faites &6/spsetup setlobby'
 lobbyunloaded: '&cLe lobby n''est pas chargé ou n''existe pas'
 teleporttolobby: '&7Téléporté au lobby'
 arenanotexist: '&cL''arène&6{ARENA}&c n''existe pas'
 noarenas: '&cAucune arène n''est disponible'
-arenanotdisabled: '&cVeuillez désactiver l''arène: &6/trsetup disable {ARENA}'
+arenanotdisabled: '&cVeuillez désactiver l''arène: &6/spsetup disable {ARENA}'
 arenanospectatorspawn: '&cPas de spawn spectateur défini pour l''arène &6{ARENA}'
 availablearenas: '&7Arènes disponibles: {COUNT}'
 availablekits: '&7Kits disponibles: {COUNT}'
@@ -67,18 +67,18 @@ notenoughmoney: '&cVous avez besoin de {MONEY} pour acheter cet objet'
 alreadyboughtitem: '&cVous avez déjà acheté un objet'
 shopnostock: '&cCet objet n''est plus en stock'
 maxdoublejumpsexceeded: '&cVous ne pouvez dépasser la limite de double sauts ({MAXJUMPS})'
-playernotinarena: '&cVous n''êtes pas dans une arène de TNTRun'
+playernotinarena: '&cVous n''êtes pas dans une arène de Spleef'
 playernotonline: '&6{PLAYER} &7est hors-ligne'
 gamesplayed: '&bParties jouées &f: '
 gameswon: '&bVictoires &f: '
 gameslost: '&bDéfaites &f: '
-statshead: '&7=========[&6Statistiques TNTRun &7]========='
-rewardshead: '&7======[&6Récompenses TNTRun&7 - &a{ARENA}&7]======'
-leaderhead: '&7======[&6Classement TNTRun&7]======'
-resultshead: '&7============[&6TNTRun&7]============'
+statshead: '&7=========[&6Statistiques Spleef &7]========='
+rewardshead: '&7======[&6Récompenses Spleef&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6Classement Spleef&7]======'
+resultshead: '&7============[&6Spleef&7]============'
 leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: Victoires &3{WINS}'
 leadersign: '&1{PLAYER} &4{WINS}'
-shopmoneyheader: '&fCompte Boutique TNTRun'
+shopmoneyheader: '&fCompte Boutique Spleef'
 shopmoneybalance: '&5Votre balance est de &6{BAL}'
 statsdisabled: '&cLes statistiques sont désactivées'
 helplobby: Téléporté au lobby
@@ -90,10 +90,10 @@ helpspectate: Rejoindre l'arène en tant que spectateur
 helpautojoin: Rejoindre automatiquement la première arène disponible
 helpleave: Quitter l'arène actuelle
 helpvote: Voter pour forcer le début de l'arène actuelle
-helpcmds: Voir toutes les commandes TNTRun
+helpcmds: Voir toutes les commandes Spleef
 helpinfo: Voir les informations du plugin
 helpstats: Voir les stats des joueurs
-helplb: Afficher le classement TNTRun
+helplb: Afficher le classement Spleef
 helpstart: Forcer le début de l'arène
 setuplobby: Définir le lobby global à votre position actuelle
 setupdellobby: Supprimer le lobby global
@@ -131,13 +131,13 @@ setupcurrency: Définir la devise pour rejoindre l'arène
 setuphelp: Commandes nécessaires pour configurer l'arène
 setupenablekits: Activer les kits pour l'arène
 setupdisablekits: Désactiver les kits pour l'arène
-setupaddkit: Créer un kit TNTRun
-setupdelkit: Supprimer un kit TNTRun
+setupaddkit: Créer un kit Spleef
+setupdelkit: Supprimer un kit Spleef
 setupp1: Définir le bloc visé comme premier bloc de sélection
 setupp2: Définir le bloc visé comme second bloc de sélection
 setupclear: Effacer les points de sélection
 setupwhitelist: Whitelister une commande à utiliser en jeu
-setupresetstats: Retirer toutes les statistiques TNTRun d'un joueur
+setupresetstats: Retirer toutes les statistiques Spleef d'un joueur
 setupresetrank: Retirer le rang du joueur de la cache
 kitadd: '&7 Le kit &6{KIT} &7a été créé'
 kitdel: '&7 Le kit &6{KIT} &7a été supprimé'
@@ -158,4 +158,4 @@ partyban: '&cVous avez été exclu du groupe'
 partyinparty: '&cVous êtes déjà dans un groupe'
 partynotexist: '&cLe groupe sélectionné n''existe pas'
 partynoinvite: '&c Vous n''avez pas d''invitation à ce groupe'
-partynotenabled: '&c Les parties TNTRun ne sont pas activées pour le moment'
+partynotenabled: '&c Les parties Spleef ne sont pas activées pour le moment'

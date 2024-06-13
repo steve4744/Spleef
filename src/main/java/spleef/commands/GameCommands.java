@@ -47,27 +47,27 @@ public class GameCommands implements CommandExecutor {
 		}
 		Player player = (Player) sender;
 		if (args.length < 1) {
-			Messages.sendMessage(player, "&7============" + Messages.trprefix + "============", false);
-			Messages.sendMessage(player, "&c Please use &6/tr help");
+			Messages.sendMessage(player, "&7============" + Messages.spprefix + "============", false);
+			Messages.sendMessage(player, "&c Please use &6/sp help");
 			return false;
 		}
 		// help command
 		if (args[0].equalsIgnoreCase("help")) {
-			Messages.sendMessage(player, "&7============" + Messages.trprefix + "============", false);
-			player.spigot().sendMessage(Utils.getTextComponent("/tr lobby", true), Utils.getTextComponent(Messages.helplobby));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr list [arena]", true), Utils.getTextComponent(Messages.helplist));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr join [arena]", true), Utils.getTextComponent(Messages.helpjoin));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr spectate {arena}", true), Utils.getTextComponent(Messages.helpspectate));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr autojoin [pvp|nopvp]", true), Utils.getTextComponent(Messages.helpautojoin));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr leave", true), Utils.getTextComponent(Messages.helpleave));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr vote", true), Utils.getTextComponent(Messages.helpvote));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr info", true), Utils.getTextComponent(Messages.helpinfo));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr stats", true), Utils.getTextComponent(Messages.helpstats));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr leaderboard [size]", true), Utils.getTextComponent(Messages.helplb));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr listkit [kit]", true), Utils.getTextComponent(Messages.helplistkit));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr listrewards {arena}", true), Utils.getTextComponent(Messages.helplistrewards));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr start {arena}", true), Utils.getTextComponent(Messages.helpstart));
-			player.spigot().sendMessage(Utils.getTextComponent("/tr cmds", true), Utils.getTextComponent(Messages.helpcmds));
+			Messages.sendMessage(player, "&7============" + Messages.spprefix + "============", false);
+			player.spigot().sendMessage(Utils.getTextComponent("/sp lobby", true), Utils.getTextComponent(Messages.helplobby));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp list [arena]", true), Utils.getTextComponent(Messages.helplist));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp join [arena]", true), Utils.getTextComponent(Messages.helpjoin));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp spectate {arena}", true), Utils.getTextComponent(Messages.helpspectate));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp autojoin [pvp|nopvp]", true), Utils.getTextComponent(Messages.helpautojoin));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp leave", true), Utils.getTextComponent(Messages.helpleave));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp vote", true), Utils.getTextComponent(Messages.helpvote));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp info", true), Utils.getTextComponent(Messages.helpinfo));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp stats", true), Utils.getTextComponent(Messages.helpstats));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp leaderboard [size]", true), Utils.getTextComponent(Messages.helplb));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp listkit [kit]", true), Utils.getTextComponent(Messages.helplistkit));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp listrewards {arena}", true), Utils.getTextComponent(Messages.helplistrewards));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp start {arena}", true), Utils.getTextComponent(Messages.helpstart));
+			player.spigot().sendMessage(Utils.getTextComponent("/sp cmds", true), Utils.getTextComponent(Messages.helpcmds));
 
 		} else if (args[0].equalsIgnoreCase("lobby")) {
 			plugin.getGlobalLobby().joinLobby(player);
@@ -82,7 +82,7 @@ public class GameCommands implements CommandExecutor {
 					return false;
 				}
 				//list arena details
-				Messages.sendMessage(player, "&7============" + Messages.trprefix + "============", false);
+				Messages.sendMessage(player, "&7============" + Messages.spprefix + "============", false);
 				Messages.sendMessage(player, "&7Arena Details: &a" + arena.getArenaName(), false);
 
 				String arenaStatus = arena.getStatusManager().isArenaEnabled() ? "Enabled" : "Disabled";
@@ -105,7 +105,7 @@ public class GameCommands implements CommandExecutor {
 					player.sendMessage(ChatColor.GOLD + "Linked Kits " + ChatColor.DARK_GRAY + "................." + bigspace + ChatColor.RED + String.join(", ", kitnames));
 				}
 
-				player.sendMessage(ChatColor.GOLD + "Rewards " + ChatColor.DARK_GRAY + "....................... " + ChatColor.RED + "Use command '/tr listrewards {arena}'");
+				player.sendMessage(ChatColor.GOLD + "Rewards " + ChatColor.DARK_GRAY + "....................... " + ChatColor.RED + "Use command '/sp listrewards {arena}'");
 
 				if (arena.getStructureManager().getFee() > 0) {
 					player.sendMessage(ChatColor.GOLD + "Join Fee " + ChatColor.DARK_GRAY + "....................... " + ChatColor.RED + arena.getStructureManager().getArenaCost());
@@ -263,47 +263,47 @@ public class GameCommands implements CommandExecutor {
 
 		// all commands
 		else if (args[0].equalsIgnoreCase("cmds")) {
-			Messages.sendMessage(player, "&7============" + Messages.trprefix + "============", false);
+			Messages.sendMessage(player, "&7============" + Messages.spprefix + "============", false);
 			Utils.displayHelp(player);
 			Messages.sendMessage(player, "&7============[&6Other commands&7]============", false);
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup deletespectate {arena}", true), Utils.getTextComponent(Messages.setupdelspectate));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setgameleveldestroydelay {arena} {ticks}", true), Utils.getTextComponent(Messages.setupdelay));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setregenerationdelay {arena} {ticks}", true), Utils.getTextComponent(Messages.setupregendelay));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setmaxplayers {arena} {players}", true), Utils.getTextComponent(Messages.setupmax));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setminplayers {arena} {players}", true), Utils.getTextComponent(Messages.setupmin));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setvotepercent {arena} {0<votepercent<1}", true), Utils.getTextComponent(Messages.setupvote));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup settimelimit {arena} {seconds}", true), Utils.getTextComponent(Messages.setuptimelimit));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setcountdown {arena} {seconds}", true), Utils.getTextComponent(Messages.setupcountdown));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setmoneyreward {arena} {amount}", true), Utils.getTextComponent(Messages.setupmoney));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setteleport {arena} {previous/lobby}", true), Utils.getTextComponent(Messages.setupteleport));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setdamage {arena} {yes/no/zero}", true), Utils.getTextComponent(Messages.setupdamage));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup addkit {kitname}", true), Utils.getTextComponent(Messages.setupaddkit));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup deletekit {kitname}", true), Utils.getTextComponent(Messages.setupdelkit));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup enablekits {arena}", true), Utils.getTextComponent(Messages.setupenablekits));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup disablekits {arena}", true), Utils.getTextComponent(Messages.setupdisablekits));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setbarcolor", true), Utils.getTextComponent(Messages.setupbarcolor));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setP1", true), Utils.getTextComponent(Messages.setupp1));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setP2", true), Utils.getTextComponent(Messages.setupp2));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup clear", true), Utils.getTextComponent(Messages.setupclear));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup configure {arena}", true), Utils.getTextComponent(Messages.setupconfigure));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup reloadbars", true), Utils.getTextComponent(Messages.setupreloadbars));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup reloadtitles", true), Utils.getTextComponent(Messages.setupreloadtitles));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup reloadmsg", true), Utils.getTextComponent(Messages.setupreloadmsg));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup reloadconfig", true), Utils.getTextComponent(Messages.setupreloadconfig));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup enable {arena}", true), Utils.getTextComponent(Messages.setupenable));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup disable {arena}", true), Utils.getTextComponent(Messages.setupdisable));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup delete {arena}", true), Utils.getTextComponent(Messages.setupdelete));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setreward {arena}", true), Utils.getTextComponent(Messages.setupreward));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setfee {arena} {amount}", true), Utils.getTextComponent(Messages.setupfee));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setcurrency {arena} {item}", true), Utils.getTextComponent(Messages.setupcurrency));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup setlobby", true), Utils.getTextComponent(Messages.setuplobby));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup deletelobby", true), Utils.getTextComponent(Messages.setupdellobby));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup addspawn", true), Utils.getTextComponent(Messages.setupaddspawn));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup deletespawnpoints", true), Utils.getTextComponent(Messages.setupdelspawns));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup addtowhitelist", true), Utils.getTextComponent(Messages.setupwhitelist));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup resetstats {player}", true), Utils.getTextComponent(Messages.setupresetstats));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup resetcachedrank {player}", true), Utils.getTextComponent(Messages.setupresetrank));
-			player.spigot().sendMessage(Utils.getTextComponent("/trsetup help", true), Utils.getTextComponent(Messages.setuphelp));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletespectate {arena}", true), Utils.getTextComponent(Messages.setupdelspectate));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setgameleveldestroydelay {arena} {ticks}", true), Utils.getTextComponent(Messages.setupdelay));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setregenerationdelay {arena} {ticks}", true), Utils.getTextComponent(Messages.setupregendelay));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setmaxplayers {arena} {players}", true), Utils.getTextComponent(Messages.setupmax));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setminplayers {arena} {players}", true), Utils.getTextComponent(Messages.setupmin));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setvotepercent {arena} {0<votepercent<1}", true), Utils.getTextComponent(Messages.setupvote));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup settimelimit {arena} {seconds}", true), Utils.getTextComponent(Messages.setuptimelimit));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setcountdown {arena} {seconds}", true), Utils.getTextComponent(Messages.setupcountdown));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setmoneyreward {arena} {amount}", true), Utils.getTextComponent(Messages.setupmoney));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setteleport {arena} {previous/lobby}", true), Utils.getTextComponent(Messages.setupteleport));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setdamage {arena} {yes/no/zero}", true), Utils.getTextComponent(Messages.setupdamage));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup addkit {kitname}", true), Utils.getTextComponent(Messages.setupaddkit));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletekit {kitname}", true), Utils.getTextComponent(Messages.setupdelkit));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup enablekits {arena}", true), Utils.getTextComponent(Messages.setupenablekits));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup disablekits {arena}", true), Utils.getTextComponent(Messages.setupdisablekits));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setbarcolor", true), Utils.getTextComponent(Messages.setupbarcolor));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setP1", true), Utils.getTextComponent(Messages.setupp1));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setP2", true), Utils.getTextComponent(Messages.setupp2));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup clear", true), Utils.getTextComponent(Messages.setupclear));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup configure {arena}", true), Utils.getTextComponent(Messages.setupconfigure));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup reloadbars", true), Utils.getTextComponent(Messages.setupreloadbars));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup reloadtitles", true), Utils.getTextComponent(Messages.setupreloadtitles));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup reloadmsg", true), Utils.getTextComponent(Messages.setupreloadmsg));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup reloadconfig", true), Utils.getTextComponent(Messages.setupreloadconfig));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup enable {arena}", true), Utils.getTextComponent(Messages.setupenable));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup disable {arena}", true), Utils.getTextComponent(Messages.setupdisable));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup delete {arena}", true), Utils.getTextComponent(Messages.setupdelete));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setreward {arena}", true), Utils.getTextComponent(Messages.setupreward));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setfee {arena} {amount}", true), Utils.getTextComponent(Messages.setupfee));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setcurrency {arena} {item}", true), Utils.getTextComponent(Messages.setupcurrency));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setlobby", true), Utils.getTextComponent(Messages.setuplobby));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletelobby", true), Utils.getTextComponent(Messages.setupdellobby));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup addspawn", true), Utils.getTextComponent(Messages.setupaddspawn));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletespawnpoints", true), Utils.getTextComponent(Messages.setupdelspawns));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup addtowhitelist", true), Utils.getTextComponent(Messages.setupwhitelist));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup resetstats {player}", true), Utils.getTextComponent(Messages.setupresetstats));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup resetcachedrank {player}", true), Utils.getTextComponent(Messages.setupresetrank));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup help", true), Utils.getTextComponent(Messages.setuphelp));
 		}
 
 		// vote
@@ -408,7 +408,7 @@ public class GameCommands implements CommandExecutor {
 		}
 
 		else {
-			Messages.sendMessage(player, "&c Invalid argument supplied, please use &6/tr help");
+			Messages.sendMessage(player, "&c Invalid argument supplied, please use &6/sp help");
 			return false;
 		}	
 		return true;

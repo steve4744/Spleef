@@ -244,20 +244,20 @@ public class ConsoleCommands implements CommandExecutor {
 	}
 
 	private void displayConsoleCommands(CommandSender sender) {
-		Messages.sendMessage(sender, "trconsole help");
-		Messages.sendMessage(sender, "trconsole list");
-		Messages.sendMessage(sender, "trconsole info");
-		Messages.sendMessage(sender, "trconsole enable {arena}");
-		Messages.sendMessage(sender, "trconsole disable {arena}");
-		Messages.sendMessage(sender, "trconsole start {arena}");
-		Messages.sendMessage(sender, "trconsole reloadconfig");
-		Messages.sendMessage(sender, "trconsole reloadmessages");
-		Messages.sendMessage(sender, "trconsole reloadbars");
-		Messages.sendMessage(sender, "trconsole leaderboard");
-		Messages.sendMessage(sender, "trconsole join {arena} {player}");
-		Messages.sendMessage(sender, "trconsole spectate {arena} {player}");
-		Messages.sendMessage(sender, "trconsole autojoin [pvp|nopvp] {player}");
-		Messages.sendMessage(sender, "trconsole givedoublejumps {player} {amount}");
+		Messages.sendMessage(sender, "spconsole help");
+		Messages.sendMessage(sender, "spconsole list");
+		Messages.sendMessage(sender, "spconsole info");
+		Messages.sendMessage(sender, "spconsole enable {arena}");
+		Messages.sendMessage(sender, "spconsole disable {arena}");
+		Messages.sendMessage(sender, "spconsole start {arena}");
+		Messages.sendMessage(sender, "spconsole reloadconfig");
+		Messages.sendMessage(sender, "spconsole reloadmessages");
+		Messages.sendMessage(sender, "spconsole reloadbars");
+		Messages.sendMessage(sender, "spconsole leaderboard");
+		Messages.sendMessage(sender, "spconsole join {arena} {player}");
+		Messages.sendMessage(sender, "spconsole spectate {arena} {player}");
+		Messages.sendMessage(sender, "spconsole autojoin [pvp|nopvp] {player}");
+		Messages.sendMessage(sender, "spconsole givedoublejumps {player} {amount}");
 	}
 
 }

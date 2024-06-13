@@ -29,7 +29,7 @@ import spleef.utils.FormattingCodesParser;
 
 public class Messages {
 
-	public static String trprefix = "&7[&6Spleef_reloaded&7]";
+	public static String spprefix = "&7[&6Spleef_reloaded&7]";
 	public static String menutitle = "&1Spleef_reloaded Arenas";
 	public static String menuarenaname = "&a{ARENA}";
 	public static String menutext = "&5Players: &6{PS}/{MPS}";
@@ -37,14 +37,14 @@ public class Messages {
 	public static String menupvp = "&5PVP: &6Enabled";
 	public static String menutracker = "&Spleef player tracker";
 	public static String nopermission = "&c You don't have permission to do this";
-	public static String nolobby = "&c Global lobby isn't set, run &6/trsetup setlobby";
+	public static String nolobby = "&c Global lobby isn't set, run &6/spsetup setlobby";
 	public static String lobbyunloaded = "&c Lobby world is unloaded or doesn't exist";
 	public static String teleporttolobby = "&7 Teleported to lobby";
 
 	public static String availablearenas = "&7 Available arenas: {COUNT}";
 	public static String arenanotexist = "&c Arena &6{ARENA}&c doesn't exist";
 	public static String noarenas = "&c There are no arenas available to join";
-	public static String arenanotdisabled = "&c Please disable arena: &6/trsetup disable {ARENA}";
+	public static String arenanotdisabled = "&c Please disable arena: &6/spsetup disable {ARENA}";
 	public static String arenanospectatorspawn = "&c No spectator spawn set for arena &6{ARENA}";
 	public static String availablekits = "&7 Available kits: {COUNT}";
 	public static String arenawolrdna = "&7 Arena world is not loaded";
@@ -205,7 +205,7 @@ public class Messages {
 			return;
 		}
 		if (addPrefix) {
-			message = trprefix + message;
+			message = spprefix + message;
 		}
 		sender.sendMessage(FormattingCodesParser.parseFormattingCodes(message));
 	}
@@ -221,7 +221,7 @@ public class Messages {
 		plugin.getLanguage().updateLangFile(messageconfig);
 		FileConfiguration config = YamlConfiguration.loadConfiguration(messageconfig);
 
-		trprefix = config.getString("trprefix", trprefix);
+		spprefix = config.getString("trprefix", spprefix);
 		menutitle = config.getString("menutitle", menutitle);
 		menuarenaname = config.getString("menuarenaname", menuarenaname);
 		menutext = config.getString("menutext", menutext);
@@ -388,7 +388,7 @@ public class Messages {
 	private static void saveMessages(File messageconfig) {
 		FileConfiguration config = new YamlConfiguration();
 		
-		config.set("trprefix", trprefix);
+		config.set("spprefix", spprefix);
 		config.set("menutitle",  menutitle);
 		config.set("menuarenaname", menuarenaname);
 		config.set("menutext",  menutext);

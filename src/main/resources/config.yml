@@ -205,7 +205,7 @@ scoreboard:
   displaydoublejumps: false
   # set to true to remove the scoreboard when a player becomes a spectator
   removefromspectators: true
-  # set to true to display the lobby scoreboard when a player runs the "/tr lobby" command
+  # set to true to display the lobby scoreboard when a player runs the "/sp lobby" command
   enablelobbyscoreboard: false
   waiting:
   - '&fWelcome to Spleef'

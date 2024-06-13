@@ -117,7 +117,7 @@ public class Utils {
 	}
 
 	public static void displayInfo(CommandSender sender) {
-		Messages.sendMessage(sender, "&7============" + Messages.trprefix + "============", false);
+		Messages.sendMessage(sender, "&7============" + Messages.spprefix + "============", false);
 		Messages.sendMessage(sender, "&bPlugin Version: &f" + Spleef.getInstance().getDescription().getVersion(), false);
 		Messages.sendMessage(sender, "&bWebsite: &fhttps://www.spigotmc.org/resources/spleef_reloaded.53359/", false);
 		Messages.sendMessage(sender, "&bSpleef_reloaded Author: &fsteve4744", false);
@@ -161,13 +161,13 @@ public class Utils {
 	}
 
 	public static void displayHelp(Player player) {
-		player.spigot().sendMessage(getTextComponent("/trsetup setlobby", true), getTextComponent(Messages.setuplobby));
-		player.spigot().sendMessage(getTextComponent("/trsetup create {arena}", true), getTextComponent(Messages.setupcreate));
-		player.spigot().sendMessage(getTextComponent("/trsetup setarena {arena}", true), getTextComponent(Messages.setupbounds));
-		player.spigot().sendMessage(getTextComponent("/trsetup setloselevel {arena}", true), getTextComponent(Messages.setuploselevel));
-		player.spigot().sendMessage(getTextComponent("/trsetup setspawn {arena}", true), getTextComponent(Messages.setupspawn));
-		player.spigot().sendMessage(getTextComponent("/trsetup setspectate {arena}", true), getTextComponent(Messages.setupspectate));
-		player.spigot().sendMessage(getTextComponent("/trsetup finish {arena}", true), getTextComponent(Messages.setupfinish));
+		player.spigot().sendMessage(getTextComponent("/spsetup setlobby", true), getTextComponent(Messages.setuplobby));
+		player.spigot().sendMessage(getTextComponent("/spsetup create {arena}", true), getTextComponent(Messages.setupcreate));
+		player.spigot().sendMessage(getTextComponent("/spsetup setarena {arena}", true), getTextComponent(Messages.setupbounds));
+		player.spigot().sendMessage(getTextComponent("/spsetup setloselevel {arena}", true), getTextComponent(Messages.setuploselevel));
+		player.spigot().sendMessage(getTextComponent("/spsetup setspawn {arena}", true), getTextComponent(Messages.setupspawn));
+		player.spigot().sendMessage(getTextComponent("/spsetup setspectate {arena}", true), getTextComponent(Messages.setupspectate));
+		player.spigot().sendMessage(getTextComponent("/spsetup finish {arena}", true), getTextComponent(Messages.setupfinish));
 	}
 
 	public static void displayJoinMessage(Player player, String arenaname, String joinMessage) {

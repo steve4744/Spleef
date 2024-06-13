@@ -134,11 +134,11 @@ public class MenuHandler implements Listener {
 		boolean leftclick = e.getClick().isLeftClick();
 		int page = Character.getNumericValue(title.charAt(title.indexOf("/") - 1));
 		int slot = e.getRawSlot();
-		String cmd = "trsetup ";
+		String cmd = "spsetup ";
 		switch (slot) {
 			case 4:
 				String status = arena.getStatusManager().isArenaEnabled() ? "disable " : "enable ";
-				Bukkit.dispatchCommand(player, "trsetup " + status + arenaname);
+				Bukkit.dispatchCommand(player, cmd + status + arenaname);
 				break;
 			case 10:
 				if (page == 1) {
@@ -173,7 +173,7 @@ public class MenuHandler implements Listener {
 				break;
 			case 14:
 				if (page == 1) {
-					Bukkit.dispatchCommand(player, "trsetup setspawn " + arenaname);
+					Bukkit.dispatchCommand(player, cmd += "setspawn " + arenaname);
 				} else {
 					if (arena.getStatusManager().isArenaEnabled()) {
 						Messages.sendMessage(player, Messages.arenanotdisabled.replace("{ARENA}", arenaname));
@@ -279,7 +279,7 @@ public class MenuHandler implements Listener {
 				break;
 			case 25:
 				if (page == 1) {
-					Bukkit.dispatchCommand(player, "trsetup finish " + arenaname);
+					Bukkit.dispatchCommand(player, cmd += "finish " + arenaname);
 				} else {
 					if (arena.getStatusManager().isArenaEnabled()) {
 						Messages.sendMessage(player, Messages.arenanotdisabled.replace("{ARENA}", arenaname));

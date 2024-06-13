@@ -1,18 +1,18 @@
 ---
-trprefix: '&7[&6TNTRun_reloaded&7]'
-menutitle: '&1Arene Tntrun_reloaded'
+trprefix: '&7[&6Spleef_reloaded&7]'
+menutitle: '&1Arene Spleef_reloaded'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Giocatori: &6{PS}/{MPS}'
 menufee: '&5Quota di adesione: &6{FEE}'
 menupvp: '&5PVP: &6 Abilitato'
-menutracker: '&1TNTRun tracker giocatore'
+menutracker: '&1Spleef tracker giocatore'
 nopermission: '&c Non hai i permessi per eseguire questa azione'
-nolobby: '&c La lobby globale non è impostata, esegui &6/trsetup setlobby'
+nolobby: '&c La lobby globale non è impostata, esegui &6/spsetup setlobby'
 lobbyunloaded: '&c Il mondo della lobby non è stato caricato o non esiste'
 teleporttolobby: '&7 Teletrasportato nella lobby'
 arenanotexist: '&c L''Arena &6{ARENA}&c non esiste'
 noarenas: '&c Non ci sono arene disponibili a cui unirsi'
-arenanotdisabled: '&c Disabilita arena: &6/trsetup disattiva {ARENA}'
+arenanotdisabled: '&c Disabilita arena: &6/spsetup disattiva {ARENA}'
 arenanospectatorspawn: '&c Nessun spawn spettatore impostato per l''arena &6{ARENA}'
 availablearenas: '&7 Arene disponibili: {COUNT}'
 availablekits: '&7 Kit disponibili: {COUNT}'
@@ -34,7 +34,7 @@ arenawaiting: '&6 Arena in attesa'
 playerscountinarena: '&6 Numero attuale di giocatori in arena: {COUNT} giocatori'
 limitreached: '&7 L''Arena è piena.'
 playerjoinedtoothers: '&c {RANK}&6{COLOR}{PLAYER} &7è entrato nell''arena (&6{PS}&7/&6{MPS}&7)'
-playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7si è unito all''arena di TNTRun &6{ARENA}&7, clicca per giocare'
+playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7si è unito all''arena di Spleef &6{ARENA}&7, clicca per giocare'
 playerborderinvite: '&b---------------------------------------'
 playerclickinvite: Clicca per unirti a {ARENA}
 playerjoinedasspectator: '&7 Ti sei unito all''arena &6{ARENA} &7come spettatore'
@@ -67,18 +67,18 @@ notenoughmoney: '&c Hai bisogno di {MONEY} per acquistare questo oggetto'
 alreadyboughtitem: '&c Hai già acquistato un articolo negozio'
 shopnostock: '&c Questo prodotto non è attualmente disponibile'
 maxdoublejumpsexceeded: '&c Non puoi superare i massimi doublejumps consentiti ({MAXJUMPS})'
-playernotinarena: '&c Non sei in un''arena TNTRun'
+playernotinarena: '&c Non sei in un''arena Spleef'
 playernotonline: '&6 {PLAYER} &7non è attualmente online'
 gamesplayed: '&bPartite giocate &f: '
 gameswon: '&bVittorie &f: '
 gameslost: '&bSconfitte &f: '
-statshead: '&7=========[&6Statistiche TNTRun&7]========='
-rewardshead: '&7======[&6TNTRun Premi&7 - &a{ARENA}&7]======'
-leaderhead: '&7======[&6TNTRun Leaderboard&7]======'
-resultshead: '&7============[&6TNTRun&7]============'
+statshead: '&7=========[&6Statistiche Spleef&7]========='
+rewardshead: '&7======[&6Spleef Premi&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6Spleef Leaderboard&7]======'
+resultshead: '&7============[&6Spleef&7]============'
 leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: Vittorie &3{WINS}'
 leadersign: '&1{PLAYER} &4{WINS}'
-shopmoneyheader: '&fAccount del Negozio TNTRun'
+shopmoneyheader: '&fAccount del Negozio Spleef'
 shopmoneybalance: '&5Il tuo saldo è &6{BAL}'
 statsdisabled: '&c Le statistiche sono attualmente disabilitate'
 helplobby: Teletrasportati alla lobby
@@ -90,10 +90,10 @@ helpspectate: Entra in arena come spettatore
 helpautojoin: Unisciti automaticamente alla prima arena disponibile
 helpleave: Esci dalla partita corrente
 helpvote: Vota per forzare l'avvio dell'arena corrente
-helpcmds: Visualizza tutti i comandi TNTRun
+helpcmds: Visualizza tutti i comandi Spleef
 helpinfo: Visualizza informazioni del plugin
 helpstats: Mostra statistiche giocatore
-helplb: Mostra la classifica TNTRun del server
+helplb: Mostra la classifica Spleef del server
 helpstart: Forza l'inizio dell'arena
 setuplobby: Imposta la lobby globale nella posizione corrente
 setupdellobby: Elimina la lobby globale
@@ -131,13 +131,13 @@ setupcurrency: Imposta il costo per entrare nell'arena
 setuphelp: Comandi necessari per configurare una nuova arena
 setupenablekits: Abilita kit per l'arena
 setupdisablekits: Disabilita i kit per l'arena
-setupaddkit: Crea un kit TNTRun
-setupdelkit: Elimina un kit TNTRun
+setupaddkit: Crea un kit Spleef
+setupdelkit: Elimina un kit Spleef
 setupp1: Imposta blocco mirato come primo punto di selezione
 setupp2: Imposta blocco mirato come secondo punto di selezione
 setupclear: Cancella punti di selezione
 setupwhitelist: Inserisci nella whitelist un comando da utilizzare nel gioco
-setupresetstats: Rimuovi tutte le statistiche TNTRun per il giocatore
+setupresetstats: Rimuovi tutte le statistiche Spleef per il giocatore
 setupresetrank: Rimuovi il rango del giocatore dalla cache
 kitadd: '&7 Il kit &6{KIT} &7è stato creato'
 kitdel: '&7 Il kit &6{KIT} &7è stato eliminato'
@@ -158,4 +158,4 @@ partyban: '&c Sei stato espulso da questo party'
 partyinparty: '&c Sei già in un party'
 partynotexist: '&c Il party selezionato non esiste'
 partynoinvite: '&c Non hai un invito a questo party'
-partynotenabled: '&c I party TNTRun non sono attualmente abilitati'
+partynotenabled: '&c I party Spleef non sono attualmente abilitati'

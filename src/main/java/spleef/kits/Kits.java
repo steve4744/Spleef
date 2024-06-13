@@ -159,7 +159,7 @@ public class Kits {
 			Messages.sendMessage(player, Messages.kitnotexists.replace("{KIT}", name));
 			return;
 		}
-		Messages.sendMessage(player, "&7============" + Messages.trprefix + "============", false);
+		Messages.sendMessage(player, "&7============" + Messages.spprefix + "============", false);
 		Messages.sendMessage(player, "&7Kit Details: &a" + name, false);
 
 		for (ItemStack is : kits.get(name).items) {

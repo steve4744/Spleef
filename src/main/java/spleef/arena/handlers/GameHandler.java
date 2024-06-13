@@ -195,7 +195,7 @@ public class GameHandler {
 		arena.getStructureManager().getRewards().setStartingPlayers(startingPlayers);
 		setActiveStats(startingPlayers);
 
-		String message = Messages.trprefix;
+		String message = Messages.spprefix;
 		int limit = arena.getStructureManager().getTimeLimit();
 		if (limit != 0) {
 			hasTimeLimit = true;

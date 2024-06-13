@@ -1,18 +1,18 @@
 ---
-trprefix: '&7[&6TNTRun_reloaded&7]'
-menutitle: '&1TNTRun_reloaded アリーナ'
+trprefix: '&7[&6Spleef_reloaded&7]'
+menutitle: '&1Spleef_reloaded アリーナ'
 menuarenaname: '&a{ARENA}'
 menutext: '&5プレイヤー数: &6{PS}/{MPS}'
 menufee: '&5参加費: &6{FEE}'
 menupvp: '&5PVP: &6有効'
-menutracker: '&1TNTRun プレイヤートラッカー'
+menutracker: '&1Spleef プレイヤートラッカー'
 nopermission: '&c あなたに権限が無いため実行できません。'
-nolobby: '&c グローバルロビーが設定されていません。設定するには &6/trsetup setlobby を実行してください。'
+nolobby: '&c グローバルロビーが設定されていません。設定するには &6/spsetup setlobby を実行してください。'
 lobbyunloaded: '&c ロビーが読み込まれていない又は存在しません。'
 teleporttolobby: '&7 ロビーにテレポートしました。'
 arenanotexist: '&c アリーナ &6{ARENA} &cが存在しません。'
 noarenas: '&c 参加できるアリーナはありません。'
-arenanotdisabled: '&c アリーナを無効に変更してください。: &6/trsetup disable {ARENA}'
+arenanotdisabled: '&c アリーナを無効に変更してください。: &6/spsetup disable {ARENA}'
 arenanospectatorspawn: '&c アリーナ &6{ARENA} に観戦者用のスポーンポイントが設定されていません。 '
 availablearenas: '&7 利用可能なアリーナ: {COUNT}'
 availablekits: '&7 利用可能なキット: {COUNT}'
@@ -34,7 +34,7 @@ arenawaiting: '&6 アリーナを無効にしました。'
 playerscountinarena: '&6 現在のプレイヤー数: {COUNT} 人'
 limitreached: '&7 Arena がいっぱいです。'
 playerjoinedtoothers: '&c {RANK}&6{COLOR}{PLAYER} &7がアリーナに参加しました (&6{PS}&7/6{MPS}&7)'
-playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7がTNTRunアリーナに参加しました &6{ARENA}&7, クリックしてプレイします'
+playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7がSpleefアリーナに参加しました &6{ARENA}&7, クリックしてプレイします'
 playerborderinvite: '&b---------------------------------------'
 playerclickinvite: クリックして {ARENA} に参加
 playerjoinedasspectator: '&7 あなたはアリーナに参加しました &6{ARENA} &7観客として参加しました'
@@ -67,18 +67,18 @@ notenoughmoney: '&c このアイテムを購入するには {MONEY} が必要で
 alreadyboughtitem: '&c 既にショップアイテムを購入しています'
 shopnostock: '&c この商品は現在在庫切れです'
 maxdoublejumpsexceeded: '&c 許可されている最大ダブルジャンプを超えることはできません ({MAXJUMPS})'
-playernotinarena: '&c あなたはTNTRunアリーナにいません。'
+playernotinarena: '&c あなたはSpleefアリーナにいません。'
 playernotonline: '&6 {PLAYER} &7は現在オンラインではありません'
 gamesplayed: '&bプレイ済みゲーム(&B): '
 gameswon: '&bWins &f: '
 gameslost: '&b失敗(&B): '
-statshead: '&7=========[&6TNTRun Stats&7]========='
-rewardshead: '&7======[&6TNTRun報酬&7 - &a{ARENA}&7]======'
-leaderhead: '&7======[&6TNTRun リーダーボード&7]======'
-resultshead: '&7============[&6TNTRun&7]============'
+statshead: '&7=========[&6Spleef Stats&7]========='
+rewardshead: '&7======[&6Spleef報酬&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6Spleef リーダーボード&7]======'
+resultshead: '&7============[&6Spleef&7]============'
 leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: &3{WINS} に勝利'
 leadersign: '&1{PLAYER} &4{WINS}'
-shopmoneyheader: '&fTNTRun ショップアカウント'
+shopmoneyheader: '&fSpleef ショップアカウント'
 shopmoneybalance: '&5あなたの残高は &6{BAL} です'
 statsdisabled: '&c 統計は現在無効になっています'
 helplobby: ロビーにテレポートする
@@ -90,10 +90,10 @@ helpspectate: 観戦者としてアリーナに参加する
 helpautojoin: 最初の利用可能なアリーナに自動的に参加する
 helpleave: 現在のアリーナから退出する
 helpvote: 現在のアリーナに投票する
-helpcmds: すべてのTNTRunコマンドを表示
+helpcmds: すべてのSpleefコマンドを表示
 helpinfo: プラグイン情報を表示
 helpstats: プレイヤーの統計を表示
-helplb: TNTRunリーダーボードを表示する
+helplb: Spleefリーダーボードを表示する
 helpstart: アリーナを強制開始
 setuplobby: 現在のロビーにグローバルロビーを設定
 setupdellobby: グローバルロビーを削除
@@ -131,13 +131,13 @@ setupcurrency: アリーナに参加する通貨を設定
 setuphelp: 新しいアリーナの設定に必要なコマンド
 setupenablekits: アリーナでキットを有効にする
 setupdisablekits: アリーナのキットを無効にする
-setupaddkit: TNTRunキットを作成
-setupdelkit: TNTRunキットを削除
+setupaddkit: Spleefキットを作成
+setupdelkit: Spleefキットを削除
 setupp1: ターゲットブロックを最初の選択点として設定
 setupp2: ターゲットブロックを2つ目の選択点として設定
 setupclear: 選択点をクリア
 setupwhitelist: Whitelist a command for use in-game
-setupresetstats: プレイヤーのTNTRunでの統計をすべて削除する
+setupresetstats: プレイヤーのSpleefでの統計をすべて削除する
 setupresetrank: Remove player's rank from the cache
 kitadd: '&7 The kit &6{KIT} &7has been created'
 kitdel: '&7 The kit &6{KIT} &7has been deleted'
@@ -158,4 +158,4 @@ partyban: '&c あなたは現在このパーティーからキックされてい
 partyinparty: '&c You are already in a party'
 partynotexist: '&c The selected party does not exist'
 partynoinvite: '&c You do not have an invitation to this party'
-partynotenabled: '&c TNTRun parties are not currently enabled'
+partynotenabled: '&c Spleef parties are not currently enabled'
