@@ -1,0 +1,52 @@
+name: Spleef_reloaded
+main: spleef.Spleef
+softdepend: [WorldEdit, Vault, HeadsPlus, mcMMO, PlaceholderAPI, Parties]
+version: ${project.version}
+api-version: 1.20.6
+author: [steve4744]
+commands:
+  spleefsetup:
+    description: Spleef arena setup commands
+    aliases: spsetup
+  spleef:
+    description: Spleef game commands
+    aliases: sp
+  spleefconsole:
+    description: Spleef console commands
+    aliases: spconsole
+permissions:
+  spleef.join:
+    description: used to control who can play Spleef and where
+    default: true
+  spleef.autojoin:
+    description: used to control who can use the autojoin command
+    default: true
+  spleef.setup:
+    description: used to create and modify arenas and gameplay
+    default: op
+  spleef.version.check:
+    description: display new version message on player join
+    default: op
+  spleef.heads:
+    description: control who can use HeadsPlus in-game
+    default: true
+  spleef.shop:
+    description: allow players to buy any shop item (if they have money)
+    default: true
+  spleef.joinmenu:
+    description: allow players to use the join menu
+    default: true
+  spleef.start:
+    description: allow players to start an arena before the minimum players is reached
+    default: op
+  spleef.spectate:
+    description: allow players to join the arena as a spectator
+    default: op
+  spleef.listrewards:
+    description: allow players to list the arena rewards
+    default: true
+  spleef.party:
+    description: allow players to create and join Spleef parties
+    default: true
+libraries:
+  - org.apache.commons:commons-lang3:3.12.0

@@ -1,0 +1,321 @@
+# Spleef_reloaded configuration file     #
+#                                        #
+# The Spleef_reloaded plugin             #
+#                                        #
+# Spleef_reloaded author steve4744       #
+#                                        #
+
+special:
+  #
+  # use bossbar to display arena messages and countdown
+  UseBossBar: true
+  #
+  # set the bossbar color, or have random colors
+  BossBarColor: RANDOM
+  #
+  # use splash titles for join/leave
+  UseTitle: true
+  #
+  # use scoreboard to display in-game stats
+  UseScoreboard: true
+  #
+  # using permission "spleef.doublejumps.n" where n is an integer will limit the number of doublejumps
+  # a player will receive up to the max allowed. Applies to free and shop doublejumps
+  UseDoubleJumpPermissions: false
+  #
+  # check for new version of Spleef_reloaded on SpigotMC.org
+  CheckForNewVersion: true
+  #
+  # enable metrics (bStats)
+  Metrics: true
+#
+# use the player's exp bar to display the countdown and/or time remaining
+usexpbar:
+  countdown: true
+  timelimit: true
+#
+# use player's rank in chat messages
+UseRankInChat:
+  enabled: false
+  usegroup: true
+  groupcolormeta: false
+  useprefix: false
+#
+# the gamemode to use while in the arena, survival(default) or adventure
+gamemode: SURVIVAL
+#
+# in-game shop configuration
+shop:
+  enabled: true
+  name: '&6&lSpleef &f&lSHOP'
+  size: 27
+  doublejump:
+    maxdoublejumps: 10
+  #
+  # log every shop purchase to console
+  logpurchases: false
+  #
+  # remove player's purchase if player leaves before game starts
+  onleave:
+    removepurchase: false
+  #
+  # item to use to show player's monetary balance in shop
+  showmoneyitem: GOLD_INGOT
+#
+# give players free doublejumps when arena starts
+freedoublejumps:
+  enabled: false
+  amount: 10
+#
+# run server commands on win
+# setting to "- null" will disable the message
+commandsonwin:
+- say {PLAYER} won Spleef on {ARENA}
+- say Congratulations...
+#
+# set duration (seconds) for fireworks on win
+fireworksonwin:
+  enabled: true
+  duration: 4
+#
+# broadcast win to whom:
+# 2 = server, 1 = only arena players, 0 = no broadcast message
+broadcastwinlevel: 2
+#
+# broadcast clickable invitation to join arena message when first player joins an arena
+invitationmessage:
+  enabled: false
+  #
+  # if true, players that join will join as spectators if arena is already running
+  allowspectate: false
+  #
+  # if true, players already playing Spleef will not receive the message
+  excludeplayers: false
+  #
+  # if true, the originating player will not receive the message
+  excludeoriginator: false
+#
+# if enabled players can create and join Spleef parties
+# alternatively, the AlessioDP Parties plugin can be used
+parties:
+  enabled: true
+  usePartiesPlugin: false
+#
+# configure arena join menu
+menu:
+  # set menu item for non-PVP arenas
+  item: TNT
+  # set menu item for PVP arenas
+  pvpitem: IRON_BLOCK
+  # set menu background colour
+  panecolor: LIGHT_BLUE
+  # should disabled arenas be included in the menu
+  includedisabled: false
+#
+# configure arena config menu
+configmenu:
+  # set 'lore' to false to not display the help text when hovering over each menu item
+  lore: true
+#
+# configure sounds
+sounds:
+  arenastart:
+    enabled: true
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 10
+    pitch: 1.0
+  itemselect:
+    enabled: true
+    sound: UI_BUTTON_CLICK
+    volume: 1
+    pitch: 1.0
+  blockbreak:
+    enabled: true
+    sound: BLOCK_SAND_BREAK
+    volume: 5
+    pitch: 1.0
+  invitationmessage:
+    enabled: false
+    sound: ENTITY_PLAYER_LEVELUP
+    volume: 10
+    pitch: 1.0
+#
+# if enabled, all players in arena teleport to arena spawn when countdown = 5 seconds
+anticamping:
+  enabled: true
+  teleporttime: 5
+#
+# set max entries displayed by leaderboard command
+leaderboard:
+  maxentries: 10
+#
+# control the size of the doublejumps
+doublejumps:
+  multiplier: 1.5
+  height: 0.7
+#
+# set hotbar items while waiting for arena start
+items:
+  vote:
+    use: true
+    material: DIAMOND
+    name: '&2&lVote'
+    slot: 0
+  info:
+    use: true
+    material: EMERALD
+    name: '&2&lInfo'
+    slot: 1
+  shop:
+    use: true
+    material: NETHER_STAR
+    name: '&2&lShop'
+    slot: 2
+  stats:
+    use: true
+    material: PLAYER_HEAD
+    name: '&2&lStats'
+    slot: 3
+  leave:
+    use: true
+    material: GREEN_BED
+    name: '&2&lLeave'
+    slot: 8
+  heads:
+    use: true
+    material: GLOWSTONE_DUST
+    name: '&e&lHeadsPlus'
+    slot: 4
+  tracker:
+    use: true
+    material: COMPASS
+    name: '&e&lPlayer Tracker'
+    slot: 5
+  doublejump:
+    use: false
+    material: FEATHER
+    name: '&e&lDoublejump'
+    slot: 0
+#
+# set scoreboard text - only the header supports hex/rgb colours
+scoreboard:
+  # the header supports hex colours, e.g. header: '<#ff11aa>&lSPLEEF'
+  header: '&6&lSPLEEF'
+  # set to true to add a player's doublejumps to the scoreboard
+  displaydoublejumps: false
+  # set to true to remove the scoreboard when a player becomes a spectator
+  removefromspectators: true
+  # set to true to display the lobby scoreboard when a player runs the "/tr lobby" command
+  enablelobbyscoreboard: false
+  waiting:
+  - '&fWelcome to Spleef'
+  - '&a '
+  - '&fArena: &6&l{ARENA}'
+  - '&b '
+  - '&fPlayers: &a&l{PS}&7&l/&c&l{MPS}'
+  - '&c '
+  - '&fVotes needed: &6&l{VOTES}'
+  - '&d '
+  - '&fStarting in: &6&l{COUNT}'
+  playing:
+  - '&fPlaying Spleef'
+  - '&fon arena: &6&l{ARENA}'
+  - '&b '
+  - '&fPlayers: &a&l{PS}&7&l/&c&l{MPS}'
+  - '&c '
+  - '&fLost Players: &a&l{LOST}'
+  - '&d '
+  - '&fEnd in: &c&l{LIMIT}'
+  lobby:
+  - '&fWelcome to the Spleef lobby'
+  - '&a '
+  - '&fNumber of Arenas: %spleef_arena_count%'
+  - '&b '
+  - '&fGames played: %spleef_played%'
+  - '&fGames won: %spleef_wins%'
+  - '&c '
+  - '&fSpleef_reloaded v%spleef_version%'
+#
+# configure stats - set database to 'file' (to use stats.yml) or 'sql' (to use a MySQL database)
+database: file
+#
+# MySQL database configuration
+MySQL:
+  host: host
+  port: 12345
+  name: spleef
+  table: stats
+  user: root
+  pass: password
+  useSSL: false
+  flags: allowPublicKeyRetrieval=true
+  legacyDriver: false
+#
+# configure sign text
+signs:
+  prefix: '&6&lSpleef'
+  join: '[Join]'
+  status:
+    disabled: '&cDisabled'
+    ingame: '&c&l{PS}&8/&c&l{MPS}'
+    regenerating: '&6&lRegen...'
+    waiting: '&a&l{PS}&8/&a&l{MPS}'
+  # if a join sign is placed on a STAINED_GLASS block, the block colour can be set to reflect the arena status
+  blockcolour:
+    disabled: ''
+    ingame: ''
+    starting: ''
+    waiting: ''
+  # set 'allowspectate' to true to allow players clicking on a sign of an in-game arena to join as spectators
+  allowspectate: false
+#
+# bungeecord settings
+bungeecord:
+  # enable if part of bungeecord network
+  enabled: false
+  # name of hub server
+  hub: lobby
+  # get arena status using MOTD
+  useMOTD: true
+  # set to true to select a random arena after every game
+  randomarena: true
+  # set to true to stop the server at the end of a game
+  stopserver: false
+  # if true players real UUIDs will be used (if forwarded by the proxy server)
+  useUUID: false
+  # if false players will join the spleef lobby when joining the server and at the end of a game
+  teleporttohub: true
+  # if true players with 'spectate' permission will join as a player if the arena has not started
+  playorspectate: false
+  # if false the default Bukkit join message will not be displayed
+  showdefaultjoinmessage: true
+#
+# currency symbols to use with message strings
+currency:
+  prefix: ''
+  suffix: ' coins'
+#
+# should a player's inventory be dropped if the player dies in the arena
+ondeath:
+  dropitems: true
+#
+# number of seconds after game starts before blocks start to break
+onstart:
+  delay: 0
+#
+# should a player's hunger and health bars be filled on joining the arena
+onjoin:
+  fillhunger: true
+  fillhealth: false
+#
+# setting this to true will prevent arrows being picked up and re-used
+removearrows: false
+#
+# disable player collisions
+disablecollisions: false
+#
+# specify language file to use from those supplied with the plugin
+language: en-GB
+#
+# set to true to log more verbose messages to console
+debug: false

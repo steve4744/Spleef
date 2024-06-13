@@ -1,0 +1,161 @@
+---
+trprefix: '&7[&6TNTRun_перезагружен&7]'
+menutitle: '&1TNTRun_перезагруженные Арены'
+menuarenaname: '&a{ARENA}'
+menutext: '&5Игроков: &6{PS}/{MPS}'
+menufee: '&5Вступление за &6{FEE}'
+menupvp: '&5PVP: &6Включен'
+menutracker: '&1TNTRun инструмент отслеживания игроков'
+nopermission: '&c У вас нет разрешения на это'
+nolobby: '&c Глобальное лобби не установлено, запустите &6/trsetup setlobby'
+lobbyunloaded: '&c Лобби мир выгружен или не существует'
+teleporttolobby: '&7 телепортирован в лобби'
+arenanotexist: '&c Арена &6{ARENA}&c не существует'
+noarenas: '&c Нет доступных аренд для входа'
+arenanotdisabled: '&c Пожалуйста, отключите арену: &6/trsetup disable {ARENA}'
+arenanospectatorspawn: '&c Не установлена точка появления для зрителей на арене: &6{ARENA}'
+availablearenas: '&7 Арен доступно: {COUNT}'
+availablekits: '&7 Наборов доступно: {COUNT}'
+arenawolrdna: '&7 Мир для арены не загружен'
+arenanobounds: '&7 Границы арены не установлены'
+arenadisabled: '&7 Арена недоступна'
+arenarunning: '&7 Арена уже запущена'
+arenaregenerating: '&7 Арена восстанавливается'
+arenavehicle: '&c Вы не можете подключиться к игре, пока сидите в транспорте'
+arenajoined: '&c Вы уже подключились к арене'
+arenadisabling: '&6 Арена выключается'
+arenastarting: '&6 Арена уже запускается'
+signcreate: '&7 Табличка успешно создана'
+signremove: '&7 Табличка успешно удалена'
+signfail: '&7 Вы должны смотреть на табличку, чтобы создать табличку для подключения'
+arenafee: '&7 С вас сняли плату&6{FEE} &7за вход на арену'
+arenanofee: '&c Вам потребуется капитал &6{FEE} &cto для входа на арену'
+arenawaiting: '&6 Арена в ожидании'
+playerscountinarena: '&6 Сейчас на арене: {COUNT} игроков'
+limitreached: '&7 Арена заполнена.'
+playerjoinedtoothers: '&c {RANK}&6{COLOR}{PLAYER} &7зашел на арену (&6{PS}&7/&6{MPS}&7)'
+playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7присоединился к арене TNTRun &6{ARENA}&7, нажмите для воспроизведения'
+playerborderinvite: '&b---------------------------------------'
+playerclickinvite: Нажмите, чтобы войти на {ARENA}
+playerjoinedasspectator: '&7 Вы присоединились к арене &6{ARENA} &7в роли наблюдателя'
+playerlefttoplayer: 'Вы покинули арену'
+playerlefttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7зашел на арену (&6{PS}&7/&6{MPS}&7)'
+playernotplaying: '&c Выбранный игрок &6{PLAYER} &cбольше не играет'
+playervotedforstart: '&f Вы проголосовали за принудительное создание игры'
+playeralreadyvotedforstart: '&c Вы уже проголосовали'
+playercannotvote: '&c Вы не можете голосовать за принудительное создание арены'
+arenastarted: '&7 Арена запущена. Лимит времени {TIMELIMIT} секунд'
+arenanolimit: '&7 Арена запущена. Без ограничения по времени'
+arenacountdown: '&7 Арена начнется через {COUNTDOWN} секунд'
+arenatimeout: '&7 Время истекло. Завершение игры'
+playerwontoplayer: '&7 Вы выиграли игру!'
+playerfinishedtestmode: '&7 Тестовая игра завершена!'
+playerlosttoplayer: '&7 Вы проиграли игру'
+playerlosttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7проиграл игру (&6{PS}&7/&6{MPS}&7)'
+playerposition: '&a{POS}: &f{RANK}{COLOR}{PLAYER}'
+rewardlistposition: '&a{POS} : '
+playerrewardmessage: '&7 Вы получили награду: &6{REWARD}'
+playerrewardmaterial: '&6 Материал: &f'
+playerrewardcommand: '&6 Команда: &f'
+playerrewardmoney: '&6 Деньги: &f'
+playerrewardxp: '&6 Опыт:      &l  &f'
+playerboughtitem: '&7 Вы купили предмет &6{ITEM} &7за &6{MONEY}'
+playerboughtwait: '&7 Вы получите предметы после начала игры'
+playerkit: '&7 Вы получили набор &6{KIT}'
+playersrequiredtostart: '&c Для принудительного старта на арене должно быть не менее 2 игроков'
+notenoughmoney: '&c Вам нужно {MONEY} для покупки этого элемента'
+alreadyboughtitem: '&c Вы уже купили предмет магазина'
+shopnostock: '&c В настоящее время этого товара нет'
+maxdoublejumpsexceeded: '&c Вы не можете превышать максимально допустимый двойной прыжок ({MAXJUMPS})'
+playernotinarena: '&c Вы не находитесь на TNTRun'
+playernotonline: '&6 {PLAYER} &7сейчас не в сети'
+gamesplayed: '&bИгры сыграно &f: '
+gameswon: '&bВыигрыши &f: '
+gameslost: '&bПроигрыши &f: '
+statshead: '&7=========[&6TNTRun Статистика&7]========='
+rewardshead: '&7======[&6TNTRun Награды&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6TNTRun Лидеры&7]========'
+resultshead: '&7============[&6TNTRun&7]============'
+leaderboard: '{POSITION} &c{RANK}&b{COLOR}{PLAYER} &f: Победы &3{WINS}'
+leadersign: '&1{PLAYER} &4{WINS}'
+shopmoneyheader: '&fTNTRun Магазин'
+shopmoneybalance: '&5Ваш баланс: &6{BAL}'
+statsdisabled: '&c Статистика в настоящее время отключена'
+helplobby: Телепортироваться в лобби
+helplist: Список всех атрибутов ИЛИ Список Арен
+helplistkit: Список всех наборов ИЛИ Список подробностей наборов
+helplistrewards: Список наград для арены
+helpjoin: Откройте меню входа ИЛИ подключитесь к арене
+helpspectate: Присоединиться к арене как наблюдатель
+helpautojoin: Автоматически присоединяйтесь к первой доступной арене
+helpleave: Покинуть текущую арену
+helpvote: Голосование для принудительного запуска текущей арены
+helpcmds: Посмотреть все команды TNTRun
+helpinfo: Информация о плагине
+helpstats: Показать статистику игрока
+helplb: Отобразить таблицу лидеров TNTRun
+helpstart: Принудительный запуск арены
+setuplobby: Установить общее лобби в вашем текущем местоположении
+setupdellobby: Удалить лобби
+setupcreate: Создать новую арену
+setupconfigure: Открыть меню для настройки арены
+setupbounds: Установить границы для арены
+setuploselevel: Установить точку появления для проигравших
+setupspawn: Установить точку появления арены
+setupspectate: Установить точку появления наблюдателя
+setupaddspawn: Установить точку появления арены
+setupdelspawns: Удалить все точки появления, созданные командой /addspawn
+setupfinish: Завершить арену и сохранить
+setupdelspectate: Удалить точку появления наблюдателя для арены
+setupdelay: Задержка удаления блока при шагах игрока
+setupregendelay: 'Задержка перед повторным присоединением игроков к арене (по умолчанию: 60)'
+setupmax: 'Установить максимальное количество игроков для арены (по умолчанию: 15)'
+setupmin: 'Установить максимальное количество игроков для арены (по умолчанию: 2)'
+setupvote: 'Установить процент голосования в режим принудительного старта (По умолчанию: 0.75)'
+setuptimelimit: 'Установите ограничение по времени для арены (По умолчанию: 300 секунд)'
+setupcountdown: 'Установите ограничение по времени до запуска для арены (По умолчанию: 15 секунд)'
+setupmoney: Установить денежную награду победившему игроку
+setupteleport: Установка телепортации при проигрыше или победе на арене
+setupdamage: Включить/выключить PVP для арены
+setupbarcolor: Установить цвет BossBar
+setupreloadbars: Перезагрузить сообщения Bossbar
+setupreloadtitles: Перезагрузить сообщения TitleBar
+setupreloadmsg: Перезагрузить сообщения арен
+setupreloadconfig: Перезагрузка конфигурационного файла
+setupenable: Включить арену
+setupdisable: Включить арену
+setupdelete: Удалить арену
+setupreward: Задать награды для арены
+setupfee: Установить стоимость для участия в арене
+setupcurrency: Установить валюту для участия в арене
+setuphelp: Команды, необходимые для установки новой арены
+setupenablekits: Включить наборы для арены
+setupdisablekits: Выключить наборы для арены
+setupaddkit: Создать набор TNTRun
+setupdelkit: Удалить набор TNTRun
+setupp1: Установить целевой блок как первую точку выделения
+setupp2: Установить целевой блок как вторую точку выделения
+setupclear: Очистить выделенные точки
+setupwhitelist: Белый список команд для использования в игре
+setupresetstats: Удалить всю статистику TNTRun игрока
+setupresetrank: Удалить ранг игрока из кэша
+kitadd: '&7 Набор &6{KIT} &7был создан'
+kitdel: '&7 Набор &6{KIT} &7был удален'
+kitexists: '&c Указанный набор уже существует: &6{KIT}'
+kitnotexists: '&c Указанного набора не существует: &6{KIT}'
+partycreate: '&7 Создана группа'
+partyjoin: '&6 {PLAYER} &7покинул группу'
+partydecline: '&6 {PLAYER} &7отклонил приглашение в группу'
+partyleave: '&6 {PLAYER} &7покинул группу'
+partyleaderleave: '&7 Лидер группы &6{PLAYER} &7покинул её! Группа удалена'
+partynotmember: '&c Вы не являетесь участником ни одной группы'
+partynotleader: 'Вы не являетесь лидером группы'
+partykick: '&6 {PLAYER} выгнан из группы'
+partyunkick: '&6 {PLAYER} &7разрешено присоединиться к вашей группе'
+partyinviteself: '&c Вы не можете пригласить себя'
+partyinvite: '&6 {PLAYER} &7пригласил вас присоединиться к группе'
+partyban: '&c В данный момент вы выгнаны из этой группы'
+partyinparty: '&c Вы уже находитесь в группы'
+partynotexist: '&c Выбранной группы не существует'
+partynoinvite: '&c У вас нет приглашений в группу'
+partynotenabled: '&c Группы в данный момент не включены'
