@@ -315,9 +315,6 @@ public class GameHandler {
 	 */
 	private void handlePlayer(final Player player) {
 		Location plloc = player.getLocation();
-		Location plufloc = plloc.clone().add(0, -1, 0);
-
-		arena.getStructureManager().getGameZone().destroyBlock(plufloc);
 
 		if (arena.getPlayersManager().getPlayersCount() == 1  && !arena.getStructureManager().isTestMode()) {
 			startEnding(player);

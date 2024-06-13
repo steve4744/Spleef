@@ -1,0 +1,56 @@
+# This workflow will build a Java project with Maven
+# For more information see: https://help.github.com/actions/language-and-framework-guides/building-and-testing-java-with-maven
+
+name: Java CI with Maven
+
+env:
+  VERSION: 9.29-SNAPSHOT
+
+on:
+  push:
+    branches: [ 9.29-SNAPSHOT ]
+      #  pull_request:
+      #    branches: [ master ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Set up JDK 21
+      uses: actions/setup-java@v3
+      with:
+        distribution: 'adopt-hotspot'
+        java-version: 21
+
+    - name: Build with Maven
+      run: mvn -B package --file pom.xml
+
+    - name: Create Release
+      id: create_release
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAG_NAME: ${{ env.VERSION }}.${{ github.run_number }}
+      run: |
+        gh release create v${{ env.TAG_NAME }} -t Spleef_reloaded-${{ env.TAG_NAME }} --target ${{ env.VERSION }}
+
+    - name: Upload Release Asset
+      id: upload-release-asset
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        TAG_NAME: ${{ env.VERSION }}.${{ github.run_number }}
+        ASSET_NAME: Spleef_reloaded-${{ env.VERSION }}.jar
+      run: |
+        gh release upload v${{ env.TAG_NAME }} "target/${{ env.ASSET_NAME }}#${{ env.ASSET_NAME }}"
+
+        #    - name: Upload to Artifactory
+        #      id: upload-to-artifactory
+        #      uses: advancedcsg-open/action-jfrog-cli@master
+        #      with:
+        #        url: 'https://steve4744.jfrog.io/artifactory/'
+        #        credentials type: 'username'
+        #        user: ${{ secrets.RT_USER }}
+        #        password: ${{ secrets.RT_PASSWORD }}
+        #        args: u "target/Spleef_reloaded-${{ env.VERSION }}.jar" "steve4744-repo/io.github.steve4744/Spleef_reloaded/${{ env.VERSION }}/"

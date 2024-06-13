@@ -81,7 +81,7 @@ public class RestrictionHandler implements Listener {
 		}
 	}
 
-	// player should not be able to break blocks while in arena
+	// player should not be able to break blocks while in arena except floor blocks
 	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
 	public void onPlayerBlockBreak(BlockBreakEvent e) {
 		Player player = e.getPlayer();
@@ -89,7 +89,10 @@ public class RestrictionHandler implements Listener {
 		if (arena == null) {
 			return;
 		}
-		e.setCancelled(true);
+		if (e.getBlock().getType() != Material.SNOW_BLOCK) {
+			e.setCancelled(true);
+		}
+		arena.getStructureManager().getGameZone().handleBlockBreak(e.getBlock());
 	}
 
 	// player should not be able to place blocks while in arena
