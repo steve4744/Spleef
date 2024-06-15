@@ -1,161 +1,160 @@
----
-trprefix: '&7[&6Spleef&7] '
-menutitle: '&1Arènes'
+trprefix: '&7[&6Spleef_reloaded&7]'
+menutitle: '&1Spleef_reloaded Arenas'
 menuarenaname: '&a{ARENA}'
-menutext: '&5Joueurs: &6{PS}/{MPS}'
-menufee: '&5Taxe d''entrée: &6{FEE}'
-menupvp: '&5PVP: &6Activé'
-menutracker: '&1Traqueur de joueurs Spleef'
-nopermission: '&cVous n''avez pas la permission de faire ça'
-nolobby: '&cLe lobby n''est pas défini, faites &6/spsetup setlobby'
-lobbyunloaded: '&cLe lobby n''est pas chargé ou n''existe pas'
-teleporttolobby: '&7Téléporté au lobby'
-arenanotexist: '&cL''arène&6{ARENA}&c n''existe pas'
-noarenas: '&cAucune arène n''est disponible'
-arenanotdisabled: '&cVeuillez désactiver l''arène: &6/spsetup disable {ARENA}'
-arenanospectatorspawn: '&cPas de spawn spectateur défini pour l''arène &6{ARENA}'
-availablearenas: '&7Arènes disponibles: {COUNT}'
-availablekits: '&7Kits disponibles: {COUNT}'
-arenawolrdna: '&7 Le monde de cette arène n''est pas chargé'
-arenanobounds: '&7Limites de l''arène non définies'
-arenadisabled: '&7L''arène est désactivée'
-arenarunning: '&7L''arène est déjà en cours'
-arenaregenerating: '&7L''arène est en train de se régénérer'
-arenavehicle: '&cVous ne pouvez pas rejoindre la partie en étant dans un véhicule'
-arenajoined: '&cVous avez déjà rejoint l''arène'
-arenadisabling: '&6L''arène est en désactivation'
-arenastarting: '&6L''arène a déjà commencé'
-signcreate: '&7Panneau créé avec succès'
-signremove: '&7Panneau retiré avec succès'
-signfail: '&7Vous devez regarder un panneau pour pouvoir le créer'
-arenafee: '&7On vous a retiré &6{FEE} &7pour rejoindre l''arène'
-arenanofee: '&cVous devez payer &6{FEE} &cpour rejoindre cette arène'
-arenawaiting: '&6L''arène est en attente'
-playerscountinarena: '&6Joueurs actuellement dans l''arène: {COUNT} joueurs'
-limitreached: '&7L''arène est pleine'
-playerjoinedtoothers: '&c{RANK}&6{COLOR}{PLAYER} &7a rejoint l''arène (&6{PS}&7/&6{MPS}&7)'
-playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7a rejoint l''arène &6{ARENA}&7, cliquez pour rejoindre'
+menutext: '&5Players: &6{PS}/{MPS}'
+menufee: '&5Join Fee: &6{FEE}'
+menupvp: '&5PVP: &6Enabled'
+menutracker: '&1Spleef player tracker'
+nopermission: '&c You don''t have permission to do this'
+nolobby: '&c Global lobby isn''t set, run &6/spsetup setlobby'
+lobbyunloaded: '&c Lobby world is unloaded or doesn''t exist'
+teleporttolobby: '&7 Teleported to lobby'
+arenanotexist: '&c Arena &6{ARENA}&c doesn''t exist'
+noarenas: '&c There are no arenas available to join'
+arenanotdisabled: '&c Please disable arena: &6/spsetup disable {ARENA}'
+arenanospectatorspawn: '&c No spectator spawn set for arena &6{ARENA}'
+availablearenas: '&7 Available arenas: {COUNT}'
+availablekits: '&7 Available kits: {COUNT}'
+arenawolrdna: '&7 Arena world is not loaded'
+arenanobounds: '&7 Arena bounds not set'
+arenadisabled: '&7 Arena is disabled'
+arenarunning: '&7 Arena already running'
+arenaregenerating: '&7 Arena is regenerating'
+arenavehicle: '&c You can''t join the game while sitting inside a vehicle'
+arenajoined: '&c You have already joined an arena'
+arenadisabling: '&6 Arena is disabling'
+arenastarting: '&6 Arena already starting'
+signcreate: '&7 Sign successfully created'
+signremove: '&7 Sign successfully removed'
+signfail: '&7 You must be looking at a sign to create the join sign'
+arenafee: '&7 You have been charged &6{FEE} &7to enter the arena'
+arenanofee: '&c You require a fee of &6{FEE} &cto enter the arena'
+arenawaiting: '&6 Arena is waiting'
+playerscountinarena: '&6 Current number of players in arena: {COUNT} players'
+limitreached: '&7 Arena is full.'
+playerjoinedtoothers: '&c {RANK}&6{COLOR}{PLAYER} &7joined the arena (&6{PS}&7/&6{MPS}&7)'
+playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7has joined Spleef arena &6{ARENA}&7, click to play'
 playerborderinvite: '&b---------------------------------------'
-playerclickinvite: Cliquez pour rejoindre {ARENA}
-playerjoinedasspectator: '&7Vous avez rejoint l''arène &6{ARENA} &7en tant que spectateur'
-playerlefttoplayer: '&7Vous avez quitté l''arène'
-playerlefttoothers: '&c{RANK}&6{COLOR}{PLAYER} &7a quitté la partie (&6{PS}&7/&6{MPS}&7)'
-playernotplaying: '&cLe joueur visé &6{PLAYER} &cn''est plus en jeu'
-playervotedforstart: '&fVous avez voté pour forcer le démarrage de la partie'
-playeralreadyvotedforstart: '&cVous avez déjà voté'
-playercannotvote: '&cVous ne pouvez pas voter pour forcer le démarrage de la partie'
-arenastarted: '&7L''arène a commencé. Le temps limite est de {TIMELIMIT} secondes'
-arenanolimit: '&7L''arène a commencé. Il n''y a pas de temps limite'
-arenacountdown: '&7L''arène va commencer dans {COUNTDOWN} secondes'
-arenatimeout: '&7Le temps est écoulé. Fin de la partie!'
-playerwontoplayer: '&7Vous avez gagné la partie'
-playerfinishedtestmode: '&7Partie de test complétée!'
-playerlosttoplayer: '&7Vous avez perdu la partie'
-playerlosttoothers: '&c{RANK}&6{COLOR}{PLAYER} &7a perdu la partie (&6{PS}&7/&6{MPS}&7)'
+playerclickinvite: Click to join {ARENA}
+playerjoinedasspectator: '&7 You joined arena &6{ARENA} &7as a spectator'
+playerlefttoplayer: '&7 You left the arena'
+playerlefttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7left the game (&6{PS}&7/&6{MPS}&7)'
+playernotplaying: '&c Targeted player &6{PLAYER} &cis no longer playing'
+playervotedforstart: '&f You voted to force-start the game'
+playeralreadyvotedforstart: '&c You have already voted'
+playercannotvote: '&c You cannot vote to force-start the arena'
+arenastarted: '&7 Arena started. Time limit is {TIMELIMIT} seconds'
+arenanolimit: '&7 Arena started. No time limit'
+arenacountdown: '&7 Arena starts in {COUNTDOWN} seconds'
+arenatimeout: '&7 Time is up. Ending game'
+playerwontoplayer: '&7 You won the game!'
+playerfinishedtestmode: '&7 Test game completed!'
+playerlosttoplayer: '&7 You lost the game'
+playerlosttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7lost the game (&6{PS}&7/&6{MPS}&7)'
 playerposition: '&a{POS}: &f{RANK}{COLOR}{PLAYER}'
 rewardlistposition: '&a{POS} : '
-playerrewardmessage: '&7Vous avez reçu : &6{REWARD}'
-playerrewardmaterial: '&6Matériau :  &f'
-playerrewardcommand: '&6Commande : &f'
-playerrewardmoney: '&6Argent :    &f'
+playerrewardmessage: '&7 You have been rewarded: &6{REWARD}'
+playerrewardmaterial: '&6 Material :  &f'
+playerrewardcommand: '&6 Command : &f'
+playerrewardmoney: '&6 Money :    &f'
 playerrewardxp: '&6 XP :      &l  &f'
-playerboughtitem: '&7Vous avez acheté l''objet &6{ITEM} &7pour &6{MONEY}'
-playerboughtwait: '&7Vous recevrez vos items lors du début de la partie'
-playerkit: '&7Vous avez reçu le kit &6{KIT}'
-playersrequiredtostart: '&cIl doit y avoir au minimum 2 joueurs pour forcer le démarrage de la partie'
-notenoughmoney: '&cVous avez besoin de {MONEY} pour acheter cet objet'
-alreadyboughtitem: '&cVous avez déjà acheté un objet'
-shopnostock: '&cCet objet n''est plus en stock'
-maxdoublejumpsexceeded: '&cVous ne pouvez dépasser la limite de double sauts ({MAXJUMPS})'
-playernotinarena: '&cVous n''êtes pas dans une arène de Spleef'
-playernotonline: '&6{PLAYER} &7est hors-ligne'
-gamesplayed: '&bParties jouées &f: '
-gameswon: '&bVictoires &f: '
-gameslost: '&bDéfaites &f: '
-statshead: '&7=========[&6Statistiques Spleef &7]========='
-rewardshead: '&7======[&6Récompenses Spleef&7 - &a{ARENA}&7]======'
-leaderhead: '&7======[&6Classement Spleef&7]======'
+playerboughtitem: '&7 You have bought item &6{ITEM} &7for &6{MONEY}'
+playerboughtwait: '&7 You will get your items when the game starts'
+playerkit: '&7 You have been given kit &6{KIT}'
+playersrequiredtostart: '&c There must be at least 2 players in the arena to force-start'
+notenoughmoney: '&c You need {MONEY} to buy this item'
+alreadyboughtitem: '&c You have already bought a shop item'
+shopnostock: '&c This item is currently out of stock'
+maxdoublejumpsexceeded: '&c You cannot exceed the maximum doublejumps allowed ({MAXJUMPS})'
+playernotinarena: '&c You are not in a Spleef arena'
+playernotonline: '&6 {PLAYER} &7is not currently online'
+gamesplayed: '&bGames played &f: '
+gameswon: '&bWins &f: '
+gameslost: '&bLosses &f: '
+statshead: '&7=========[&6Spleef Stats&7]========='
+rewardshead: '&7======[&6Spleef Rewards&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6Spleef Leaderboard&7]======'
 resultshead: '&7============[&6Spleef&7]============'
-leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: Victoires &3{WINS}'
+leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: Wins &3{WINS}'
 leadersign: '&1{PLAYER} &4{WINS}'
-shopmoneyheader: '&fCompte Boutique Spleef'
-shopmoneybalance: '&5Votre balance est de &6{BAL}'
-statsdisabled: '&cLes statistiques sont désactivées'
-helplobby: Téléporté au lobby
-helplist: Lister toutes les arènes OU Les détails de la liste des arènes
-helplistkit: Lister tous les kits OU Lister les détails des kits
-helplistrewards: Lister les récompenses des arènes
-helpjoin: Ouvrir le menu d'inscription OU Rejoindre l'arène
-helpspectate: Rejoindre l'arène en tant que spectateur
-helpautojoin: Rejoindre automatiquement la première arène disponible
-helpleave: Quitter l'arène actuelle
-helpvote: Voter pour forcer le début de l'arène actuelle
-helpcmds: Voir toutes les commandes Spleef
-helpinfo: Voir les informations du plugin
-helpstats: Voir les stats des joueurs
-helplb: Afficher le classement Spleef
-helpstart: Forcer le début de l'arène
-setuplobby: Définir le lobby global à votre position actuelle
-setupdellobby: Supprimer le lobby global
-setupcreate: Créer une nouvelle arène
-setupconfigure: Ouvrir le menu pour configurer l'arène
-setupbounds: Définir les limites de l'arène
-setuploselevel: Définir la couche de défaite sous vos pieds (Y)
-setupspawn: Définir le spawn de l'arène sous vos pieds
-setupspectate: Définir le point de spawn des spectateurs
-setupaddspawn: Définir un point de spawn additionnel sous vos pieds
-setupdelspawns: Supprimer tous les points d'apparition avec la commande addspawn
-setupfinish: Terminer l'arène et sauvegarder
-setupdelspectate: Retirer le point d'apparition pour les spectateurs
-setupdelay: Définir le délai à partir duquel les blocs se retirent sous les pieds
-setupregendelay: 'Définir le délai pour rejoindre une nouvelle arène (Défaut: 60)'
-setupmax: 'Définir le nombre de joueurs maximum de l''arène (Défaut: 15)'
-setupmin: 'Définir le nombre de joueurs minimum de l''arène (Défaut: 2)'
-setupvote: 'Définir le pourcentage de vote pour forcer le début de l''arène (Défaut: 0.75)'
-setuptimelimit: 'Définir un temps limite pour l''arène (Défaut: 300 secondes)'
-setupcountdown: 'Définir un compte à rebours pour l''arène (Défaut: 15 secondes)'
-setupmoney: Définir une récompense d'argent pour le gagnant
-setupteleport: Définir la téléportation en cas de victoire ou de défaite de l'arène
-setupdamage: Activer/Désactiver le PVP pour cette arène
-setupbarcolor: Définir la couleur de la BossBar
-setupreloadbars: Recharger les messages de la BAR
-setupreloadtitles: Recharger les messages des Titles
-setupreloadmsg: Recharger les messages des arènes
-setupreloadconfig: Recharger les fichiers de la configuration
-setupenable: Activer l'arène
-setupdisable: Désactiver l'arène
-setupdelete: Supprimer l'arène
-setupreward: Définir les récompenses pour l'arène
-setupfee: Définir le coût pour rejoindre l'arène
-setupcurrency: Définir la devise pour rejoindre l'arène
-setuphelp: Commandes nécessaires pour configurer l'arène
-setupenablekits: Activer les kits pour l'arène
-setupdisablekits: Désactiver les kits pour l'arène
-setupaddkit: Créer un kit Spleef
-setupdelkit: Supprimer un kit Spleef
-setupp1: Définir le bloc visé comme premier bloc de sélection
-setupp2: Définir le bloc visé comme second bloc de sélection
-setupclear: Effacer les points de sélection
-setupwhitelist: Whitelister une commande à utiliser en jeu
-setupresetstats: Retirer toutes les statistiques Spleef d'un joueur
-setupresetrank: Retirer le rang du joueur de la cache
-kitadd: '&7 Le kit &6{KIT} &7a été créé'
-kitdel: '&7 Le kit &6{KIT} &7a été supprimé'
-kitexists: '&cLe kit spécifié existe déjà : &6{KIT}'
-kitnotexists: '&cLe kit spécifié n''existe pas : &6{KIT}'
-partycreate: '&7Groupe créé'
-partyjoin: '&6{PLAYER} &7a rejoint le groupe'
-partydecline: '&6{PLAYER} &7a décliné votre invitation'
-partyleave: '&6{PLAYER} &7a quitté le groupe'
-partyleaderleave: '&7Le chef du groupee &6{PLAYER} &7a quitté - groupe supprimé'
-partynotmember: '&cVous n''êtes membre d''aucun groupe'
-partynotleader: '&cVous n''êtes pas chef du groupe'
-partykick: '&6{PLAYER} &7a été exclu du groupe'
-partyunkick: '&6{PLAYER} &7est autorisé à rejoindre votre groupe'
-partyinviteself: '&cVous ne pouvez pas vous inviter ¯\_(ツ)_/¯'
-partyinvite: '&6{PLAYER} &7vous a invité a rejoindre son groupe'
-partyban: '&cVous avez été exclu du groupe'
-partyinparty: '&cVous êtes déjà dans un groupe'
-partynotexist: '&cLe groupe sélectionné n''existe pas'
-partynoinvite: '&c Vous n''avez pas d''invitation à ce groupe'
-partynotenabled: '&c Les parties Spleef ne sont pas activées pour le moment'
+shopmoneyheader: '&fSpleef Shop Account'
+shopmoneybalance: '&5Your balance is &6{BAL}'
+statsdisabled: '&c Stats are currently disabled'
+helplobby: Teleport to lobby
+helplist: List all arenas OR List arena details
+helplistkit: List all kits OR List kit details
+helplistrewards: List the rewards for the arena
+helpjoin: Open join menu OR Join the arena
+helpspectate: Join the arena as a spectator
+helpautojoin: Automatically join the first available arena
+helpleave: Leave the current arena
+helpvote: Vote to force-start current arena
+helpcmds: View all Spleef commands
+helpinfo: View plugin info
+helpstats: View player stats
+helplb: Display the Spleef leaderboard
+helpstart: Force-start the arena
+setuplobby: Set the global lobby at your current location
+setupdellobby: Delete the global lobby
+setupcreate: Create a new arena
+setupconfigure: Open menu to configure arena
+setupbounds: Set bounds for arena
+setuploselevel: Set loselevel point at your feet
+setupspawn: Set arena spawn at your feet
+setupspectate: Set spectator spawn point
+setupaddspawn: Set an additional spawn at your feet
+setupdelspawns: Delete all spawn points created with the addspawn command
+setupfinish: Finish arena and save
+setupdelspectate: Delete spectator spawn for arena
+setupdelay: Set delay for removing block when player steps on it
+setupregendelay: 'Set delay before players can re-join arena (Default: 60)'
+setupmax: 'Set maximum players for arena (Default: 15)'
+setupmin: 'Set minimum players for arena (Default: 2)'
+setupvote: 'Set vote percentage to force-start arena (Default: 0.75)'
+setuptimelimit: 'Set a time limit for arena (Default: 300 seconds)'
+setupcountdown: 'Set a countdown for arena (Default: 15 seconds)'
+setupmoney: Set a money reward for winning player
+setupteleport: Set teleport when you lose or win in arena
+setupdamage: Enable/disable PVP for the arena
+setupbarcolor: Set the BossBar color
+setupreloadbars: Reload Bar messages
+setupreloadtitles: Reload Title messages
+setupreloadmsg: Reload arena messages
+setupreloadconfig: Reload config file
+setupenable: Enable arena
+setupdisable: Disable arena
+setupdelete: Delete arena
+setupreward: Set the rewards for the arena
+setupfee: Set the cost to join the arena
+setupcurrency: Set the currency to join the arena
+setuphelp: Commands required to setup a new arena
+setupenablekits: Enable kits for the arena
+setupdisablekits: Disable kits for the arena
+setupaddkit: Create a Spleef kit
+setupdelkit: Delete a Spleef kit
+setupp1: Set targeted block as first selection point
+setupp2: Set targeted block as second selection point
+setupclear: Clear selection points
+setupwhitelist: Whitelist a command for use in-game
+setupresetstats: Remove all Spleef stats for the player
+setupresetrank: Remove player's rank from the cache
+kitadd: '&7 The kit &6{KIT} &7has been created'
+kitdel: '&7 The kit &6{KIT} &7has been deleted'
+kitexists: '&c The specified kit already exists : &6{KIT}'
+kitnotexists: '&c The specified kit does not exist : &6{KIT}'
+partycreate: '&7 Party created'
+partyjoin: '&6 {PLAYER} &7has joined the party'
+partydecline: '&6 {PLAYER} &7has declined the party invitation'
+partyleave: '&6 {PLAYER} &7has left the party'
+partyleaderleave: '&7 Party leader &6{PLAYER} &7has left - the party has been deleted'
+partynotmember: '&c You are not a member of any party'
+partynotleader: '&c You are not a party leader'
+partykick: '&6 {PLAYER} &7has been kicked from the party'
+partyunkick: '&6 {PLAYER} &7is allowed to join your party'
+partyinviteself: '&c You cannot invite yourself'
+partyinvite: '&6 {PLAYER} &7has invited you to join a party'
+partyban: '&c You are currently kicked from this party'
+partyinparty: '&c You are already in a party'
+partynotexist: '&c The selected party does not exist'
+partynoinvite: '&c You do not have an invitation to this party'
+partynotenabled: '&c Spleef parties are not currently enabled'
