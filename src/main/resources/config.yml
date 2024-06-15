@@ -195,6 +195,11 @@ items:
     use: false
     material: FEATHER
     name: '&e&lDoublejump'
+    slot: 5
+  tool:
+    use: true
+    material: DIAMOND_SHOVEL
+    name: ''
     slot: 0
 #
 # set scoreboard text - only the header supports hex/rgb colours

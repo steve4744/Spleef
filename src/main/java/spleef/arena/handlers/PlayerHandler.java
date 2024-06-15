@@ -703,6 +703,15 @@ public class PlayerHandler {
 		player.getInventory().setItem(plugin.getConfig().getInt("items.doublejump.slot", 0), item);
 	}
 
+	protected void addTool(Player player) {
+		ItemStack item = new ItemStack(Material.getMaterial(plugin.getConfig().getString("items.tool.material")));
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName(FormattingCodesParser.parseFormattingCodes(plugin.getConfig().getString("items.tool.name")));
+		item.setItemMeta(meta);
+
+		player.getInventory().setItem(plugin.getConfig().getInt("items.tool.slot", 0), item);
+	}
+
 	protected void addLeaveItem(Player player) {
 		// Old config files will have BED as leave item which is no longer valid on 1.13. Update any invalid material to valid one.
 		Material leaveMaterial = Material.getMaterial(plugin.getConfig().getString("items.leave.material"));

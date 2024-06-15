@@ -534,6 +534,7 @@ public class GameHandler {
 
 	/**
 	 * Remove the inventory items and optionally give the player a kit and any items bought in the shop.
+	 * Give the player the tool to be used replacing any item in configured tool slot.
 	 *
 	 * @param player
 	 */
@@ -551,6 +552,9 @@ public class GameHandler {
 				arena.getPlayerHandler().addLeaveItem(player);
 			}
 		}
+
+		arena.getPlayerHandler().addTool(player);
+
 		if (plugin.getConfig().getBoolean("items.doublejump.use")) {
 			arena.getPlayerHandler().addDoubleJumpItem(player);
 		}
