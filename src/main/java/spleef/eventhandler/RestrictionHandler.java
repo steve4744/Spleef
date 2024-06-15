@@ -89,9 +89,10 @@ public class RestrictionHandler implements Listener {
 		if (arena == null) {
 			return;
 		}
-		if (e.getBlock().getType() != Material.SNOW_BLOCK) {
+		if (!arena.getStatusManager().isArenaRunning() || e.getBlock().getType() != Material.SNOW_BLOCK) {
 			e.setCancelled(true);
 		}
+		e.setDropItems(false);
 		arena.getStructureManager().getGameZone().handleBlockBreak(e.getBlock());
 	}
 
