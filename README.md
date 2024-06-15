@@ -14,9 +14,9 @@
 
 ## Description
 
-Spleef is a highly configurable, fully automated minigame for Minecraft servers. Traditionally players start on a layer of snow, and once the game starts every block that a player steps on will disappear. If a player falls through a hole, he/she will continue to run on the layer below. Once a player falls through the final layer he/she loses the game and becomes a spectator for the remainder of the game. The last player remaining wins the game.
+Spleef is a highly configurable, fully automated minigame for Minecraft servers. Traditionally players start on a layer of snow, and once the game starts players attempt to break the blocks below other players causing them to fall and lose the game and become a spectator for the remainder of the game. The last player remaining wins the game.
 
-The latest version of Spleef_reloaded requires a minimum Java version of 21, and is supported on servers running Minecraft versions 1.20.6+.
+The latest version of Spleef_reloaded requires a minimum Java version of 17, and is supported on servers running Minecraft versions 1.20.1+.
 
 The following description and features apply to the latest release. Some of the features will not be present in the older versions which are maintained and supported on an 'as is' basis, and will only be updated if a bug is reported or an existing feature breaks.
 
@@ -27,7 +27,7 @@ Optionally, a fee can be set to join each arena, which can be monetary or any Mi
 
 ## Download
 
-If your server is running Minecraft 1.20.6+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.53359/ "Spleef_reloaded")
+If your server is running Minecraft 1.20.1+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.xxxxx/ "Spleef_reloaded")
 
 
 ## Development Builds
@@ -107,4 +107,4 @@ FAWE is also supported, and can be used in place of the WorldEdit on 1.13+ serve
 <br />
 <br />
 <br />
-Updated steve4744 - 10th June 2024
+Updated steve4744 - 15th June 2024
