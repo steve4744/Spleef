@@ -211,10 +211,11 @@ public class PlayerDataStore {
 	}
 
 	private GameMode getGameMode() {
-		String gamemode = plugin.getConfig().getString("gamemode", "SURVIVAL");
+		String gamemode = "SURVIVAL";
+		/*String gamemode = plugin.getConfig().getString("gamemode", "SURVIVAL");
 		if (!gamemode.equalsIgnoreCase("ADVENTURE")) {
 			gamemode = "SURVIVAL";
-		}
+		}*/
 		return GameMode.valueOf(gamemode.toUpperCase());
 	}
 }
