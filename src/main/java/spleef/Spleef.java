@@ -93,7 +93,7 @@ public class Spleef extends JavaPlugin {
 	private static Spleef instance;
 	private String version;
 	private static final int SPIGOT_ID = 53359;
-	private static final int BSTATS_PLUGIN_ID = 2192;
+	private static final int BSTATS_PLUGIN_ID = 22271;
 
 	@Override
 	public void onEnable() {
