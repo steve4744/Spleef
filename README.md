@@ -14,7 +14,7 @@
 
 ## Description
 
-Spleef is a highly configurable, fully automated minigame for Minecraft servers. Traditionally players start on a layer of snow, and once the game starts players attempt to break the blocks below other players causing them to fall and lose the game and become a spectator for the remainder of the game. The last player remaining wins the game.
+Spleef is a highly configurable, fully automated minigame for Minecraft servers. Traditionally players start on a layer of snow, and once the game starts players attempt to break the blocks below other players. If this causes them to fall, they lose the game and become a spectator for the remainder of the game. The last player remaining wins the game.
 
 The latest version of Spleef_reloaded requires a minimum Java version of 17, and is supported on servers running Minecraft versions 1.20.1+.
 
