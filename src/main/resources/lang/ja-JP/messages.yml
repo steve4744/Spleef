@@ -1,142 +1,142 @@
 trprefix: '&7[&6Spleef_reloaded&7]'
-menutitle: '&1Spleef_reloaded Arenas'
+menutitle: '&1Spleef_reloaded アリーナ'
 menuarenaname: '&a{ARENA}'
-menutext: '&5Players: &6{PS}/{MPS}'
-menufee: '&5Join Fee: &6{FEE}'
-menupvp: '&5PVP: &6Enabled'
-menutracker: '&1Spleef player tracker'
-nopermission: '&c You don''t have permission to do this'
-nolobby: '&c Global lobby isn''t set, run &6/spsetup setlobby'
-lobbyunloaded: '&c Lobby world is unloaded or doesn''t exist'
-teleporttolobby: '&7 Teleported to lobby'
-arenanotexist: '&c Arena &6{ARENA}&c doesn''t exist'
-noarenas: '&c There are no arenas available to join'
-arenanotdisabled: '&c Please disable arena: &6/spsetup disable {ARENA}'
-arenanospectatorspawn: '&c No spectator spawn set for arena &6{ARENA}'
-availablearenas: '&7 Available arenas: {COUNT}'
-availablekits: '&7 Available kits: {COUNT}'
-arenawolrdna: '&7 Arena world is not loaded'
-arenanobounds: '&7 Arena bounds not set'
-arenadisabled: '&7 Arena is disabled'
-arenarunning: '&7 Arena already running'
-arenaregenerating: '&7 Arena is regenerating'
-arenavehicle: '&c You can''t join the game while sitting inside a vehicle'
-arenajoined: '&c You have already joined an arena'
-arenadisabling: '&6 Arena is disabling'
-arenastarting: '&6 Arena already starting'
-signcreate: '&7 Sign successfully created'
-signremove: '&7 Sign successfully removed'
-signfail: '&7 You must be looking at a sign to create the join sign'
-arenafee: '&7 You have been charged &6{FEE} &7to enter the arena'
-arenanofee: '&c You require a fee of &6{FEE} &cto enter the arena'
-arenawaiting: '&6 Arena is waiting'
-playerscountinarena: '&6 Current number of players in arena: {COUNT} players'
-limitreached: '&7 Arena is full.'
-playerjoinedtoothers: '&c {RANK}&6{COLOR}{PLAYER} &7joined the arena (&6{PS}&7/&6{MPS}&7)'
-playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7has joined Spleef arena &6{ARENA}&7, click to play'
+menutext: '&5プレイヤー数: &6{PS}/{MPS}'
+menufee: '&5参加費: &6{FEE}'
+menupvp: '&5PVP: &6有効'
+menutracker: '&1Spleef プレイヤートラッカー'
+nopermission: '&c あなたに権限が無いため実行できません。'
+nolobby: '&c グローバルロビーが設定されていません。設定するには &6/spsetup setlobby を実行してください。'
+lobbyunloaded: '&c ロビーが読み込まれていない又は存在しません。'
+teleporttolobby: '&7 ロビーにテレポートしました。'
+arenanotexist: '&c アリーナ &6{ARENA} &cが存在しません。'
+noarenas: '&c 参加できるアリーナはありません。'
+arenanotdisabled: '&c アリーナを無効に変更してください。: &6/spsetup disable {ARENA}'
+arenanospectatorspawn: '&c アリーナ &6{ARENA} に観戦者用のスポーンポイントが設定されていません。 '
+availablearenas: '&7 利用可能なアリーナ: {COUNT}'
+availablekits: '&7 利用可能なキット: {COUNT}'
+arenawolrdna: '&7 アリーナワールドが読み込まれていません。'
+arenanobounds: '&7 アリーナの境界線が設定されていません。'
+arenadisabled: '&7 アリーナを無効にしました。'
+arenarunning: '&7 このアリーナは既に有効になっています。'
+arenaregenerating: '&7 アリーナを再生中です。'
+arenavehicle: '&c 車内に座ったままゲームに参加することはできません'
+arenajoined: '&c すでにアリーナに参加しています'
+arenadisabling: '&6 アリーナを無効にしました。'
+arenastarting: '&6 このアリーナは既に有効になっています。'
+signcreate: '&7 サインが正常に作成されました'
+signremove: '&7 サインは正常に削除されました'
+signfail: '&7あなたは参加サインを作成するためにサインを見ている必要があります'
+arenafee: '&7あなたはアリーナに入るために &6{FEE} &7課金されました'
+arenanofee: '&c アリーナに参加するには &6{FEE} &cの手数料が必要です'
+arenawaiting: '&6 アリーナを無効にしました。'
+playerscountinarena: '&6 現在のプレイヤー数: {COUNT} 人'
+limitreached: '&7 Arena がいっぱいです。'
+playerjoinedtoothers: '&c {RANK}&6{COLOR}{PLAYER} &7がアリーナに参加しました (&6{PS}&7/6{MPS}&7)'
+playerjoininvite: '&c{RANK}&6{COLOR}{PLAYER} &7がSpleefアリーナに参加しました &6{ARENA}&7, クリックしてプレイします'
 playerborderinvite: '&b---------------------------------------'
-playerclickinvite: Click to join {ARENA}
-playerjoinedasspectator: '&7 You joined arena &6{ARENA} &7as a spectator'
-playerlefttoplayer: '&7 You left the arena'
-playerlefttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7left the game (&6{PS}&7/&6{MPS}&7)'
-playernotplaying: '&c Targeted player &6{PLAYER} &cis no longer playing'
-playervotedforstart: '&f You voted to force-start the game'
-playeralreadyvotedforstart: '&c You have already voted'
-playercannotvote: '&c You cannot vote to force-start the arena'
-arenastarted: '&7 Arena started. Time limit is {TIMELIMIT} seconds'
-arenanolimit: '&7 Arena started. No time limit'
-arenacountdown: '&7 Arena starts in {COUNTDOWN} seconds'
-arenatimeout: '&7 Time is up. Ending game'
-playerwontoplayer: '&7 You won the game!'
-playerfinishedtestmode: '&7 Test game completed!'
-playerlosttoplayer: '&7 You lost the game'
-playerlosttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7lost the game (&6{PS}&7/&6{MPS}&7)'
+playerclickinvite: クリックして {ARENA} に参加
+playerjoinedasspectator: '&7 あなたはアリーナに参加しました &6{ARENA} &7観客として参加しました'
+playerlefttoplayer: 'アリーナを抜けました。'
+playerlefttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7がアリーナに参加しました (&6{PS}&7/6{MPS}&7)'
+playernotplaying: '&c ターゲットプレーヤー &6{PLAYER} &cは再生されなくなりました'
+playervotedforstart: '&f あなたは強制的にゲームを開始するために投票しました'
+playeralreadyvotedforstart: '既に投票済みです'
+playercannotvote: '&c アリーナを強制的に開始するには投票できません'
+arenastarted: '&7 Arena が開始しました。制限時間は {TIMELIMIT} 秒です。'
+arenanolimit: '&7 Arena が開始しました。制限時間はありません'
+arenacountdown: '&7 Arena は {COUNTDOWN} 秒後に開始'
+arenatimeout: '&7 時間が終了しました。ゲーム終了'
+playerwontoplayer: '&bゲームに勝利しました！'
+playerfinishedtestmode: '&7 ゲームをテストしました！'
+playerlosttoplayer: '負けました、続けて頑張ってくださいね'
+playerlosttoothers: '&c {RANK}&6{COLOR}{PLAYER} &7がアリーナに参加しました (&6{PS}&7/6{MPS}&7)'
 playerposition: '&a{POS}: &f{RANK}{COLOR}{PLAYER}'
 rewardlistposition: '&a{POS} : '
-playerrewardmessage: '&7 You have been rewarded: &6{REWARD}'
-playerrewardmaterial: '&6 Material :  &f'
-playerrewardcommand: '&6 Command : &f'
-playerrewardmoney: '&6 Money :    &f'
-playerrewardxp: '&6 XP :      &l  &f'
-playerboughtitem: '&7 You have bought item &6{ITEM} &7for &6{MONEY}'
-playerboughtwait: '&7 You will get your items when the game starts'
-playerkit: '&7 You have been given kit &6{KIT}'
-playersrequiredtostart: '&c There must be at least 2 players in the arena to force-start'
-notenoughmoney: '&c You need {MONEY} to buy this item'
-alreadyboughtitem: '&c You have already bought a shop item'
-shopnostock: '&c This item is currently out of stock'
-maxdoublejumpsexceeded: '&c You cannot exceed the maximum doublejumps allowed ({MAXJUMPS})'
-playernotinarena: '&c You are not in a Spleef arena'
-playernotonline: '&6 {PLAYER} &7is not currently online'
-gamesplayed: '&bGames played &f: '
+playerrewardmessage: '&7 報酬を受け取りました: &6{REWARD}'
+playerrewardmaterial: '&6 マテリアル: &f'
+playerrewardcommand: '&6 コマンド: &f'
+playerrewardmoney: '&6 Money : &f'
+playerrewardxp: '&6 XP : &f'
+playerboughtitem: '&7 &6{ITEM} &7の &6{MONEY} を購入しました'
+playerboughtwait: '&7 ゲーム開始時にアイテムが手に入ります。'
+playerkit: '&7 キットが与えられました &6{KIT}'
+playersrequiredtostart: '&c アリーナには少なくとも2人のプレイヤーがいる必要があります'
+notenoughmoney: '&c このアイテムを購入するには {MONEY} が必要です'
+alreadyboughtitem: '&c 既にショップアイテムを購入しています'
+shopnostock: '&c この商品は現在在庫切れです'
+maxdoublejumpsexceeded: '&c 許可されている最大ダブルジャンプを超えることはできません ({MAXJUMPS})'
+playernotinarena: '&c あなたはSpleefアリーナにいません。'
+playernotonline: '&6 {PLAYER} &7は現在オンラインではありません'
+gamesplayed: '&bプレイ済みゲーム(&B): '
 gameswon: '&bWins &f: '
-gameslost: '&bLosses &f: '
+gameslost: '&b失敗(&B): '
 statshead: '&7=========[&6Spleef Stats&7]========='
-rewardshead: '&7======[&6Spleef Rewards&7 - &a{ARENA}&7]======'
-leaderhead: '&7======[&6Spleef Leaderboard&7]======'
+rewardshead: '&7======[&6Spleef報酬&7 - &a{ARENA}&7]======'
+leaderhead: '&7======[&6Spleef リーダーボード&7]======'
 resultshead: '&7============[&6Spleef&7]============'
-leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: Wins &3{WINS}'
+leaderboard: '{POSITION}) &c{RANK}&b{COLOR}{PLAYER} &f: &3{WINS} に勝利'
 leadersign: '&1{PLAYER} &4{WINS}'
-shopmoneyheader: '&fSpleef Shop Account'
-shopmoneybalance: '&5Your balance is &6{BAL}'
-statsdisabled: '&c Stats are currently disabled'
-helplobby: Teleport to lobby
-helplist: List all arenas OR List arena details
-helplistkit: List all kits OR List kit details
-helplistrewards: List the rewards for the arena
-helpjoin: Open join menu OR Join the arena
-helpspectate: Join the arena as a spectator
-helpautojoin: Automatically join the first available arena
-helpleave: Leave the current arena
-helpvote: Vote to force-start current arena
-helpcmds: View all Spleef commands
-helpinfo: View plugin info
-helpstats: View player stats
-helplb: Display the Spleef leaderboard
-helpstart: Force-start the arena
-setuplobby: Set the global lobby at your current location
-setupdellobby: Delete the global lobby
-setupcreate: Create a new arena
-setupconfigure: Open menu to configure arena
-setupbounds: Set bounds for arena
-setuploselevel: Set loselevel point at your feet
-setupspawn: Set arena spawn at your feet
-setupspectate: Set spectator spawn point
-setupaddspawn: Set an additional spawn at your feet
-setupdelspawns: Delete all spawn points created with the addspawn command
-setupfinish: Finish arena and save
-setupdelspectate: Delete spectator spawn for arena
-setupdelay: Set delay for removing block when player steps on it
-setupregendelay: 'Set delay before players can re-join arena (Default: 60)'
-setupmax: 'Set maximum players for arena (Default: 15)'
-setupmin: 'Set minimum players for arena (Default: 2)'
-setupvote: 'Set vote percentage to force-start arena (Default: 0.75)'
-setuptimelimit: 'Set a time limit for arena (Default: 300 seconds)'
-setupcountdown: 'Set a countdown for arena (Default: 15 seconds)'
-setupmoney: Set a money reward for winning player
-setupteleport: Set teleport when you lose or win in arena
-setupdamage: Enable/disable PVP for the arena
-setupbarcolor: Set the BossBar color
-setupreloadbars: Reload Bar messages
-setupreloadtitles: Reload Title messages
-setupreloadmsg: Reload arena messages
-setupreloadconfig: Reload config file
-setupenable: Enable arena
-setupdisable: Disable arena
-setupdelete: Delete arena
-setupreward: Set the rewards for the arena
-setupfee: Set the cost to join the arena
-setupcurrency: Set the currency to join the arena
-setuphelp: Commands required to setup a new arena
-setupenablekits: Enable kits for the arena
-setupdisablekits: Disable kits for the arena
-setupaddkit: Create a Spleef kit
-setupdelkit: Delete a Spleef kit
-setupp1: Set targeted block as first selection point
-setupp2: Set targeted block as second selection point
-setupclear: Clear selection points
+shopmoneyheader: '&fSpleef ショップアカウント'
+shopmoneybalance: '&5あなたの残高は &6{BAL} です'
+statsdisabled: '&c 統計は現在無効になっています'
+helplobby: ロビーにテレポートする
+helplist: すべてのアリーナ、またはアリーナの詳細を一覧表示する
+helplistkit: すべてのキットまたはリストキットの詳細をリストする
+helplistrewards: アリーナの報酬を一覧表示する
+helpjoin: 参加メニューを開くか、アリーナに参加する
+helpspectate: 観戦者としてアリーナに参加する
+helpautojoin: 最初の利用可能なアリーナに自動的に参加する
+helpleave: 現在のアリーナから退出する
+helpvote: 現在のアリーナに投票する
+helpcmds: すべてのSpleefコマンドを表示
+helpinfo: プラグイン情報を表示
+helpstats: プレイヤーの統計を表示
+helplb: Spleefリーダーボードを表示する
+helpstart: アリーナを強制開始
+setuplobby: 現在のロビーにグローバルロビーを設定
+setupdellobby: グローバルロビーを削除
+setupcreate: 新しいアリーナを作成
+setupconfigure: アリーナを設定するためにメニューを開く
+setupbounds: アリーナの範囲を設定
+setuploselevel: 足元にloselevel点を設定
+setupspawn: 足元にアリーナのスポーンを設定する
+setupspectate: スペクテイターのスポーン地点を設定
+setupaddspawn: 足元に追加のスポーン地点を設定する
+setupdelspawns: addspawn コマンドで作成されたすべてのスポーン地点を削除します
+setupfinish: アリーナのセットアップを完了して保存する
+setupdelspectate: アリーナの観戦者のスポーンポイントを削除
+setupdelay: プレイヤーが踏んだ時のブロック削除の遅延を設定
+setupregendelay: 'プレイヤーがアリーナに再参加できるまでの時間を設定(デフォルト: 60)'
+setupmax: 'アリーナの最大プレイヤー数を設定 (デフォルト: 15)'
+setupmin: 'アリーナの最小プレイヤーを設定(デフォルト: 2)'
+setupvote: 'アリーナの強制スタートの投票率を設定(デフォルト: 0.75)'
+setuptimelimit: 'アリーナの制限時間を設定(デフォルト: 300 秒)'
+setupcountdown: 'アリーナのカウントダウンを設定(デフォルト：15秒)'
+setupmoney: 勝利したプレイヤーへの報酬を設定
+setupteleport: アリーナで負けた時や勝った時のテレポート地点を設定
+setupdamage: アリーナの PVP を有効/無効にする
+setupbarcolor: ボスバーの色を設定
+setupreloadbars: バーのメッセージを再読み込み
+setupreloadtitles: タイトルメッセージを再読み込み
+setupreloadmsg: アリーナのメッセージを再読み込み
+setupreloadconfig: 設定ファイルを再読み込み
+setupenable: このアリーナを有効化
+setupdisable: このアリーナを無効化
+setupdelete: このアリーナを削除
+setupreward: アリーナの報酬を設定
+setupfee: アリーナに参加するためのコストを設定
+setupcurrency: アリーナに参加する通貨を設定
+setuphelp: 新しいアリーナの設定に必要なコマンド
+setupenablekits: アリーナでキットを有効にする
+setupdisablekits: アリーナのキットを無効にする
+setupaddkit: Spleefキットを作成
+setupdelkit: Spleefキットを削除
+setupp1: ターゲットブロックを最初の選択点として設定
+setupp2: ターゲットブロックを2つ目の選択点として設定
+setupclear: 選択点をクリア
 setupwhitelist: Whitelist a command for use in-game
-setupresetstats: Remove all Spleef stats for the player
+setupresetstats: プレイヤーのSpleefでの統計をすべて削除する
 setupresetrank: Remove player's rank from the cache
 kitadd: '&7 The kit &6{KIT} &7has been created'
 kitdel: '&7 The kit &6{KIT} &7has been deleted'
@@ -149,11 +149,11 @@ partyleave: '&6 {PLAYER} &7has left the party'
 partyleaderleave: '&7 Party leader &6{PLAYER} &7has left - the party has been deleted'
 partynotmember: '&c You are not a member of any party'
 partynotleader: '&c You are not a party leader'
-partykick: '&6 {PLAYER} &7has been kicked from the party'
-partyunkick: '&6 {PLAYER} &7is allowed to join your party'
-partyinviteself: '&c You cannot invite yourself'
-partyinvite: '&6 {PLAYER} &7has invited you to join a party'
-partyban: '&c You are currently kicked from this party'
+partykick: '&6 {PLAYER} &7がパーティーからキックされました'
+partyunkick: '&6 {PLAYER} &7はあなたのパーティーへの参加が許可されました'
+partyinviteself: '自分を招待することはできません'
+partyinvite: '&6 {PLAYER} &7があなたをパーティーに招待しました'
+partyban: '&c あなたは現在このパーティーからキックされています。'
 partyinparty: '&c You are already in a party'
 partynotexist: '&c The selected party does not exist'
 partynoinvite: '&c You do not have an invitation to this party'
