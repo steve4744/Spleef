@@ -9,7 +9,7 @@ commands:
     description: Spleef arena setup commands
     aliases: spsetup
   spleef:
-    description: Spleef game commands
+    description: Spleef_reloaded game commands
     aliases: sp
   spleefconsole:
     description: Spleef console commands
