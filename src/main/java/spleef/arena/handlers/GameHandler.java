@@ -554,7 +554,9 @@ public class GameHandler {
 		}
 
 		arena.getPlayerHandler().addTool(player);
-
+		if (plugin.getConfig().getBoolean("items.snowball.use")) {
+			arena.getPlayerHandler().addProjectile(player);
+		}
 		if (plugin.getConfig().getBoolean("items.doublejump.use")) {
 			arena.getPlayerHandler().addDoubleJumpItem(player);
 		}

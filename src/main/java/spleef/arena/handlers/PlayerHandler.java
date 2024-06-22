@@ -712,6 +712,15 @@ public class PlayerHandler {
 		player.getInventory().setItem(plugin.getConfig().getInt("items.tool.slot", 0), item);
 	}
 
+	protected void addProjectile(Player player) {
+		ItemStack item = new ItemStack(Material.getMaterial(plugin.getConfig().getString("items.snowball.material")));
+		ItemMeta meta = item.getItemMeta();
+		meta.setDisplayName(FormattingCodesParser.parseFormattingCodes(plugin.getConfig().getString("items.snowball.name")));
+		item.setItemMeta(meta);
+
+		player.getInventory().setItem(plugin.getConfig().getInt("items.snowball.slot", 1), item);
+	}
+
 	protected void addLeaveItem(Player player) {
 		// Old config files will have BED as leave item which is no longer valid on 1.13. Update any invalid material to valid one.
 		Material leaveMaterial = Material.getMaterial(plugin.getConfig().getString("items.leave.material"));

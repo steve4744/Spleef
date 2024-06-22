@@ -35,6 +35,8 @@ import spleef.arena.structure.StructureManager.DamageEnabled;
 
 import org.bukkit.event.entity.FoodLevelChangeEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
+import org.bukkit.event.entity.ProjectileLaunchEvent;
+import org.bukkit.inventory.ItemStack;
 
 public class PlayerStatusHandler implements Listener {
 
@@ -130,9 +132,27 @@ public class PlayerStatusHandler implements Listener {
 		if (!arena.getStatusManager().isArenaRunning()) {
 			return;
 		}
-		double knockback = plugin.isGlobalShop() ? plugin.getShop().getKnockback() : 1.0;
+		double knockback = plugin.getConfig().getDouble("items.snowball.knockback", 1.5);
 		player.damage(0.5, projectile);
 		player.setVelocity(projectile.getVelocity().multiply(knockback));
 	}
 
+	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+	public void onSnowballThrow(ProjectileLaunchEvent e) {
+		if (!(e.getEntity() instanceof Snowball)) {
+			return;
+		}
+
+		Player player = (Player) e.getEntity().getShooter();
+		Arena arena = plugin.amanager.getPlayerArena(player.getName());
+		if (arena == null) {
+			return;
+		}
+		if (!arena.getStatusManager().isArenaRunning()) {
+			return;
+		}
+		int slot = plugin.getConfig().getInt("items.snowball.slot", 1);
+		plugin.getServer().getScheduler().runTaskLater(plugin, () ->
+				player.getInventory().setItem(slot, new ItemStack(Material.SNOWBALL)), 1L);
+	}
 }

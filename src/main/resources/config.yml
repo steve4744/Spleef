@@ -198,6 +198,12 @@ items:
     material: DIAMOND_SHOVEL
     name: ''
     slot: 0
+  snowball:
+    use: true
+    material: SNOWBALL
+    name: ''
+    knockback: 1.0
+    slot: 1
 #
 # set scoreboard text - only the header supports hex/rgb colours
 scoreboard:
