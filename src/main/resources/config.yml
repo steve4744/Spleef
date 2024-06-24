@@ -204,6 +204,7 @@ items:
     name: ''
     knockback: 1.0
     slot: 1
+    breakblocks: false
 #
 # set scoreboard text - only the header supports hex/rgb colours
 scoreboard:

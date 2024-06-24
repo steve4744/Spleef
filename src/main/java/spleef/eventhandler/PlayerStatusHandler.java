@@ -18,6 +18,7 @@
 package spleef.eventhandler;
 
 import org.bukkit.Material;
+import org.bukkit.block.Block;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.entity.Projectile;
@@ -121,17 +122,25 @@ public class PlayerStatusHandler implements Listener {
 		if (!(projectile instanceof Snowball)) {
 			return;
 		}
-		if (e.getHitEntity() == null || e.getHitEntity().getType() != EntityType.PLAYER) {
-			return;
-		}
-		Player player = (Player) e.getHitEntity();
-		Arena arena = plugin.amanager.getPlayerArena(player.getName());
+		Player shooter = (Player) projectile.getShooter();
+		Arena arena = plugin.amanager.getPlayerArena(shooter.getName());
 		if (arena == null) {
 			return;
 		}
 		if (!arena.getStatusManager().isArenaRunning()) {
 			return;
 		}
+		if (plugin.getConfig().getBoolean("items.snowball.breakblocks")) {
+			Block block = e.getHitBlock();
+			if (block != null && block.getType() == Material.SNOW_BLOCK) {
+				block.breakNaturally();
+				return;
+			}
+		}
+		if (e.getHitEntity() == null || e.getHitEntity().getType() != EntityType.PLAYER) {
+			return;
+		}
+		Player player = (Player) e.getHitEntity();
 		double knockback = plugin.getConfig().getDouble("items.snowball.knockback", 1.5);
 		player.damage(0.5, projectile);
 		player.setVelocity(projectile.getVelocity().multiply(knockback));
