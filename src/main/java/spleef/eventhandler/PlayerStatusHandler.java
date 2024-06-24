@@ -119,7 +119,7 @@ public class PlayerStatusHandler implements Listener {
 	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
 	public void onSnowballHit(ProjectileHitEvent e) {
 		Projectile projectile = e.getEntity();
-		if (!(projectile instanceof Snowball)) {
+		if (!(projectile instanceof Snowball) || !(projectile.getShooter() instanceof Player)) {
 			return;
 		}
 		Player shooter = (Player) projectile.getShooter();
@@ -133,6 +133,7 @@ public class PlayerStatusHandler implements Listener {
 		if (plugin.getConfig().getBoolean("items.snowball.breakblocks")) {
 			Block block = e.getHitBlock();
 			if (block != null && block.getType() == Material.SNOW_BLOCK) {
+				arena.getStructureManager().getGameZone().handleBlockBreak(block);
 				block.breakNaturally();
 				return;
 			}
