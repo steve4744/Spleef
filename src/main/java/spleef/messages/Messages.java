@@ -221,7 +221,7 @@ public class Messages {
 		plugin.getLanguage().updateLangFile(messageconfig);
 		FileConfiguration config = YamlConfiguration.loadConfiguration(messageconfig);
 
-		spprefix = config.getString("trprefix", spprefix);
+		spprefix = config.getString("spprefix", spprefix);
 		menutitle = config.getString("menutitle", menutitle);
 		menuarenaname = config.getString("menuarenaname", menuarenaname);
 		menutext = config.getString("menutext", menutext);
