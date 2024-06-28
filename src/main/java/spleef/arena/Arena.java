@@ -27,12 +27,14 @@ import spleef.arena.handlers.ScoreboardHandler;
 import spleef.arena.status.PlayersManager;
 import spleef.arena.status.StatusManager;
 import spleef.arena.structure.StructureManager;
+import spleef.eventhandler.SnowballHandler;
 
 public class Arena {
 
 	public Spleef plugin;
 	private String arenaname;
 	private ArenaEconomy arenaeco;
+	private SnowballHandler snowballHandler;
 
 	public Arena(String name, Spleef plugin) {
 		arenaname = name;
@@ -42,6 +44,7 @@ public class Arena {
 		arenafile = new File(plugin.getDataFolder() + File.separator + "arenas" + File.separator + arenaname + ".yml");
 		arenasb = new ScoreboardHandler(plugin, this);
 		arenaeco = new ArenaEconomy(plugin, this);
+		snowballHandler = new SnowballHandler(plugin, this);
 	}
 
 	public String getArenaName() {
@@ -85,5 +88,9 @@ public class Arena {
 
 	public ArenaEconomy getArenaEconomy() {
 		return arenaeco;
+	}
+
+	public SnowballHandler getSnowballHandler() {
+		return snowballHandler;
 	}
 }

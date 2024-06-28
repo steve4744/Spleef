@@ -564,8 +564,6 @@ public class StructureManager {
 		linkedRandom = config.getBoolean("kits.randomLinkedKit", true);
 		punchDamage = config.getBoolean("punchDamage", true);
 		testmode = config.getBoolean("testmode");
-		//TODO exludeStats is redundant since 9.20, superseded by statsEnabled. Only here for upgrading from pre-9.20.
-		excludeStats = config.getBoolean("excludeStats");
 		statsEnabled = excludeStats ? false : config.getBoolean("stats.enabled", true);
 		statsMinPlayers = config.getInt("stats.minPlayers", statsMinPlayers);
 		allowDoublejumps = config.getBoolean("allowDoublejumps", true);
