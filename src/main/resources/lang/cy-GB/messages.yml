@@ -1,11 +1,10 @@
----
-trprefix: '&7[&6Spleef_reloaded&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1Spleef_reloaded Arenâu'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Chwaraewr: &6{PS}/{MPS}'
 menufee: '&5Ffi Ymuno: &6{FEE}'
 menupvp: '&5PVP: &6Enabled'
-menutracker: '&1Spleef player tracker'
+menutracker: '&Spleef player tracker'
 nopermission: '&c Nid oes gennych ganiatâd i wneud hyn'
 nolobby: '&c Global lobby isn''t set, run &6/spsetup setlobby'
 lobbyunloaded: '&c Lobby world is unloaded or doesn''t exist'
@@ -85,6 +84,7 @@ helplobby: Teleport to lobby
 helplist: List all arenas OR List arena details
 helplistkit: List all kits OR List kit details
 helplistrewards: List the rewards for the arena
+helpclick: Click to select
 helpjoin: Open join menu OR Join the arena
 helpspectate: Join the arena as a spectator
 helpautojoin: Automatically join the first available arena
@@ -159,3 +159,7 @@ partyinparty: '&c You are already in a party'
 partynotexist: '&c The selected party does not exist'
 partynoinvite: '&c You do not have an invitation to this party'
 partynotenabled: '&c Spleef parties are not currently enabled'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'
