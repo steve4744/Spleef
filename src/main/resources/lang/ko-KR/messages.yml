@@ -1,11 +1,10 @@
----
-trprefix: '&7[&6TNT Run Reloaded&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1TNT Run Reloaded 경기장'
 menuarenaname: '&a{ARENA}'
 menutext: '&5플레이어: &6{PS}/{MPS}'
 menufee: '&5가입비: &6{FEE}'
 menupvp: '&5PVP: &6활성화'
-menutracker: '&1TNT Run 플레이어 추적기'
+menutracker: '&Spleef player tracker'
 nopermission: '&c 당신은 권한이 없습니다.'
 nolobby: '&c 로비가 설정되지 않았습니다. / 다음 명령어를 실행하십시오. &6/spsetup setlobby'
 lobbyunloaded: '&c 로비 월드가 존재하지 않거나 로딩이 되지 않습니다.'
@@ -85,6 +84,7 @@ helplobby: 로비로 순간이동
 helplist: 모든 경기장 나열 또는 경기장 세부 정보 나열
 helplistkit: 모든 키트 나열 또는 키트 세부 정보 나열
 helplistrewards: 경기장에 대한 보상 나열
+helpclick: Click to select
 helpjoin: 참가 메뉴 열기 또는 경기장 참가
 helpspectate: 관전자로 경기장에 참여
 helpautojoin: 사용 가능한 첫 번째 경기장에 자동으로 참여
@@ -99,7 +99,7 @@ setuplobby: 현재 위치에 로비 설정
 setupdellobby: 로비 삭제
 setupcreate: 새로운 경기장 만들기
 setupconfigure: 경기장 구성을 위한 메뉴 열기
-setupbounds: 경기장에 대한 경계 설정
+setupbounds: Set bounds for arena
 setuploselevel: 당신의 발 지점을 탈락 지점으로 설정
 setupspawn: 당신의 발 지점을 경기장 스폰 설정
 setupspectate: 관전자 스폰 지점 설정
@@ -159,3 +159,7 @@ partyinparty: '&c 당신은 이미 파티에 있습니다'
 partynotexist: '&c 선택한 당사자가 존재하지 않습니다'
 partynoinvite: '&c You do not have an invitation to this party'
 partynotenabled: '&c Spleef parties are not currently enabled'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'
