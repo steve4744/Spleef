@@ -1,11 +1,10 @@
----
-trprefix: '&7[&6Spleef&7] '
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1Arènes'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Joueurs: &6{PS}/{MPS}'
 menufee: '&5Taxe d''entrée: &6{FEE}'
 menupvp: '&5PVP: &6Activé'
-menutracker: '&1Traqueur de joueurs Spleef'
+menutracker: '&Spleef player tracker'
 nopermission: '&cVous n''avez pas la permission de faire ça'
 nolobby: '&cLe lobby n''est pas défini, faites &6/spsetup setlobby'
 lobbyunloaded: '&cLe lobby n''est pas chargé ou n''existe pas'
@@ -85,6 +84,7 @@ helplobby: Téléporté au lobby
 helplist: Lister toutes les arènes OU Les détails de la liste des arènes
 helplistkit: Lister tous les kits OU Lister les détails des kits
 helplistrewards: Lister les récompenses des arènes
+helpclick: Click to select
 helpjoin: Ouvrir le menu d'inscription OU Rejoindre l'arène
 helpspectate: Rejoindre l'arène en tant que spectateur
 helpautojoin: Rejoindre automatiquement la première arène disponible
@@ -159,3 +159,7 @@ partyinparty: '&cVous êtes déjà dans un groupe'
 partynotexist: '&cLe groupe sélectionné n''existe pas'
 partynoinvite: '&c Vous n''avez pas d''invitation à ce groupe'
 partynotenabled: '&c Les parties Spleef ne sont pas activées pour le moment'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'
