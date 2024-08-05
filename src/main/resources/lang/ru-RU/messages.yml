@@ -1,11 +1,10 @@
----
-trprefix: '&7[&6Spleef_перезагружен&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1Spleef_перезагруженные Арены'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Игроков: &6{PS}/{MPS}'
 menufee: '&5Вступление за &6{FEE}'
 menupvp: '&5PVP: &6Включен'
-menutracker: '&1Spleef инструмент отслеживания игроков'
+menutracker: '&Spleef player tracker'
 nopermission: '&c У вас нет разрешения на это'
 nolobby: '&c Глобальное лобби не установлено, запустите &6/spsetup setlobby'
 lobbyunloaded: '&c Лобби мир выгружен или не существует'
@@ -85,6 +84,7 @@ helplobby: Телепортироваться в лобби
 helplist: Список всех атрибутов ИЛИ Список Арен
 helplistkit: Список всех наборов ИЛИ Список подробностей наборов
 helplistrewards: Список наград для арены
+helpclick: Click to select
 helpjoin: Откройте меню входа ИЛИ подключитесь к арене
 helpspectate: Присоединиться к арене как наблюдатель
 helpautojoin: Автоматически присоединяйтесь к первой доступной арене
@@ -159,3 +159,7 @@ partyinparty: '&c Вы уже находитесь в группы'
 partynotexist: '&c Выбранной группы не существует'
 partynoinvite: '&c У вас нет приглашений в группу'
 partynotenabled: '&c Группы в данный момент не включены'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'
