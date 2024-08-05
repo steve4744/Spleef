@@ -1,11 +1,10 @@
----
-trprefix: '&7[&6Spleef_重製&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1Spleef 地圖'
 menuarenaname: '&a{ARENA}'
 menutext: '&5玩家: &6{PS}/{MPS}'
 menufee: '&5入場費: &6{FEE}'
 menupvp: '&5PVP: &6啟用'
-menutracker: '&1Spleef玩家追踪器'
+menutracker: '&Spleef player tracker'
 nopermission: '&c 你沒有權限這樣做'
 nolobby: '&c 主大廳尚未設置，請輸入 &6/spsetup setlobby &c來設置'
 lobbyunloaded: '&c 大廳所位於的世界未載入或是它不存在'
@@ -85,6 +84,7 @@ helplobby: 傳送到大廳
 helplist: 列出所有地圖或是詳細資料
 helplistkit: 列出所有職業或是詳細資料
 helplistrewards: 列出該地圖的獎賞
+helpclick: Click to select
 helpjoin: 打開選單或是加入遊戲
 helpspectate: 以旁觀者加入遊戲
 helpautojoin: 自動加入遊戲
@@ -159,3 +159,7 @@ partyinparty: '&c 你已經在派對中'
 partynotexist: '&c 所選方不存在'
 partynoinvite: '&c 您沒有參加此派對的邀請'
 partynotenabled: '&c Spleef 當前未啟用各方'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'
