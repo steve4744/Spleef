@@ -35,7 +35,7 @@ public class Messages {
 	public static String menutext = "&5Players: &6{PS}/{MPS}";
 	public static String menufee = "&5Join Fee: &6{FEE}";
 	public static String menupvp = "&5PVP: &6Enabled";
-	public static String menutracker = "&Spleef player tracker";
+	public static String menutracker = "&1Spleef player tracker";
 	public static String nopermission = "&c You don't have permission to do this";
 	public static String nolobby = "&c Global lobby isn't set, run &6/spsetup setlobby";
 	public static String lobbyunloaded = "&c Lobby world is unloaded or doesn't exist";
