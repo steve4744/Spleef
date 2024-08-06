@@ -1,5 +1,4 @@
----
-trprefix: '&7[&6Spleef_reloaded&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1Spleef_reloaded Arenaer'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Spiller: &6{PS}/{MPS}'
@@ -85,6 +84,7 @@ helplobby: Teleporter til lobbyen
 helplist: Liste opp alle arenaer ELLER Liste arena detaljer
 helplistkit: Liste opp alle settene ELLER listesettdetaljer
 helplistrewards: Oppgi belønningene for arenaen
+helpclick: Click to select
 helpjoin: Åpne bli meny ELLER Bli med på arenaen
 helpspectate: Bli med på arenaen som tilskuer
 helpautojoin: Bli automatisk med på den første tilgjengelige arenaen
@@ -159,3 +159,7 @@ partyinparty: '&c You are already in a party'
 partynotexist: '&c The selected party does not exist'
 partynoinvite: '&c You do not have an invitation to this party'
 partynotenabled: '&c Spleef parties are not currently enabled'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'

@@ -1,5 +1,4 @@
----
-trprefix: '&7[&6Spleef_reloaded&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: 'Arenas &1Spleef_reloaded'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Spelers: &6{PS}/{MPS}'
@@ -85,6 +84,7 @@ helplobby: Teleporteer naar lobby
 helplist: Toon alle arena's OF Lijst van de arena details
 helplistkit: Laat alle uitrustingen OF Lijst uitrusting gegevens zien
 helplistrewards: Laat de beloningen voor de arena zien
+helpclick: Click to select
 helpjoin: Open het menu of neem deel aan arena
 helpspectate: Neem deel aan de arena als toeschouwer
 helpautojoin: Automatisch toetreden tot de eerste beschikbare arena
@@ -159,3 +159,7 @@ partyinparty: '&c Je zit al in een groep'
 partynotexist: '&c De geselecteerde groep bestaat niet'
 partynoinvite: '&c Je hebt geen uitnodiging voor deze groep'
 partynotenabled: '&c Spleef party is momenteel niet ingeschakeld'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'

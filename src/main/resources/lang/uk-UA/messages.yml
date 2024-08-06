@@ -1,5 +1,4 @@
----
-trprefix: '&7[&6Spleef_reloaded&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1Арени Spleef_reloaded'
 menuarenaname: '&a{ARENA}'
 menutext: '&5Гравців: &6{PS}/{MPS}'
@@ -85,6 +84,7 @@ helplobby: Телепорт у лобі
 helplist: Перелічити всі арени АБО Список деталей арен
 helplistkit: Показати всі комплекти АБО Список комплектів
 helplistrewards: Список нагород за арену
+helpclick: Click to select
 helpjoin: Відкрити меню приєднання АБО приєднатися до арени
 helpspectate: Приєднатися до Арени як глядач
 helpautojoin: Автоматично вступити до першої доступної арени
@@ -159,3 +159,7 @@ partyinparty: 'Ви вже у вечірці'
 partynotexist: 'Вибрана вечірка не існує'
 partynoinvite: '&c У вас немає запрошення до цієї вечірки'
 partynotenabled: '&c Вечірки наразі вимкнено'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'

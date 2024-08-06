@@ -1,5 +1,4 @@
----
-trprefix: '&7[&6Spleef_reloaded&7]'
+spprefix: '&7[&6Spleef_reloaded&7]'
 menutitle: '&1Spleef_reloaded アリーナ'
 menuarenaname: '&a{ARENA}'
 menutext: '&5プレイヤー数: &6{PS}/{MPS}'
@@ -85,6 +84,7 @@ helplobby: ロビーにテレポートする
 helplist: すべてのアリーナ、またはアリーナの詳細を一覧表示する
 helplistkit: すべてのキットまたはリストキットの詳細をリストする
 helplistrewards: アリーナの報酬を一覧表示する
+helpclick: Click to select
 helpjoin: 参加メニューを開くか、アリーナに参加する
 helpspectate: 観戦者としてアリーナに参加する
 helpautojoin: 最初の利用可能なアリーナに自動的に参加する
@@ -159,3 +159,7 @@ partyinparty: '&c You are already in a party'
 partynotexist: '&c The selected party does not exist'
 partynoinvite: '&c You do not have an invitation to this party'
 partynotenabled: '&c Spleef parties are not currently enabled'
+partyclickaccept: '&6&lAccept'
+partyclickdecline: '&6&lDecline'
+partyaccepttext: '&7Click to &baccept &7the invitation'
+partydeclinetext: '&7Click to &cdecline &7the invitation'
