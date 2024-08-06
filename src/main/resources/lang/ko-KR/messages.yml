@@ -99,7 +99,7 @@ setuplobby: 현재 위치에 로비 설정
 setupdellobby: 로비 삭제
 setupcreate: 새로운 경기장 만들기
 setupconfigure: 경기장 구성을 위한 메뉴 열기
-setupbounds: Set bounds for arena
+setupbounds: 경기장에 대한 경계 설정
 setuploselevel: 당신의 발 지점을 탈락 지점으로 설정
 setupspawn: 당신의 발 지점을 경기장 스폰 설정
 setupspectate: 관전자 스폰 지점 설정
