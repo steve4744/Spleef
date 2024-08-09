@@ -93,8 +93,7 @@ public class Spleef extends JavaPlugin {
 	private static Spleef instance;
 	private String version;
 	private String latestRelease;
-	//TODO add correct Spigot ID"
-	private static final int SPIGOT_ID = 0;
+	private static final int SPIGOT_ID = 118673;
 	private static final int BSTATS_PLUGIN_ID = 22271;
 	private static final String SPIGOT_URL = "https://www.spigotmc.org/resources/Spleef_reloaded." + SPIGOT_ID + "/";
 
@@ -124,8 +123,7 @@ public class Spleef extends JavaPlugin {
 		setupScoreboards();
 
 		loadArenas();
-		//TODO when on Spigot
-		//checkUpdate();
+		checkUpdate();
 		sound = new SoundHandler(this);
 
 		if (isBungeecord()) {
@@ -230,7 +228,6 @@ public class Spleef extends JavaPlugin {
 		return getConfig().getBoolean("bungeecord.enabled");
 	}
 
-	@SuppressWarnings("unused")
 	private void checkUpdate() {
 		if (!getConfig().getBoolean("special.CheckForNewVersion", true)) {
 			return;
