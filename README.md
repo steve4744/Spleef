@@ -14,11 +14,11 @@
 
 ## Description
 
-Spleef is a highly configurable, fully automated minigame for Minecraft servers. Traditionally players start on a layer of snow, and once the game starts players attempt to break the blocks below other players. If this causes them to fall, they lose the game and become a spectator for the remainder of the game. The last player remaining wins the game.
+Spleef is the iconic Minecraft mini game where players join and arena and try to break the blocks that other players are standing on causing them to fall and lose the game. The last player standing wins.
+
+Spleef_reloaded is a highly configurable, fully automated minigame. It has been created using the TNTRun_reloaded code base so many of the commands and features are identical between the two plugins.
 
 The latest version of Spleef_reloaded requires a minimum Java version of 17, and is supported on servers running Minecraft versions 1.20.1+.
-
-The following description and features apply to the latest release. Some of the features will not be present in the older versions which are maintained and supported on an 'as is' basis, and will only be updated if a bug is reported or an existing feature breaks.
 
 The plugin features a customisable shop where players can buy items such as weapons, armour, double-jumps, splash potions, snowballs (with knockback) and commands which run when the game starts. There is an option to enable PVP in an arena, assign kits, and the plugin also interfaces with HeadsPlus (by ThatsMusic99) allowing players to buy/wear custom heads during the game.
 
@@ -27,7 +27,7 @@ Optionally, a fee can be set to join each arena, which can be monetary or any Mi
 
 ## Download
 
-If your server is running Minecraft 1.20.1+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.xxxxx/ "Spleef_reloaded")
+If your server is running Minecraft 1.20.1+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
 
 
 ## Development Builds
@@ -42,7 +42,6 @@ Development snapshots are created by GitHub Actions every time a commit is pushe
     Custom Events
     Native Party system
     Support for AlessioDP Parties
-    Configurable block destroy delay
     Force-start voting system
     Permission controlled force-start command
     Join fee can be set per arena
@@ -94,17 +93,11 @@ The latest version of Spleef_reloaded has been tested with the following version
 One of the following plugins (or similar) is required to create Holographic Leaderboards for Spleef_reloaded (see wiki for details and example).
     
     DecentHolograms 2.8.8 (optional, an example plugin needed to create holograms)
-    HolographicDisplays 3.0.1 (optional, an example plugin needed to create holograms)
 
-If you are interested in recording the amount of time players spend playing Spleef_reloaded, with the option to reward players in-game for surviving a set amount of time (includes its own leaderboards and placeholders):
-
-    SpleefTimedRewards (optional add-on for recording time played in arena, and rewarding survival time)
-
-FAWE is also supported, and can be used in place of the WorldEdit on 1.13+ servers.
-
+FAWE is also supported, and can be used in place of the WorldEdit.
 
 
 <br />
 <br />
 <br />
-Updated steve4744 - 15th June 2024
+Updated steve4744 - 15th August 2024
