@@ -29,7 +29,11 @@ public class SnowballHandler implements Listener {
 		plugin.getServer().getPluginManager().registerEvents(this, plugin);
 	}
 
-	// give snowballs an impact effect
+	/**
+	 * Give the snowball an impact effect.
+	 *
+	 * @param Projectile hit event.
+	 */
 	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
 	public void onSnowballHit(ProjectileHitEvent e) {
 		Projectile projectile = e.getEntity();
@@ -61,6 +65,11 @@ public class SnowballHandler implements Listener {
 		player.setVelocity(projectile.getVelocity().multiply(knockback));
 	}
 
+	/**
+	 * On launching the snowball, replace the item in the hotbar.
+	 *
+	 * @param Projectile launch event.
+	 */
 	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
 	public void onSnowballThrow(ProjectileLaunchEvent e) {
 		if (!(e.getEntity() instanceof Snowball) || !(e.getEntity().getShooter() instanceof Player)) {
@@ -75,6 +84,9 @@ public class SnowballHandler implements Listener {
 		if (!arena.getStatusManager().isArenaRunning()) {
 			return;
 		}
+		if (!plugin.getConfig().getBoolean("items.snowball.use")) {
+			return;
+		}
 		int slot = plugin.getConfig().getInt("items.snowball.slot", 1);
 		plugin.getServer().getScheduler().runTaskLater(plugin, () ->
 				player.getInventory().setItem(slot, new ItemStack(Material.SNOWBALL)), 1L);
@@ -86,6 +98,9 @@ public class SnowballHandler implements Listener {
 			return;
 		}
 		if (event.getEntity().getItemStack().getType() != Material.SNOWBALL) {
+			return;
+		}
+		if (plugin.getConfig().getBoolean("items.snowball.allowpickup")) {
 			return;
 		}
 		if (arena.getStructureManager().isInArenaBounds(event.getLocation())) {

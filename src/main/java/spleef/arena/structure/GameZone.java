@@ -21,7 +21,6 @@ public class GameZone {
 
 	public void handleBlockBreak(Block block) {
 		Spleef.getInstance().getSound().BLOCK_BREAK(block);
-		block.getDrops().clear();
 		removeGLBlocks(block);
 	}
 

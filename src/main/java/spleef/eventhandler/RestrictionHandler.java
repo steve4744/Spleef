@@ -77,7 +77,12 @@ public class RestrictionHandler implements Listener {
 		}
 	}
 
-	// player should not be able to break blocks while in arena except floor blocks
+	/**
+	 * Prevent players breaking blocks except floor blocks. Snowball drop event is cancelled unless
+	 * option to pick up snowballs is enabled in the config.
+	 *
+	 * @param Block break event.
+	 */
 	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
 	public void onPlayerBlockBreak(BlockBreakEvent e) {
 		Player player = e.getPlayer();
@@ -87,8 +92,8 @@ public class RestrictionHandler implements Listener {
 		}
 		if (!arena.getStatusManager().isArenaRunning() || e.getBlock().getType() != Material.SNOW_BLOCK) {
 			e.setCancelled(true);
+			return;
 		}
-		e.setDropItems(false);
 		arena.getStructureManager().getGameZone().handleBlockBreak(e.getBlock());
 	}
 
