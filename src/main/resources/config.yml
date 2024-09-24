@@ -206,6 +206,7 @@ items:
     slot: 1
     breakblocks: false
     allowpickup: false
+    maxpickup: 10
 #
 # set scoreboard text - only the header supports hex/rgb colours
 scoreboard:

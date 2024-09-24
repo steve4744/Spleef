@@ -10,6 +10,7 @@ import org.bukkit.entity.Snowball;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;
+import org.bukkit.event.entity.EntityPickupItemEvent;
 import org.bukkit.event.entity.ItemSpawnEvent;
 import org.bukkit.event.entity.ProjectileHitEvent;
 import org.bukkit.event.entity.ProjectileLaunchEvent;
@@ -108,4 +109,46 @@ public class SnowballHandler implements Listener {
 		}
 	}
 
+	/**
+	 * If set, limit the number of snowballs a player can hold.
+	 *
+	 * @param event
+	 */
+	@EventHandler(priority = EventPriority.HIGHEST, ignoreCancelled = true)
+	public void onSnowballPickup(EntityPickupItemEvent event) {
+		if (!(event.getEntity() instanceof Player)) {
+			return;
+		}
+		if (event.getItem().getItemStack().getType() != Material.SNOWBALL) {
+			return;
+		}
+		Player player = (Player) event.getEntity();
+		Arena arena = plugin.amanager.getPlayerArena(player.getName());
+		if (arena == null) {
+			return;
+		}
+		if (!arena.getStatusManager().isArenaRunning()) {
+			return;
+		}
+		int maxpickup = plugin.getConfig().getInt("items.snowball.maxpickup");
+		if (maxpickup <= 0) {
+			return;
+		}
+		int holding = 0;
+		for(ItemStack is : player.getInventory().all(Material.SNOWBALL).values()) {
+			holding += is.getAmount();
+		}
+		if (holding >= maxpickup) {
+			event.setCancelled(true);
+			return;
+		}
+
+		int drops = event.getItem().getItemStack().getAmount();
+		if ((holding + drops)  > maxpickup) {
+			event.getItem().getItemStack().setAmount(drops - (maxpickup - holding));
+			event.setCancelled(true);
+			ItemStack is = new ItemStack(Material.SNOWBALL, maxpickup - holding);
+			player.getInventory().addItem(is);
+		}
+	}
 }
