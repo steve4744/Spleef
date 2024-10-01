@@ -314,7 +314,7 @@ public class Shop {
 				meta.setLore(getFormattedLore(lore));
 			}
 			if (isGlowing) {
-				meta.addEnchant(Enchantment.UNBREAKING, 2, true);
+				meta.addEnchant(Enchantment.DURABILITY, 2, true);
 				meta.addItemFlags(ItemFlag.HIDE_ENCHANTS);
 			}
 			item.setItemMeta(meta);
@@ -331,7 +331,7 @@ public class Shop {
 		PotionEffect effect = createPotionEffect(enchantment);
 		if (effect != null) {
 			potionmeta.addCustomEffect(effect, true);
-			potionmeta.addItemFlags(ItemFlag.HIDE_ADDITIONAL_TOOLTIP);
+			potionmeta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
 			NamespacedKey key = NamespacedKey.minecraft(getEnchantmentName(enchantment).toLowerCase());
 			if (Registry.EFFECT.get(key) != null) {
 				potionmeta.setColor(Registry.EFFECT.get(key).getColor());
