@@ -2,15 +2,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.steve4744</groupId>
   <artifactId>Spleef_reloaded</artifactId>
-  <version>0.9</version>
+  <version>0.81</version>
   <name>Spleef_reloaded</name>
   <description>A Minecraft mini-game plugin</description>
   <packaging>jar</packaging>
 
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-    <maven.compiler.source>21</maven.compiler.source>
-    <maven.compiler.target>21</maven.compiler.target>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
   </properties>
 
   <licenses>
@@ -63,7 +63,7 @@
     <dependency>
         <groupId>org.spigotmc</groupId>
         <artifactId>spigot-api</artifactId>
-        <version>1.21.1-R0.1-SNAPSHOT</version>
+        <version>1.20.4-R0.1-SNAPSHOT</version>
         <scope>provided</scope>
     </dependency>
     <!-- Vault API -->
@@ -91,7 +91,7 @@
     <dependency>
         <groupId>com.sk89q.worldedit</groupId>
         <artifactId>worldedit-bukkit</artifactId>
-        <version>7.3.6</version>
+        <version>7.3.3</version>
         <scope>provided</scope>
     </dependency>
     <!-- HeadsPlus -->
