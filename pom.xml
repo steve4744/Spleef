@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>io.github.steve4744</groupId>
   <artifactId>Spleef_reloaded</artifactId>
-  <version>0.8.1</version>
+  <version>0.8.2</version>
   <name>Spleef_reloaded</name>
   <description>A Minecraft mini-game plugin</description>
   <packaging>jar</packaging>
@@ -56,6 +56,11 @@
     <repository>
         <id>alessiodp-repo</id>
         <url>https://repo.alessiodp.com/releases/</url>
+    </repository>
+    <!-- IridiumColorAPI Repo -->
+    <repository>
+        <id>iridiumdevelopment</id>
+        <url>https://nexus.iridiumdevelopment.net/repository/maven-releases/</url>
     </repository>
   </repositories>
   <dependencies>
@@ -128,6 +133,12 @@
         <artifactId>parties-api</artifactId>
         <version>3.2.13</version>
         <scope>provided</scope>
+    </dependency>
+    <!-- IridiumColorAPI -->
+    <dependency>
+        <groupId>com.iridium</groupId>
+        <artifactId>IridiumColorAPI</artifactId>
+        <version>1.0.9</version>
     </dependency>
     <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
     <dependency>
