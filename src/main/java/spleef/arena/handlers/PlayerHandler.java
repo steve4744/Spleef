@@ -30,6 +30,7 @@ import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemFlag;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.SkullMeta;
@@ -707,6 +708,7 @@ public class PlayerHandler {
 		ItemStack item = new ItemStack(Material.getMaterial(plugin.getConfig().getString("items.tool.material")));
 		ItemMeta meta = item.getItemMeta();
 		meta.setDisplayName(FormattingCodesParser.parseFormattingCodes(plugin.getConfig().getString("items.tool.name")));
+		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 		item.setItemMeta(meta);
 
 		player.getInventory().setItem(plugin.getConfig().getInt("items.tool.slot", 0), item);
