@@ -5,6 +5,7 @@ import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
+import java.util.StringJoiner;
 
 import org.apache.commons.lang3.StringUtils;
 import org.bukkit.Bukkit;
@@ -29,6 +30,7 @@ public class ScoreboardManager {
 	private HashSet<String> lobbyScoreboards = new HashSet<>();
 	private Map<String, Scoreboard> scoreboardMap = new HashMap<>();
 	private Map<String, Scoreboard> prejoinScoreboards = new HashMap<>();
+	private List<String> codes = List.of("a", "b", "c", "d", "e", "f", "1", "2", "3", "4", "5", "6", "7", "8", "9");
 
 	public ScoreboardManager(Spleef plugin) {
 		this.plugin = plugin;
@@ -91,8 +93,13 @@ public class ScoreboardManager {
 		if (!plugin.isPlaceholderAPI() || !isPlaceholderString(s)) {
 			return s;
 		}
-		String[] a = s.split("%");
-		return a[0] + PlaceholderAPI.setPlaceholders(player, "%" + a[1] + "%");
+		String[] parts = s.split("%");
+		parts[1] = PlaceholderAPI.setPlaceholders(player, "%" + parts[1] + "%");
+		StringJoiner value = new StringJoiner("");
+		for(String ss : parts) {
+			value.add(ss);
+		}
+		return value.toString();
 	}
 
 	public Scoreboard resetScoreboard(Player player) {
@@ -128,5 +135,17 @@ public class ScoreboardManager {
 
 	public void removeLobbyScoreboard(String playerName) {
 		lobbyScoreboards.remove(playerName);
+	}
+
+	public String getTeamEntry(Scoreboard scoreboard, int size, String s) {
+		String entry = ChatColor.translateAlternateColorCodes('&', "&" + codes.get(size));
+		String teamname = "t" + size;
+		Team team = scoreboard.getTeam(teamname);
+		if (team == null) {
+			team = scoreboard.registerNewTeam(teamname);
+		}
+		team.setSuffix(s);
+		team.addEntry(entry);
+		return entry;
 	}
 }
