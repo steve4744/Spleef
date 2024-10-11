@@ -55,6 +55,7 @@ import spleef.commands.setup.arena.SetSpectatorSpawn;
 import spleef.commands.setup.arena.SetTeleport;
 import spleef.commands.setup.arena.SetTimeLimit;
 import spleef.commands.setup.arena.SetVotePercent;
+import spleef.commands.setup.arena.SetWaitingSpawn;
 import spleef.commands.setup.arena.SetupHelp;
 import spleef.commands.setup.kits.AddKit;
 import spleef.commands.setup.kits.DeleteKit;
@@ -104,6 +105,7 @@ public class SetupCommandsHandler implements CommandExecutor {
 		commandHandlers.put("deletespawnpoints", new DeleteSpawnPoints(plugin));
 		commandHandlers.put("setspectate", new SetSpectatorSpawn(plugin));
 		commandHandlers.put("deletespectate", new DeleteSpectatorSpawn(plugin));
+		commandHandlers.put("setwaitingspawn", new SetWaitingSpawn(plugin));
 		commandHandlers.put("setmaxplayers", new SetMaxPlayers(plugin));
 		commandHandlers.put("setminplayers", new SetMinPlayers(plugin));
 		commandHandlers.put("setvotepercent", new SetVotePercent(plugin));
@@ -152,14 +154,14 @@ public class SetupCommandsHandler implements CommandExecutor {
 			CommandHandlerInterface commandh = commandHandlers.get(args[0]);
 			//check args length
 			if (args.length - 1 < commandh.getMinArgsLength()) {
-				Messages.sendMessage(player, "&c ERROR: Please use &6/sp cmds&c to view required arguments for all game commands");
+				Messages.sendMessage(player, "&c ERROR: Please use &6/spleef cmds&c to view required arguments for all game commands");
 				return false;
 			}
 			//execute command
 			boolean result = commandh.handleCommand(player, Arrays.copyOfRange(args, 1, args.length));
 			return result;
 		} 
-		Messages.sendMessage(player, "&c ERROR: Please use &6/sp cmds&c to view all valid game commands");
+		Messages.sendMessage(player, "&c ERROR: Please use &6/spleef cmds&c to view all valid game commands");
 		return false;
 	}
 }

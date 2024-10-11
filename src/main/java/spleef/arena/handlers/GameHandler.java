@@ -131,7 +131,8 @@ public class GameHandler {
 				} else if(count == antiCamping) {
 					String message = Messages.arenacountdown.replace("{COUNTDOWN}", String.valueOf(count));
 					for (Player player : arena.getPlayersManager().getPlayers()) {
-						if (isAntiCamping() && !arena.getStructureManager().hasAdditionalSpawnPoints()) {
+						if (arena.getStructureManager().isWaitingSpawnSet() ||
+								(isAntiCamping() && !arena.getStructureManager().hasAdditionalSpawnPoints())) {
 							player.teleport(arena.getStructureManager().getSpawnPoint());
 						}
 						displayCountdown(player, count, message);

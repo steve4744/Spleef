@@ -49,6 +49,7 @@ public class StructureManager {
 	private LoseLevel loselevel = new LoseLevel();
 	private SpectatorSpawn spectatorspawn = new SpectatorSpawn();
 	private PlayerSpawn playerspawn = new PlayerSpawn();
+	private WaitingSpawn waitingspawn = new WaitingSpawn();
 	private int minPlayers = 2;
 	private int maxPlayers = 15;
 	private double votesPercent = 0.75;
@@ -119,6 +120,22 @@ public class StructureManager {
 								spectatorspawn.getVector().getZ(),
 								spectatorspawn.getYaw(),
 								spectatorspawn.getPitch());
+		}
+		return null;
+	}
+
+	public Vector getWaitingSpawnVector() {
+		return waitingspawn.getVector();
+	}
+
+	public Location getWaitingSpawn() {
+		if (waitingspawn.isConfigured()) {
+			return new Location(getWorld(),
+								waitingspawn.getVector().getX(),
+								waitingspawn.getVector().getY(),
+								waitingspawn.getVector().getZ(),
+								waitingspawn.getYaw(),
+								waitingspawn.getPitch());
 		}
 		return null;
 	}
@@ -310,6 +327,10 @@ public class StructureManager {
 		return spectatorspawn.isConfigured();
 	}
 
+	public boolean isWaitingSpawnSet() {
+		return waitingspawn.isConfigured();
+	}
+
 	public boolean isPvpEnabled() {
 		return !getDamageEnabled().toString().equalsIgnoreCase("no");
 	}
@@ -356,6 +377,14 @@ public class StructureManager {
 		return false;
 	}
 
+	public boolean setWaitingSpawn(Location loc) {
+		if (isInArenaBounds(loc)) {
+			waitingspawn.setWaitingSpawn(loc);
+			return true;
+		}
+		return false;
+	}
+
 	/**
 	 * Creates an additional spawn point from the supplied location.
 	 * @param loc
@@ -371,6 +400,10 @@ public class StructureManager {
 
 	public void removeSpectatorsSpawn() {
 		spectatorspawn.remove();
+	}
+
+	public void removeWaitingSpawn() {
+		waitingspawn.remove();
 	}
 
 	public void removeAdditionalSpawnPoints() {
@@ -509,6 +542,10 @@ public class StructureManager {
 			spectatorspawn.saveToConfig(config);
 		} catch (Exception e) {
 		}
+		try {
+			waitingspawn.saveToConfig(config);
+		} catch (Exception e) {
+		}
 		config.set("gameleveldestroydelay", gameleveldestroydelay);
 		config.set("maxPlayers", maxPlayers);
 		config.set("minPlayers", minPlayers);
@@ -555,6 +592,7 @@ public class StructureManager {
 		loselevel.loadFromConfig(config);
 		playerspawn.loadFromConfig(config);
 		spectatorspawn.loadFromConfig(config);
+		waitingspawn.loadFromConfig(config);
 		maxPlayers = config.getInt("maxPlayers", maxPlayers);
 		minPlayers = config.getInt("minPlayers", minPlayers);
 		votesPercent = config.getDouble("votePercent", votesPercent);
