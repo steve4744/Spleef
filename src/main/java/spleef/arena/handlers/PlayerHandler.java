@@ -209,6 +209,9 @@ public class PlayerHandler {
 	 * @return the spawnpoint location
 	 */
 	private Location getSpawnPoint(String playerName) {
+		if (arena.getStructureManager().isWaitingSpawnSet()) {
+			return arena.getStructureManager().getWaitingSpawn();
+		}
 		Location loc = null;
 		if (spawnmap.containsKey(playerName) && (arena.getStructureManager().getFreeSpawnList().contains(spawnmap.get(playerName).toVector()))) {
 			loc = spawnmap.get(playerName);

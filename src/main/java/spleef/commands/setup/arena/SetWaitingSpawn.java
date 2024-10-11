@@ -24,10 +24,10 @@ import spleef.arena.Arena;
 import spleef.commands.setup.CommandHandlerInterface;
 import spleef.messages.Messages;
 
-public class SetSpectatorSpawn implements CommandHandlerInterface {
+public class SetWaitingSpawn implements CommandHandlerInterface {
 
 	private Spleef plugin;
-	public SetSpectatorSpawn(Spleef plugin) {
+	public SetWaitingSpawn(Spleef plugin) {
 		this.plugin = plugin;
 	}
 
@@ -43,13 +43,13 @@ public class SetSpectatorSpawn implements CommandHandlerInterface {
 				Messages.sendMessage(player, Messages.arenanobounds);
 				return true;
 			}
-			if (arena.getStructureManager().setSpectatorsSpawn(player.getLocation())) {
-				Messages.sendMessage(player, "&7 Arena &6" + args[0] + "&7 Spectator spawn set to &6X: &7" +
+			if (arena.getStructureManager().setWaitingSpawn(player.getLocation())) {
+				Messages.sendMessage(player, "&7 Arena &6" + args[0] + "&7 Waiting spawn set to &6X: &7" +
 						Math.round(player.getLocation().getX()) + " &6Y: &7" +
 						Math.round(player.getLocation().getY()) + " &6Z: &7" +
 						Math.round(player.getLocation().getZ()));
 			} else {
-				Messages.sendMessage(player, "&c Arena &6" + args[0] + "&c Spectator spawn must be inside arena bounds");
+				Messages.sendMessage(player, "&c Arena &6" + args[0] + "&c Waiting spawn must be inside arena bounds");
 			}
 		} else {
 			Messages.sendMessage(player, Messages.arenanotexist.replace("{ARENA}", args[0]));
