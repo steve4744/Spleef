@@ -73,8 +73,8 @@ public class GameHandler {
 				public void run() {
 					for (Player player : arena.getPlayersManager().getPlayersCopy()) {
 						if (!arena.getStructureManager().isInArenaBounds(player.getLocation())) {
-							//remove player during countdown, otherwise spectate
-							if (arena.getStatusManager().isArenaStarting()) {
+							//remove player leaving arena when not started otherwise spectate player
+							if (arena.getStatusManager().isArenaStarting() || arena.getStatusManager().getArenaStatus() == "Waiting") {
 								arena.getPlayerHandler().leavePlayer(player, Messages.playerlefttoplayer, Messages.playerlefttoothers);
 							} else {
 								setPlaces(player.getName());
