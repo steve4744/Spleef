@@ -300,6 +300,7 @@ public class GameCommands implements CommandExecutor {
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletelobby", true), Utils.getTextComponent(Messages.setupdellobby));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup addspawn", true), Utils.getTextComponent(Messages.setupaddspawn));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletespawnpoints", true), Utils.getTextComponent(Messages.setupdelspawns));
+			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletewaitingspawn", true), Utils.getTextComponent(Messages.setupdelwaiting));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup addtowhitelist", true), Utils.getTextComponent(Messages.setupwhitelist));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup resetstats {player}", true), Utils.getTextComponent(Messages.setupresetstats));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup resetcachedrank {player}", true), Utils.getTextComponent(Messages.setupresetrank));

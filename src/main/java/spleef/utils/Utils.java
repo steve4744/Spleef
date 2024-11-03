@@ -168,6 +168,7 @@ public class Utils {
 		player.spigot().sendMessage(getTextComponent("/spsetup setloselevel {arena}", true), getTextComponent(Messages.setuploselevel));
 		player.spigot().sendMessage(getTextComponent("/spsetup setspawn {arena}", true), getTextComponent(Messages.setupspawn));
 		player.spigot().sendMessage(getTextComponent("/spsetup setspectate {arena}", true), getTextComponent(Messages.setupspectate));
+		player.spigot().sendMessage(getTextComponent("/spsetup setwatingspawn {arena}", true), getTextComponent(Messages.setupwaiting));
 		player.spigot().sendMessage(getTextComponent("/spsetup finish {arena}", true), getTextComponent(Messages.setupfinish));
 	}
 
