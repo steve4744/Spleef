@@ -32,6 +32,7 @@ import spleef.commands.setup.arena.CreateArena;
 import spleef.commands.setup.arena.DeleteArena;
 import spleef.commands.setup.arena.DeleteSpawnPoints;
 import spleef.commands.setup.arena.DeleteSpectatorSpawn;
+import spleef.commands.setup.arena.DeleteWaitingSpawn;
 import spleef.commands.setup.arena.DisableArena;
 import spleef.commands.setup.arena.DisableKits;
 import spleef.commands.setup.arena.EnableArena;
@@ -106,6 +107,7 @@ public class SetupCommandsHandler implements CommandExecutor {
 		commandHandlers.put("setspectate", new SetSpectatorSpawn(plugin));
 		commandHandlers.put("deletespectate", new DeleteSpectatorSpawn(plugin));
 		commandHandlers.put("setwaitingspawn", new SetWaitingSpawn(plugin));
+		commandHandlers.put("deletewaitingspawn", new DeleteWaitingSpawn(plugin));
 		commandHandlers.put("setmaxplayers", new SetMaxPlayers(plugin));
 		commandHandlers.put("setminplayers", new SetMinPlayers(plugin));
 		commandHandlers.put("setvotepercent", new SetVotePercent(plugin));

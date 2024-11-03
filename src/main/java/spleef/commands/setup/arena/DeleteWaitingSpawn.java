@@ -24,10 +24,10 @@ import spleef.arena.Arena;
 import spleef.commands.setup.CommandHandlerInterface;
 import spleef.messages.Messages;
 
-public class DeleteSpectatorSpawn implements CommandHandlerInterface {
+public class DeleteWaitingSpawn implements CommandHandlerInterface {
 
 	private Spleef plugin;
-	public DeleteSpectatorSpawn(Spleef plugin) {
+	public DeleteWaitingSpawn(Spleef plugin) {
 		this.plugin = plugin;
 	}
 
@@ -39,8 +39,8 @@ public class DeleteSpectatorSpawn implements CommandHandlerInterface {
 				Messages.sendMessage(player, Messages.arenanotdisabled.replace("{ARENA}", args[0]));
 				return true;
 			}
-			arena.getStructureManager().removeSpectatorsSpawn();
-			Messages.sendMessage(player, "&7 Spectator spawn for arena &6" + args[0] + "&7 deleted");
+			arena.getStructureManager().removeWaitingSpawn();
+			Messages.sendMessage(player, "&7 Waiting spawn for arena &6" + args[0] + "&7 deleted");
 		} else {
 			Messages.sendMessage(player, Messages.arenanotexist.replace("{ARENA}", args[0]));
 		}
@@ -51,5 +51,4 @@ public class DeleteSpectatorSpawn implements CommandHandlerInterface {
 	public int getMinArgsLength() {
 		return 1;
 	}
-
 }

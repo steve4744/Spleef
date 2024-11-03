@@ -179,6 +179,8 @@ public class Messages {
 	public static String setupwhitelist = "Whitelist a command for use in-game";
 	public static String setupresetstats = "Remove all Spleef stats for the player";
 	public static String setupresetrank = "Remove player's rank from the cache";
+	public static String setupwaiting = "Set a spawn location used prior to joining the arena";
+	public static String setupdelwaiting = "Delete the waiting spawn location";
 	
 	public static String partycreate = "&7 Party created";
 	public static String partyjoin = "&6 {PLAYER} &7has joined the party";
@@ -367,6 +369,8 @@ public class Messages {
 		setupwhitelist = config.getString("setupwhitelist", setupwhitelist);
 		setupresetstats = config.getString("setupresetstats", setupresetstats);
 		setupresetrank = config.getString("setupresetrank", setupresetrank);
+		setupwaiting = config.getString("setupwaiting", setupwaiting);
+		setupdelwaiting = config.getString("setupdelwaiting", setupdelwaiting);
 		kitadd = config.getString("kitadd", kitadd);
 		kitdel = config.getString("kitdel", kitdel);
 		kitexists = config.getString("kitexists", kitexists);
@@ -539,6 +543,8 @@ public class Messages {
 		config.set("setupwhitelist", setupwhitelist);
 		config.set("setupresetstats", setupresetstats);
 		config.set("setupresetrank", setupresetrank);
+		config.set("setupwaiting", setupwaiting);
+		config.set("setupdelwaiting", setupdelwaiting);
 		config.set("kitadd", kitadd);
 		config.set("kitdel", kitdel);
 		config.set("kitexists", kitexists);
