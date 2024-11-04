@@ -29,8 +29,7 @@ Optionally, a fee can be set to join each arena, which can be monetary or any Mi
 
 If your server is running Minecraft 1.20.6+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
 
-If your server is running Minecraft 1.20.1 - 1.20.4, download version 0.83 from the [GitHub Releases.]
-(https://github.com/steve4744/Spleef/releases/tag/v0.8.3 "Legacy version")
+If your server is running Minecraft 1.20.1 - 1.20.4, download version 0.83 from [GitHub Releases.](https://github.com/steve4744/Spleef/releases/tag/v0.8.3/ "Legacy version")
 
 
 ## Development Builds
