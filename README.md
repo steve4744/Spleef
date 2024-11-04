@@ -18,7 +18,7 @@ Spleef is the iconic Minecraft mini game where players join and arena and try to
 
 Spleef_reloaded is a highly configurable, fully automated minigame. It has been created using the TNTRun_reloaded code base so many of the commands and features are identical between the two plugins.
 
-The latest version of Spleef_reloaded requires a minimum Java version of 17, and is supported on servers running Minecraft versions 1.20.1+.
+The latest version of Spleef_reloaded requires a minimum Java version of 21, and is supported on servers running Minecraft versions 1.20.6+.
 
 The plugin features a customisable shop where players can buy items such as weapons, armour, double-jumps, splash potions, snowballs (with knockback) and commands which run when the game starts. There is an option to enable PVP in an arena, assign kits, and the plugin also interfaces with HeadsPlus (by ThatsMusic99) allowing players to buy/wear custom heads during the game.
 
@@ -27,7 +27,10 @@ Optionally, a fee can be set to join each arena, which can be monetary or any Mi
 
 ## Download
 
-If your server is running Minecraft 1.20.1+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
+If your server is running Minecraft 1.20.6+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
+
+If your server is running Minecraft 1.20.1 - 1.20.4, download version 0.83 from the [GitHub Releases.]
+(https://github.com/steve4744/Spleef/releases/tag/v0.8.3 "Legacy version")
 
 
 ## Development Builds
@@ -48,6 +51,7 @@ Development snapshots are created by GitHub Actions every time a commit is pushe
     Arena currency (money or any Minecraft material)
     Arena selection GUI
     Configurable anti-camping system
+    Supports multiple spawn points including a waiting spawn area
     Translatable messages
     Command whitelist
     Formatting codes support
@@ -83,7 +87,7 @@ Links to download each plugin are available on Spleef_reloaded's Spigot page.
 
 The latest version of Spleef_reloaded has been tested with the following versions of these plugins:
 
-    WorldEdit 7.3.2 (optional, internal commands setP1 and setP2 can be used to set arena bounds)
+    WorldEdit 7.3.6 (optional, internal commands setP1 and setP2 can be used to set arena bounds)
     Vault 1.7 (optional, required to use economy)
     HeadsPlus 7.1.2 (optional, allow players to buy and run around wearing different heads)
     mcMMO 2.2.012 (optional, will allow players in same mcMMO party to PVP in arena)
@@ -100,4 +104,4 @@ FAWE is also supported, and can be used in place of the WorldEdit.
 <br />
 <br />
 <br />
-Updated steve4744 - 15th August 2024
+Updated steve4744 - 4th November 2024
