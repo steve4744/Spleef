@@ -67,7 +67,9 @@ public class GameCommands implements CommandExecutor {
 			player.spigot().sendMessage(Utils.getTextComponent("/sp listkit [kit]", true), Utils.getTextComponent(Messages.helplistkit));
 			player.spigot().sendMessage(Utils.getTextComponent("/sp listrewards {arena}", true), Utils.getTextComponent(Messages.helplistrewards));
 			player.spigot().sendMessage(Utils.getTextComponent("/sp start {arena}", true), Utils.getTextComponent(Messages.helpstart));
-			player.spigot().sendMessage(Utils.getTextComponent("/sp cmds", true), Utils.getTextComponent(Messages.helpcmds));
+			if (player.hasPermission("spleef.setup")) {
+				player.spigot().sendMessage(Utils.getTextComponent("/sp cmds", true), Utils.getTextComponent(Messages.helpcmds));
+			}
 
 		} else if (args[0].equalsIgnoreCase("lobby")) {
 			plugin.getGlobalLobby().joinLobby(player);
@@ -261,8 +263,12 @@ public class GameCommands implements CommandExecutor {
 			}
 		}
 
-		// all commands
+		// all setup commands
 		else if (args[0].equalsIgnoreCase("cmds")) {
+			if (!player.hasPermission("spleef.setup")) {
+				Messages.sendMessage(player, Messages.nopermission);
+				return false;
+			}
 			Messages.sendMessage(player, "&7============" + Messages.spprefix + "============", false);
 			Utils.displayHelp(player);
 			Messages.sendMessage(player, "&7============[&6Other commands&7]============", false);
