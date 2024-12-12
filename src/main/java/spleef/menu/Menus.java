@@ -266,13 +266,13 @@ public class Menus {
 					}
 					lores.add(status + (arena.getStructureManager().isSpectatorSpawnSet() ? done : todo));
 				} else {
-					im.setDisplayName(ChatColor.GREEN + "Set gameleveldestroydelay");
+					im.setDisplayName(ChatColor.GREEN + "Set waiting spawn point (optional)");
 					if (showhelp) {
-						lores.add(ChatColor.GRAY + "Set the time before a block is broken after being");
-						lores.add(ChatColor.GRAY + "stepped on by a player (default 8 ticks).");
-						lores.add(ChatColor.GRAY + "Left click to increase, right click to decrease.");
+						lores.add(ChatColor.GRAY + "Set a point players can spawn to wait for the");
+						lores.add(ChatColor.GRAY + "game to start. It must be within the arena bounds.");
+						lores.add(ChatColor.GRAY + "Players will be teleported from here to the arena.");
 					}
-					lores.add(status + arena.getStructureManager().getGameLevelDestroyDelay());
+					lores.add(status + (arena.getStructureManager().isWaitingSpawnSet() ? done : todo));
 				}
 				break;
 			case 16:

@@ -186,8 +186,7 @@ public class MenuHandler implements Listener {
 				if (page == 1) {
 					cmd += "setspectate " + arenaname;
 				} else {
-					int delay = leftclick ? (arena.getStructureManager().getGameLevelDestroyDelay() + 1) : (arena.getStructureManager().getGameLevelDestroyDelay() - 1);
-					cmd += "setgameleveldestroydelay " + arenaname + " " + delay;
+					cmd += "setwaitingspawn " + arenaname;
 				}
 				Bukkit.dispatchCommand(player, cmd);
 				break;
