@@ -273,7 +273,6 @@ public class GameCommands implements CommandExecutor {
 			Utils.displayHelp(player);
 			Messages.sendMessage(player, "&7============[&6Other commands&7]============", false);
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup deletespectate {arena}", true), Utils.getTextComponent(Messages.setupdelspectate));
-			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setgameleveldestroydelay {arena} {ticks}", true), Utils.getTextComponent(Messages.setupdelay));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setregenerationdelay {arena} {ticks}", true), Utils.getTextComponent(Messages.setupregendelay));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setmaxplayers {arena} {players}", true), Utils.getTextComponent(Messages.setupmax));
 			player.spigot().sendMessage(Utils.getTextComponent("/spsetup setminplayers {arena} {players}", true), Utils.getTextComponent(Messages.setupmin));

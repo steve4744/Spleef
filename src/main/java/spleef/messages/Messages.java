@@ -147,7 +147,6 @@ public class Messages {
 	public static String setupdelspawns = "Delete all spawn points created with the addspawn command";
 	public static String setupfinish = "Finish arena and save";
 	public static String setupdelspectate = "Delete spectator spawn for arena";
-	public static String setupdelay = "Set delay for removing block when player steps on it";
 	public static String setupregendelay = "Set delay before players can re-join arena (Default: 60)";
 	public static String setupmax = "Set maximum players for arena (Default: 15)";
 	public static String setupmin = "Set minimum players for arena (Default: 2)";
@@ -337,7 +336,6 @@ public class Messages {
 		setupdelspawns = config.getString("setupdelspawns", setupdelspawns);
 		setupfinish = config.getString("setupfinish", setupfinish);
 		setupdelspectate = config.getString("setupdelspectate", setupdelspectate);
-		setupdelay = config.getString("setupdelay", setupdelay);
 		setupregendelay = config.getString("setupregendelay", setupregendelay);
 		setupmax = config.getString("setupmax", setupmax);
 		setupmin = config.getString("setupmin", setupmin);
@@ -511,7 +509,6 @@ public class Messages {
 		config.set("setupdelspawns", setupdelspawns);
 		config.set("setupfinish", setupfinish);
 		config.set("setupdelspectate", setupdelspectate);
-		config.set("setupdelay", setupdelay);
 		config.set("setupregendelay", setupregendelay);
 		config.set("setupmax", setupmax);
 		config.set("setupmin", setupmin);

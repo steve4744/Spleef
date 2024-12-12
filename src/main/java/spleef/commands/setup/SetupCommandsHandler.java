@@ -44,7 +44,6 @@ import spleef.commands.setup.arena.SetCountdown;
 import spleef.commands.setup.arena.SetCurrency;
 import spleef.commands.setup.arena.SetDamage;
 import spleef.commands.setup.arena.SetFee;
-import spleef.commands.setup.arena.SetGameLevelDestroyDelay;
 import spleef.commands.setup.arena.SetLoseLevel;
 import spleef.commands.setup.arena.SetMaxPlayers;
 import spleef.commands.setup.arena.SetMinPlayers;
@@ -98,7 +97,6 @@ public class SetupCommandsHandler implements CommandExecutor {
 		commandHandlers.put("create", new CreateArena(plugin));
 		commandHandlers.put("delete", new DeleteArena(plugin));
 		commandHandlers.put("setarena", new SetArena(plugin, plselection));
-		commandHandlers.put("setgameleveldestroydelay", new SetGameLevelDestroyDelay(plugin));
 		commandHandlers.put("setregenerationdelay", new SetRegenerationDelay(plugin));
 		commandHandlers.put("setloselevel", new SetLoseLevel(plugin));
 		commandHandlers.put("setspawn", new SetSpawn(plugin));

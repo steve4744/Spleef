@@ -45,7 +45,6 @@ public class StructureManager {
 	private String world;
 	private Vector p1 = null;
 	private Vector p2 = null;
-	private int gameleveldestroydelay = 8;
 	private LoseLevel loselevel = new LoseLevel();
 	private SpectatorSpawn spectatorspawn = new SpectatorSpawn();
 	private PlayerSpawn playerspawn = new PlayerSpawn();
@@ -98,10 +97,6 @@ public class StructureManager {
 
 	public GameZone getGameZone() {
 		return gamezone;
-	}
-
-	public int getGameLevelDestroyDelay() {
-		return gameleveldestroydelay;
 	}
 
 	public LoseLevel getLoseLevel() {
@@ -349,10 +344,6 @@ public class StructureManager {
 		p2 = loc2.toVector();
 	}
 
-	public void setGameLevelDestroyDelay(int delay) {
-		gameleveldestroydelay = delay;
-	}
-
 	public boolean setLoseLevel(Location loc1) {
 		if (isInArenaBounds(loc1)) {
 			loselevel.setLoseLocation(loc1);
@@ -546,7 +537,7 @@ public class StructureManager {
 			waitingspawn.saveToConfig(config);
 		} catch (Exception e) {
 		}
-		config.set("gameleveldestroydelay", gameleveldestroydelay);
+		config.set("gameleveldestroydelay", null);
 		config.set("maxPlayers", maxPlayers);
 		config.set("minPlayers", minPlayers);
 		config.set("votePercent", votesPercent);
@@ -588,7 +579,6 @@ public class StructureManager {
 		world = config.getString("world", null);
 		p1 = config.getVector("p1", null);
 		p2 = config.getVector("p2", null);
-		gameleveldestroydelay = config.getInt("gameleveldestroydelay", gameleveldestroydelay);
 		loselevel.loadFromConfig(config);
 		playerspawn.loadFromConfig(config);
 		spectatorspawn.loadFromConfig(config);
