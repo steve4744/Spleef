@@ -90,7 +90,8 @@ public class RestrictionHandler implements Listener {
 		if (arena == null) {
 			return;
 		}
-		if (!arena.getStatusManager().isArenaRunning() || e.getBlock().getType() != Material.SNOW_BLOCK) {
+		if (!arena.getStatusManager().isArenaRunning() || e.getBlock().getType() != Material.SNOW_BLOCK ||
+						arena.getPlayersManager().isSpectator(player.getName())) {
 			e.setCancelled(true);
 			return;
 		}
