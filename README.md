@@ -18,7 +18,7 @@ Spleef is the iconic Minecraft mini game where players join and arena and try to
 
 Spleef_reloaded is a highly configurable, fully automated minigame. It has been created using the TNTRun_reloaded code base so many of the commands and features are identical between the two plugins.
 
-The latest version of Spleef_reloaded requires a minimum Java version of 21, and is supported on servers running Minecraft versions 1.20.6+.
+The latest version of Spleef_reloaded requires a minimum Java version of 21, and is supported on servers running Minecraft versions 1.21.3+.
 
 The plugin features a customisable shop where players can buy items such as weapons, armour, double-jumps, splash potions, snowballs (with knockback) and commands which run when the game starts. There is an option to enable PVP in an arena, assign kits, and the plugin also interfaces with HeadsPlus (by ThatsMusic99) allowing players to buy/wear custom heads during the game.
 
@@ -27,7 +27,9 @@ Optionally, a fee can be set to join each arena, which can be monetary or any Mi
 
 ## Download
 
-If your server is running Minecraft 1.20.6+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
+If your server is running Minecraft 1.21.3+, then the latest version of Spleef\_reloaded can be [downloaded from Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
+
+If your server is running Minecraft 1.20.6 - 1.21.2, download version 1.0 from [Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
 
 If your server is running Minecraft 1.20.1 - 1.20.4, download version 0.83 from [GitHub Releases.](https://github.com/steve4744/Spleef/releases/tag/v0.8.3/ "Legacy version")
 
@@ -103,4 +105,4 @@ FAWE is also supported, and can be used in place of the WorldEdit.
 <br />
 <br />
 <br />
-Updated steve4744 - 4th November 2024
+Updated steve4744 - 24th January 2025
