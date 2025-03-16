@@ -1,6 +1,6 @@
 # Spleef_reloaded
 
-[![Resource](https://img.shields.io/badge/SpigotMC-Resource-orange.svg)](https://www.spigotmc.org/resources/spleef_reloaded-spleef-for-1-13-1-20.53359/)
+[![Resource](https://img.shields.io/badge/SpigotMC-Resource-orange.svg)](https://www.spigotmc.org/resources/spleef_reloaded-spleef-for-1-20-1-21-4.118673/)
 [![Java CI with Maven](https://github.com/steve4744/Spleef/workflows/Java%20CI%20with%20Maven/badge.svg)](https://github.com/steve4744/Spleef/actions?query=workflow%3A%22Java+CI+with+Maven%22)
 [![Dev Build](https://img.shields.io/badge/Dev%20Build-Latest-orange?logo=github-actions)](https://github.com/steve4744/Spleef/releases)
 [![GPLv3 License](https://img.shields.io/badge/License-GPL%20v3-yellow.svg)](https://opensource.org/licenses/)
