@@ -198,6 +198,7 @@ items:
     material: DIAMOND_SHOVEL
     name: ''
     slot: 0
+    custommodeldata: 0
   snowball:
     use: true
     material: SNOWBALL

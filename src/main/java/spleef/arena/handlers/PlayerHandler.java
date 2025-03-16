@@ -712,6 +712,9 @@ public class PlayerHandler {
 		ItemMeta meta = item.getItemMeta();
 		meta.setDisplayName(FormattingCodesParser.parseFormattingCodes(plugin.getConfig().getString("items.tool.name")));
 		meta.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
+		if (plugin.getConfig().getInt("items.tool.custommodeldata") > 0) {
+			meta.setCustomModelData(plugin.getConfig().getInt("items.tool.custommodeldata"));
+		}
 		item.setItemMeta(meta);
 
 		player.getInventory().setItem(plugin.getConfig().getInt("items.tool.slot", 0), item);
