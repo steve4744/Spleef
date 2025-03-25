@@ -37,6 +37,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.inventory.meta.PotionMeta;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
+import org.bukkit.potion.PotionType;
 
 import spleef.Spleef;
 import spleef.arena.Arena;
@@ -226,10 +227,13 @@ public class Shop {
 				if (effect != null) {
 					potionmeta.addCustomEffect(effect, true);
 					NamespacedKey key = NamespacedKey.minecraft(getEnchantmentName(peffects).toLowerCase());
-					if (Registry.EFFECT.get(key) == null) {
+					//if (Registry.EFFECT.get(key) == null) {
+					PotionType type = Registry.POTION.get(key);
+					if (type == null) {
 						continue;
 					}
-					potionmeta.setColor(Registry.EFFECT.get(key).getColor());
+					PotionEffectType pe = type.getEffectType();
+					potionmeta.setColor(pe.getColor());
 				}
 			}
 		}
@@ -243,13 +247,16 @@ public class Shop {
 		int amplifier = getEnchantmentAmplifier(effect);
 		NamespacedKey key = NamespacedKey.minecraft(name.toLowerCase());
 
-		PotionEffectType type = Registry.EFFECT.get(key);
+		//PotionEffectType type = Registry.EFFECT.get(key);
+		PotionType type = Registry.POTION.get(key);
 		if (type == null) {
 			plugin.getLogger().info("Potion effect type is invalid: " + name);
 			return null;
 		}
 
-		return new PotionEffect(type, duration * 20, amplifier);
+		PotionEffectType pe = type.getEffectType();
+		//return new PotionEffect(type, duration * 20, amplifier);
+		return new PotionEffect(pe, duration * 20, amplifier);
 	}
 
 	private boolean canBuyDoubleJumps(FileConfiguration cfg, Player p, int kit) {
@@ -333,8 +340,10 @@ public class Shop {
 			potionmeta.addCustomEffect(effect, true);
 			potionmeta.addItemFlags(ItemFlag.HIDE_POTION_EFFECTS);
 			NamespacedKey key = NamespacedKey.minecraft(getEnchantmentName(enchantment).toLowerCase());
-			if (Registry.EFFECT.get(key) != null) {
-				potionmeta.setColor(Registry.EFFECT.get(key).getColor());
+			PotionType type = Registry.POTION.get(key);
+			if (type != null) {
+				PotionEffectType pe = type.getEffectType();
+				potionmeta.setColor(pe.getColor());
 			}
 		}
 
