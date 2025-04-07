@@ -130,6 +130,10 @@ public class SnowballHandler implements Listener {
 		if (!arena.getStatusManager().isArenaRunning()) {
 			return;
 		}
+		if (arena.getPlayersManager().isSpectator(player.getName())) {
+			event.setCancelled(true);
+			return;
+		}
 		int maxpickup = plugin.getConfig().getInt("items.snowball.maxpickup");
 		if (maxpickup <= 0) {
 			return;
