@@ -183,9 +183,9 @@ public class Utils {
 		final String command = "/spleef joinorspectate ";
 		final String border = FormattingCodesParser.parseFormattingCodes(Messages.playerborderinvite);
 		final String clickAction = "RUN_COMMAND";
-		TextComponent jointc = new TextComponent(TextComponent.fromLegacyText(border + "\n"));
+		TextComponent jointc = new TextComponent(TextComponent.fromLegacy(border + "\n"));
 		jointc.addExtra(buildComponent(joinMessage, Messages.playerclickinvite.replace("{ARENA}", arenaname), arenaname, command, clickAction));
-		jointc.addExtra(new TextComponent(TextComponent.fromLegacyText("\n" + border)));
+		jointc.addExtra(new TextComponent(TextComponent.fromLegacy("\n" + border)));
 		player.spigot().sendMessage(jointc);
 	}
 
