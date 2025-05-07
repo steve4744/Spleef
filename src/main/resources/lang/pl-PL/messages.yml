@@ -84,7 +84,7 @@ helplobby: Teleportuj się do lobby
 helplist: Wyświetl wszystkie areny LUB Wyświetl szczegóły aren
 helplistkit: Wymień wszystkie zestawy LUB Wyświetl szczegóły zestawu
 helplistrewards: Wymień nagrody za arenę
-helpclick: Click to select
+helpclick: Kliknij, aby wybrać
 helpjoin: Otwórz menu dołączania LUB Dołącz do areny
 helpspectate: Dołącz do areny jako widz
 helpautojoin: Automatycznie dołącz do pierwszej dostępnej areny
@@ -159,7 +159,7 @@ partyinparty: '&c Jesteś już w drużynie'
 partynotexist: '&c Wybrana drużyna nie istnieje'
 partynoinvite: '&c Nie masz zaproszenia do tej drużyny'
 partynotenabled: '&c Party Spleef nie są aktualnie włączone'
-partyclickaccept: '&6&lAccept'
-partyclickdecline: '&6&lDecline'
-partyaccepttext: '&7Click to &baccept &7the invitation'
-partydeclinetext: '&7Click to &cdecline &7the invitation'
+partyclickaccept: '&6&lAkceptuj'
+partyclickdecline: '&6&lOdrzuć'
+partyaccepttext: '&7Kliknij, aby &bprzyjąć &7zaproszenie'
+partydeclinetext: '&7Kliknij, aby &codrzucić &7zaproszenie'

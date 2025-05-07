@@ -84,7 +84,7 @@ helplobby: Teletransportarse al lobby
 helplist: Listar todas las arenas O Listar detalles de arenas
 helplistkit: Listar todos los kits O Listar los detalles del kit
 helplistrewards: Listar las recompensas para la arena
-helpclick: Click to select
+helpclick: Haga clic para seleccionar
 helpjoin: Abrir el menú de partidas O unirse a la partida
 helpspectate: Unirse a la partida como espectador
 helpautojoin: Únase automáticamente a la primera partida disponible
@@ -159,7 +159,7 @@ partyinparty: '&c ¡Ya estás en un equipo!'
 partynotexist: '&c El equipo seleccionado no existe'
 partynoinvite: '&c No tienes una invitación para este equipo'
 partynotenabled: '&c Los equipos Spleef no están habilitados actualmente'
-partyclickaccept: '&6&lAccept'
-partyclickdecline: '&6&lDecline'
-partyaccepttext: '&7Click to &baccept &7the invitation'
-partydeclinetext: '&7Click to &cdecline &7the invitation'
+partyclickaccept: '&6&lAceptar'
+partyclickdecline: '&6&lRechazar'
+partyaccepttext: '&7Haga clic para &baceptar &7la invitación'
+partydeclinetext: '&7Haga clic para &cdeclinar &7la invitación'
