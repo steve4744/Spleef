@@ -200,13 +200,23 @@ items:
     slot: 0
     custommodeldata: 0
   snowball:
+    # if true will give players infinite snowballs
     use: true
+    # only SNOWBALL is currently supported
     material: SNOWBALL
+    # display name to give the snowball
     name: ''
+    # how much knockback to inflict on hit players
     knockback: 1.0
+    # how much damage to inflict on hit players
+    damage: 0.5
+    # hotbar slot to hold snowballs
     slot: 1
+    # if true will cause snowballs to break snow_blocks when hit
     breakblocks: false
+    # if true snow_blocks will drop snowballs when broken
     allowpickup: false
+    # maximum number of snowballs a player can hold
     maxpickup: 10
 #
 # set scoreboard text - only the header supports hex/rgb colours

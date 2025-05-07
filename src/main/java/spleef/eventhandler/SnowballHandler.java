@@ -60,9 +60,15 @@ public class SnowballHandler implements Listener {
 		if (e.getHitEntity() == null || e.getHitEntity().getType() != EntityType.PLAYER) {
 			return;
 		}
+
+		double damage = plugin.getConfig().getDouble("items.snowball.damage", 0.5);
 		Player player = (Player) e.getHitEntity();
+		player.damage(damage, projectile);
+
 		double knockback = plugin.getConfig().getDouble("items.snowball.knockback", 1.5);
-		player.damage(0.5, projectile);
+		if (knockback <= 0) {
+			return;
+		}
 		player.setVelocity(projectile.getVelocity().multiply(knockback));
 	}
 
