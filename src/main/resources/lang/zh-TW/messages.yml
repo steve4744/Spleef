@@ -84,7 +84,7 @@ helplobby: 傳送到大廳
 helplist: 列出所有地圖或是詳細資料
 helplistkit: 列出所有職業或是詳細資料
 helplistrewards: 列出該地圖的獎賞
-helpclick: Click to select
+helpclick: 點擊以選擇
 helpjoin: 打開選單或是加入遊戲
 helpspectate: 以旁觀者加入遊戲
 helpautojoin: 自動加入遊戲
@@ -159,7 +159,7 @@ partyinparty: '&c 你已經在派對中'
 partynotexist: '&c 所選方不存在'
 partynoinvite: '&c 您沒有參加此派對的邀請'
 partynotenabled: '&c Spleef 當前未啟用各方'
-partyclickaccept: '&6&lAccept'
-partyclickdecline: '&6&lDecline'
-partyaccepttext: '&7Click to &baccept &7the invitation'
-partydeclinetext: '&7Click to &cdecline &7the invitation'
+partyclickaccept: '&6&l接受'
+partyclickdecline: '&6&l拒絕'
+partyaccepttext: '&7點擊&b接受&7邀請'
+partydeclinetext: '&7點擊&4拒絕&7邀請'
