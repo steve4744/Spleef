@@ -19,6 +19,8 @@ package spleef;
 
 import org.bukkit.scheduler.BukkitRunnable;
 
+import spleef.utils.Utils;
+
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -121,13 +123,18 @@ import java.util.logging.Logger;
 
 				statement = c.prepareStatement(query);
 
+				if (Utils.debug()) {
+					logger.info("Mysql query = " + query);
+				}
 				if (statement.execute()) {
 					return new Result(statement, statement.getResultSet());
 				}
 			} catch (final SQLException e) {
 				final String msg = e.getMessage();
 
-				logger.severe("Database query error: " + msg);
+				if (!msg.contains("looses")) {
+					logger.severe("Database query error: " + msg);
+				}
 
 				if (retry && msg.contains("_BUSY")) {
 					logger.severe("Retrying query...");
