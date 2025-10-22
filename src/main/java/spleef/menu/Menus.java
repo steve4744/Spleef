@@ -20,10 +20,10 @@ package spleef.menu;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
+//import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
+//import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Stream;
 
@@ -49,7 +49,6 @@ public class Menus {
 
 	private final Spleef plugin;
 	private int keyPos;
-	private Map<String, Inventory> invMap = new HashMap<>();
 
 	public Menus(Spleef plugin) {
 		this.plugin = plugin;
@@ -63,8 +62,7 @@ public class Menus {
 	public void buildJoinMenu(Player player) {
 		TreeMap<String, Arena> arenas = getDisplayArenas();
 		int size = getJoinMenuSize(arenas.size());
-		Inventory inv = Bukkit.createInventory(null, size, FormattingCodesParser.parseFormattingCodes(Messages.menutitle));
-		invMap.put(player.getName(), inv);
+		Inventory inv = Bukkit.createInventory(new MenuHolder("join"), size, FormattingCodesParser.parseFormattingCodes(Messages.menutitle));
 
 		keyPos = 9;
 		//TODO provide permanent fix for > 28 arenas
@@ -72,7 +70,7 @@ public class Menus {
 			Arena arena = e.getValue();
 			boolean isPvp = arena.getStructureManager().isPvpEnabled();
 			List<String> lores = new ArrayList<>();
-			ItemStack is = new ItemStack(getMenuItem(isPvp));
+			ItemStack is = new ItemStack(getMenuItem(arena, isPvp));
 			ItemMeta im = is.getItemMeta();
 
 			im.setDisplayName(FormattingCodesParser.parseFormattingCodes(Messages.menuarenaname).replace("{ARENA}", arena.getArenaName()));
@@ -110,8 +108,7 @@ public class Menus {
 	 */
 	public void buildTrackerMenu(Player player, Arena arena) {
 		int size = getTrackerMenuSize(arena.getPlayersManager().getPlayersCount());
-		Inventory inv = Bukkit.createInventory(null, size, FormattingCodesParser.parseFormattingCodes(Messages.menutracker));
-		invMap.put(player.getName(), inv);
+		Inventory inv = Bukkit.createInventory(new MenuHolder("tracker"), size, FormattingCodesParser.parseFormattingCodes(Messages.menutracker));
 
 		for (Player p : arena.getPlayersManager().getPlayers()) {
 			ItemStack is = new ItemStack(Material.PLAYER_HEAD);
@@ -139,8 +136,7 @@ public class Menus {
 	public void buildConfigMenu(Player player, Arena arena, int page) {
 		final int size = 36;
 		String title = "Spleef setup {PAGE}/2 - ".replace("{PAGE}", String.valueOf(page)) + arena.getArenaName();
-		Inventory inv = Bukkit.createInventory(null, size, title);
-		invMap.put(player.getName(), inv);
+		Inventory inv = Bukkit.createInventory(new MenuHolder("config"), size, title);
 
 		if (page == 1) {
 			Stream.of(ConfigMenu.values()).forEach(item -> {
@@ -450,7 +446,7 @@ public class Menus {
 		}
 	}
 
-	private Material getPane() {
+	public Material getPane() {
 		String colour = plugin.getConfig().getString("menu.panecolor", "LIGHT_BLUE").toUpperCase();
 		if (colour == "NONE" || colour == "AIR" || Enums.getIfPresent(DyeColor.class, colour).orNull() == null) {
 			return Material.AIR;
@@ -458,9 +454,21 @@ public class Menus {
 		return Material.getMaterial(colour + "_STAINED_GLASS_PANE");
 	}
 
-	private Material getMenuItem(boolean pvpEnabled) {
+	/**
+	 * Get the item to display in the join menu from the config.
+	 * If the arena has its own menu items defined get those from the arena config.
+	 *
+	 * @param arena
+	 * @param pvpEnabled
+	 * @return
+	 */
+	private Material getMenuItem(Arena arena, boolean pvpEnabled) {
 		String path = pvpEnabled ? "menu.pvpitem" : "menu.item";
 		String item = plugin.getConfig().getString(path, "TNT").toUpperCase();
+
+		if (arena.getStructureManager().hasMenuItem(pvpEnabled)) {
+			item = arena.getStructureManager().getMenuItem(pvpEnabled).toUpperCase();
+		}
 
 		return Material.getMaterial(item) != null ? Material.getMaterial(item) : Material.TNT;
 	}
@@ -564,9 +572,5 @@ public class Menus {
 			invsize = 45;
 		}
 		return invsize;
-	}
-
-	public Inventory getInv(String playerName) {
-		return invMap.get(playerName);
 	}
 }
