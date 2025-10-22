@@ -31,7 +31,7 @@ If your server is running Minecraft 1.21.3+, then the latest version of Spleef\_
 
 If your server is running Minecraft 1.20.6 - 1.21.2, download version 1.0 from [Spigot.](https://www.spigotmc.org/resources/spleef_reloaded.118673/ "Spleef_reloaded")
 
-If your server is running Minecraft 1.20.1 - 1.20.4, download version 0.83 from [GitHub Releases.](https://github.com/steve4744/Spleef/releases/tag/v0.8.3/ "Legacy version")
+If your server is running Minecraft 1.20.1 - 1.20.4, download version 0.84 from [GitHub Releases.](https://github.com/steve4744/Spleef/releases/tag/v0.8.4/ "Legacy version")
 
 
 ## Development Builds
@@ -105,4 +105,4 @@ FAWE is also supported, and can be used in place of the WorldEdit.
 <br />
 <br />
 <br />
-Updated steve4744 - 24th January 2025
+Updated steve4744 - 22nd October 2025
