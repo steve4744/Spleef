@@ -73,8 +73,8 @@ public class StructureManager {
 	private boolean finished = false;
 	private List<Vector> additionalSpawnPoints = new ArrayList<>();
 	private List<Vector> freeSpawnList = new ArrayList<>();
-	private String commandOnStart;
-	private String commandOnStop;
+	private List<String> commandsOnStart = new ArrayList<>();
+	private List<String> commandsOnStop = new ArrayList<>();
 	private boolean shopEnabled = true;
 	private int maxFinalPositions = 3;
 	private boolean enableOnRestart = true;
@@ -263,20 +263,20 @@ public class StructureManager {
 		return new StringBuilder().append((int) fee).append(" x ").append(currency).toString();
 	}
 
-	public String getCommandOnStart() {
-		return commandOnStart != null ? commandOnStart : "";
+	public List<String> getCommandsOnStart() {
+		return commandsOnStart;
 	}
 
-	public String getCommandOnStop() {
-		return commandOnStop != null ? commandOnStop : "";
+	public List<String> getCommandsOnStop() {
+		return commandsOnStop;
 	}
 
-	public boolean hasCommandOnStart() {
-		return commandOnStart != null && commandOnStart.length() > 0;
+	public boolean hasCommandsOnStart() {
+		return !commandsOnStart.isEmpty();
 	}
 
-	public boolean hasCommandOnStop() {
-		return commandOnStop != null && commandOnStop.length() > 0;
+	public boolean hasCommandsOnStop() {
+		return !commandsOnStop.isEmpty();
 	}
 
 	public boolean isInArenaBounds(Location loc) {
@@ -560,8 +560,10 @@ public class StructureManager {
 		config.set("currency", currency);
 		config.set("finished", finished);
 		config.set("spawnpoints", additionalSpawnPoints);
-		config.set("commandOnStart", getCommandOnStart());
-		config.set("commandOnStop", getCommandOnStop());
+		config.set("commandsOnStart", getCommandsOnStart());
+		config.set("commandsOnStop", getCommandsOnStop());
+		config.set("commandOnStart", null);
+		config.set("commandOnStop", null);
 		config.set("displayfinalpositions", maxFinalPositions);
 		config.set("enableOnRestart", enableOnRestart);
 		config.set("shop.enabled", shopEnabled);
@@ -608,8 +610,17 @@ public class StructureManager {
 			finished = true;
 		}
 		additionalSpawnPoints = (List<Vector>) config.getList("spawnpoints", new ArrayList<>());
-		commandOnStart = config.getString("commandOnStart", "");
-		commandOnStop = config.getString("commandOnStop", "");
+		//TODO the string commandOn[Start|Stop] is redundant, migrated to a List in 9.33.
+		if (config.isSet("commandOnStart")) {
+			commandsOnStart = config.getString("commandOnStart", "").isEmpty() ? new ArrayList<>() : List.of(config.getString("commandOnStart"));
+		} else {
+			commandsOnStart = config.getStringList("commandsOnStart");
+		}
+		if (config.isSet("commandOnStop")) {
+			commandsOnStop = config.getString("commandOnStop", "").isEmpty() ? new ArrayList<>() : List.of(config.getString("commandOnStop"));
+		} else {
+			commandsOnStop = config.getStringList("commandsOnStop");
+		}
 		maxFinalPositions = config.getInt("displayfinalpositions", maxFinalPositions);
 		enableOnRestart = config.getBoolean("enableOnRestart", true);
 		shopEnabled = config.getBoolean("shop.enabled", true);
