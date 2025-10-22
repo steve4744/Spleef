@@ -20,10 +20,8 @@ package spleef.menu;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-//import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-//import java.util.Map;
 import java.util.TreeMap;
 import java.util.stream.Stream;
 
@@ -203,7 +201,6 @@ public class Menus {
 				break;
 			case 11:
 				if (page == 1) {
-					im.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 					im.setDisplayName(ChatColor.GREEN + "Set arena bounds");
 					if (showhelp) {
 						lores.add(ChatColor.GRAY + "Set the corner points of a cuboid which");
@@ -299,7 +296,6 @@ public class Menus {
 					lores.add(status + arena.getStructureManager().getMinPlayers());
 					is.setAmount(arena.getStructureManager().getMinPlayers());
 				} else {
-					im.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 					im.setDisplayName(ChatColor.GREEN + "Set damage (PVP)");
 					if (showhelp) {
 						lores.add(ChatColor.GRAY + "Enable or disable PVP in the arena by setting");
@@ -407,6 +403,7 @@ public class Menus {
 		}
 
 		im.setLore(lores);
+		im.addItemFlags(ItemFlag.HIDE_ATTRIBUTES);
 		is.setItemMeta(im);
 		return is;
 	}
