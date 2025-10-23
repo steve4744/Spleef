@@ -71,6 +71,7 @@ playernotonline: '&6 {PLAYER} &7non è attualmente online'
 gamesplayed: '&bPartite giocate &f: '
 gameswon: '&bVittorie &f: '
 gameslost: '&bSconfitte &f: '
+winstreak: '&bWin streak &f: '
 statshead: '&7=========[&6Statistiche Spleef&7]========='
 rewardshead: '&7======[&6Spleef Premi&7 - &a{ARENA}&7]======'
 leaderhead: '&7======[&6Spleef Leaderboard&7]======'
@@ -107,7 +108,6 @@ setupaddspawn: Imposta il punto di rigenerazione dell'arena ai tuoi piedi
 setupdelspawns: Elimina tutti i punti di spawn creati con il comando addspawn
 setupfinish: Termina l'arena e salva
 setupdelspectate: Elimina spawn dello spettatore per l'arena corrente
-setupdelay: Imposta il ritardo per rimuovere il blocco quando il giocatore passa su di esso
 setupregendelay: 'Imposta il ritardo prima che i giocatori possano ri-entrare nell''arena (Predefinito: 60)'
 setupmax: 'Imposta il numero massimo di giocatori per l''arena (predefinito: 15)'
 setupmin: 'Imposta il minimo di giocatori per l''arena (predefinito: 2)'
@@ -139,6 +139,8 @@ setupclear: Cancella punti di selezione
 setupwhitelist: Inserisci nella whitelist un comando da utilizzare nel gioco
 setupresetstats: Rimuovi tutte le statistiche Spleef per il giocatore
 setupresetrank: Rimuovi il rango del giocatore dalla cache
+setupwaiting: Set a spawn location used prior to joining the arena
+setupdelwaiting: Delete the waiting spawn location
 kitadd: '&7 Il kit &6{KIT} &7è stato creato'
 kitdel: '&7 Il kit &6{KIT} &7è stato eliminato'
 kitexists: '&c Il kit specificato esiste già: &6{KIT}'
