@@ -72,6 +72,7 @@ playernotonline: '&6 {PLAYER} &7is not currently online'
 gamesplayed: '&bGames played &f: '
 gameswon: '&bWins &f: '
 gameslost: '&bLosses &f: '
+winstreak: '&bWin streak &f: '
 statshead: '&7=========[&6Spleef Stats&7]========='
 rewardshead: '&7======[&6Spleef Rewards&7 - &a{ARENA}&7]======'
 leaderhead: '&7======[&6Spleef Leaderboard&7]======'
@@ -108,7 +109,6 @@ setupaddspawn: Set an additional spawn at your feet
 setupdelspawns: Delete all spawn points created with the addspawn command
 setupfinish: Finish arena and save
 setupdelspectate: Delete spectator spawn for arena
-setupdelay: Set delay for removing block when player steps on it
 setupregendelay: 'Set delay before players can re-join arena (Default: 60)'
 setupmax: 'Set maximum players for arena (Default: 15)'
 setupmin: 'Set minimum players for arena (Default: 2)'
@@ -140,6 +140,8 @@ setupclear: Clear selection points
 setupwhitelist: Whitelist a command for use in-game
 setupresetstats: Remove all Spleef stats for the player
 setupresetrank: Remove player's rank from the cache
+setupwaiting: Set a spawn location used prior to joining the arena
+setupdelwaiting: Delete the waiting spawn location
 kitadd: '&7 The kit &6{KIT} &7has been created'
 kitdel: '&7 The kit &6{KIT} &7has been deleted'
 kitexists: '&c The specified kit already exists : &6{KIT}'
