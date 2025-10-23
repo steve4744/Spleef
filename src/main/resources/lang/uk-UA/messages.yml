@@ -71,6 +71,7 @@ playernotonline: '&6 {PLAYER} &7наразі не в мережі'
 gamesplayed: '&bІгор зіграно &f: '
 gameswon: '&bПеремог &f: '
 gameslost: '&bПоразок &f: '
+winstreak: '&bWin streak &f: '
 statshead: '&7=========[&6Статистика Spleef&7]========='
 rewardshead: '&7======[&6Винагороди Spleef&7 - &a{ARENA}&7]======'
 leaderhead: '&7======[&6ЛідерБорд Spleef&7]======'
@@ -107,7 +108,6 @@ setupaddspawn: Встановити точку появи арени
 setupdelspawns: Видалити всі точки появи, створені командою /addspawn
 setupfinish: Закінчити арену та зберегти
 setupdelspectate: Видалити спавн глядача для арени
-setupdelay: Затримка видалення блоку під час кроків гравця
 setupregendelay: 'Затримка перед повторним приєднанням гравців до арени (за замовчуванням: 60)'
 setupmax: 'Встановити максимальну кількість гравців для арени (за замовчуванням: 15)'
 setupmin: 'Встановити мінімальну кількість гравців для арени (За замовчуванням: 2)'
@@ -139,6 +139,8 @@ setupclear: Очистити точки виділення
 setupwhitelist: Білий список команд для використання в грі
 setupresetstats: Видалити всю статистику Spleef для гравця
 setupresetrank: Видалити ранг гравця з кешу
+setupwaiting: Set a spawn location used prior to joining the arena
+setupdelwaiting: Delete the waiting spawn location
 kitadd: '&7 Комплект &6{KIT} &7успішно створено'
 kitdel: '&7 Комплект &6{KIT} &7успішно видалено'
 kitexists: '&c Указаний комплект вже існує: &6{KIT}'
