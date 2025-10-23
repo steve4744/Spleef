@@ -71,6 +71,7 @@ playernotonline: '&6 {PLAYER}&7이(가) 현재 온라인 상태가 아닙니다.
 gamesplayed: '&b플레이한 게임&f:'
 gameswon: '&b승리&f: '
 gameslost: '&b패배&f: '
+winstreak: '&bWin streak &f: '
 statshead: '&7=========[&6TNT Run 통계&7]=========='
 rewardshead: '&7======[&6TNT Run 보상s&7 - &a{ARENA}&7]======'
 leaderhead: '&7======[&6TNT Run 리더보드&7]======'
@@ -107,7 +108,6 @@ setupaddspawn: 당신의 발 지점을 추가 스폰 설정
 setupdelspawns: addspawn 명령어로 생성된 모든 스폰 지점 삭제
 setupfinish: 경기장을 완료하고 저장
 setupdelspectate: 경기장에 대한 관전자 생성 삭제
-setupdelay: 플레이어가 블록을 밟을 때 블록 제거 지연 설정
 setupregendelay: '플레이어가 경기장에 다시 참가할 수 있기 전에 지연 설정 (기본값: 60)'
 setupmax: '경기장의 최대 플레이어 수 설정 (기본값: 15)'
 setupmin: '경기장의 최소 플레이어 설정 (기본값: 2)'
@@ -139,6 +139,8 @@ setupclear: 선택 포인트 지우기
 setupwhitelist: 게임 내에서 사용할 명령어를 허용 목록에 추가
 setupresetstats: 플레이어에 대한 모든 TNT Run 통계 제거
 setupresetrank: 캐시에서 플레이어의 순위를 제거합니다.
+setupwaiting: Set a spawn location used prior to joining the arena
+setupdelwaiting: Delete the waiting spawn location
 kitadd: '&7 The kit &6{KIT} &7has been created'
 kitdel: '&7 The kit &6{KIT} &7has been deleted'
 kitexists: '&c 지정된 키트가 이미 존재함: &6{KIT}'
