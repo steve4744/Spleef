@@ -213,9 +213,9 @@ public class PlayerHandler {
 			return arena.getStructureManager().getWaitingSpawn();
 		}
 		Location loc = null;
-		if (spawnmap.containsKey(playerName) && (arena.getStructureManager().getFreeSpawnList().contains(spawnmap.get(playerName).toVector()))) {
+		if (spawnmap.containsKey(playerName) && (arena.getStructureManager().getFreeSpawnList().contains(spawnmap.get(playerName)))) {
 			loc = spawnmap.get(playerName);
-			arena.getStructureManager().getFreeSpawnList().remove(loc.toVector());
+			arena.getStructureManager().getFreeSpawnList().remove(loc);
 		} else {
 			loc = arena.getStructureManager().getSpawnPoint();
 			if (arena.getStructureManager().hasAdditionalSpawnPoints()) {
@@ -485,7 +485,7 @@ public class PlayerHandler {
 		if (!arena.getStatusManager().isArenaRunning()) {
 			arena.getScoreboardHandler().createWaitingScoreBoard();
 			if (spawnmap.containsKey(player.getName())) {
-				arena.getStructureManager().getFreeSpawnList().add(spawnmap.get(player.getName()).toVector());
+				arena.getStructureManager().getFreeSpawnList().add(spawnmap.get(player.getName()));
 			}
 		}
 
